@@ -11,6 +11,50 @@
   <link rel="stylesheet" href="sandratang.github.io/theme.css">
 </head>
 
+<style>
+  body{
+    background-color: rgb(245, 245, 245);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
+  }
+  p{
+    font-weight: 400;
+  }
+  div{
+    padding: 10px;
+    border-color: rgb(240, 240, 240);
+  }
+  h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  h1, h2, h3{
+    letter-spacing: 4px;
+  }
+  h4, h5, h6{
+    letter-spacing: 1px;
+  }
+  .thumbnail{
+    padding: 30px;
+  }
+  div.header {
+    display:table;
+    width:100%;
+    <!-- Take this away for small screen sizes. -->
+    table-layout: fixed;
+  }
+  div.header span {
+    display:table-cell;
+    text-align:center;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .featured-image{
+    margin-bottom: 20px;
+  }
+</style>
+
 <body>
 
 <nav style="background-color: black; padding: 10px; position: fixed; width: 100%; z-index: 999">
@@ -28,7 +72,7 @@
 <h3 style="margin: auto; position: absolute; top: 95vh; left: 25px; font-size: 10px; color: white;"><a href="#" style="color:white;">FACEBOOK</a> / <a href="#" style="color:white;">TWITTER</a> / <a href="#" style="color:white;">INSTAGRAM</a></h3>
 
 
-<div class="container" style="align-content: center">
+<div class="container" style="align-content: center; padding: 30px">
   <div class="row">
 
     <!--MAIN AREA-->
@@ -36,16 +80,18 @@
       <h2 class="thumbnail" style="text-align: center; color: white; background-color: teal;">FEATURED PROJECTS</h2>
       <!-- Article 1 -->
       <div class="thumbnail">
-        <a href="">
-        <img class="featured-image" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-        <h4>Ofera Foundation</h4>
+        <a href="https://oferafoundation.github.io/" style="color: black">
+          <img class="featured-image" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
+          <h4>Ofera Foundation</h4>
         </a>
         <p>Ofera Foundation is a non-profit organization that strives to better the environment and educate others. In addition to being one of two directors and a graphic designer, I am also the website's front-end developer.</p>
       </div>
       <!-- Article 2 -->
       <div class="thumbnail">
-        <img class="featured-image" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-        <h4>Python Cryptography Games</h4>
+        <a href="https://sandratang.github.io/cryptography" style="color: black">
+          <img class="featured-image" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
+          <h4>Python Cryptography Games</h4>
+        </a>
         <p>When my high school's Science Olympiad Code Busters team had trouble finding cryptography games to test our skills, I programmed some cryptography games in Python 2 to help us prepare for the competition.</p>
       </div>
       <!-- Article 3 -->
