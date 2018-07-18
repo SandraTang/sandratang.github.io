@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="sandratang.github.io/theme.css">
+</head>
+
+<style>
+  body{
+    background-color: rgb(245, 245, 245);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
+  }
+  p{
+    font-weight: 400;
+  }
+  div{
+    padding: 10px;
+    border-color: rgb(240, 240, 240);
+  }
+  h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  h1, h2, h3{
+    letter-spacing: 4px;
+  }
+  h4, h5, h6{
+    letter-spacing: 1px;
+  }
+  .thumbnail{
+    padding: 30px;
+  }
+  div.header {
+    display:table;
+    width:100%;
+    <!-- Take this away for small screen sizes. -->
+    table-layout: fixed;
+  }
+  div.header span {
+    display:table-cell;
+    text-align:center;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .featured-image{
+    margin-bottom: 20px;
+  }
+</style>
+
+<body>
+
+<nav style="background-color: black; padding: 10px; position: fixed; width: 100%; z-index: 999">
+  <div class="header">
+    <span><a href="https://sandratang.github.io/" style="color:white;">HOME</a></span>
+    <span><a href="https://sandratang.github.io/about" style="color:white;">ABOUT</a></span>
+    <span><a href="https://sandratang.github.io/projects" style="color:white;">PROJECTS</a></span>
+    <span><a href="https://sandratang.github.io/contact" style="color:white;">CONTACT</a></span>
+  </div>
+</nav>
+
+<!-- Landing Page Image and words over it -->
+<img src="https://wallpaper-house.com/data/out/7/wallpaper2you_202136.jpg" style="object-fit: cover; width: 100%; height: 100vh;">
+<h1 style="margin: auto; position: absolute; top: 45vh; left: 19vw; font-size: 6vw;color: white; letter-spacing: 15px; font-weight: bold;">Cryptography</h1>
+
+<div class="container" style="align-content: center; padding: 30px">
+  <p>When my high school's Science Olympiad Code Busters team had trouble finding cryptography games to test our skills, I programmed some cryptography games in Python 2 to help us prepare for the competition. </p>
+  <hr>
+  <h3>Caesar Cipher Game - Hard</h3>
+  <p>Caesar cipher practice game with no spaces between words.</p>
+  <iframe src="https://trinket.io/embed/python/f10b2f6a45?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <hr>
+  <h3>Caesar Cipher Game - Medium</h3>
+  <p>Caesar cipher practice game with spaces between words.</p>
+  <iframe src="https://trinket.io/embed/python/2a88027d18?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
