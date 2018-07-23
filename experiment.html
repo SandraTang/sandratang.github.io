@@ -140,11 +140,11 @@ $data = json_decode(file_get_contents('data.json'), true);
   }
 
   .headline {
-      font-size: 6vw;
+      font-size: 8vw;
   }
 
   .subheadline {
-  	font-size: 2vw;
+  	font-size: 3vw;
   }
 
   .button-desktop {
@@ -156,13 +156,13 @@ $data = json_decode(file_get_contents('data.json'), true);
     margin-top: -30px;
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
       .headline {
         font-size: 48px;
       }
 
       .subheadline {
-        font-size: 16px;
+        font-size: 18px;
       }
 
       .button-desktop {
@@ -171,7 +171,11 @@ $data = json_decode(file_get_contents('data.json'), true);
 
       .button-mobile {
         visibility: visible;
-        margin-top: -30px;
+        margin-top: -60px;
+      }
+
+      .vertical-center{
+        top: 10%;
       }
   }
 
@@ -198,14 +202,13 @@ $data = json_decode(file_get_contents('data.json'), true);
               <!-- Mobile Version -->
                 <div id="#language" class="fadeIn three button-mobile">
                   <div id="buttons-wrapper">
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-en.php';">English </button>
-                  <br><br>
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-m.php';">普通話 </button>
-                  <br><br>
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-c.php';">粵語 </button>
-                  <br><br>
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-es.php';">Español </button>
-                  <br><br>
+                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-en.php';">English </button>
+                  <br>
+                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-zh-m.php';">普通話 </button>
+                  <br>
+                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-zh-c.php';">粵語 </button>
+                  <br>
+                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-es.php';">Español </button>
                   </div>
               </div>
             </div>
