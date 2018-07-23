@@ -148,12 +148,11 @@ $data = json_decode(file_get_contents('data.json'), true);
   }
 
   .button-desktop {
-    visibility: visible;
+    display: block;
   }
 
   .button-mobile {
-    visibility: hidden;
-    margin-top: -30px;
+    display: none;
   }
 
   @media only screen and (max-width: 600px) {
@@ -166,12 +165,12 @@ $data = json_decode(file_get_contents('data.json'), true);
       }
 
       .button-desktop {
-        visibility: hidden;
+        display: none;
       }
 
       .button-mobile {
-        visibility: visible;
-        margin-top: -60px;
+        display: block;
+        margin-top: -20px;
       }
 
       .vertical-center{
