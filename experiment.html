@@ -56,7 +56,7 @@ $data = json_decode(file_get_contents('data.json'), true);
   .vertical-center{
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 30%;
     width: 100%;
     text-align: center;
   }
@@ -147,19 +147,32 @@ $data = json_decode(file_get_contents('data.json'), true);
   	font-size: 2vw;
   }
 
-  <!-- Mobile Changes -->
+  .button-desktop {
+    visibility: visible;
+  }
+
+  .button-mobile {
+    visibility: hidden;
+    margin-top: -30px;
+  }
+
   @media only screen and (max-width: 800px) {
       .headline {
-      font-size: 48px;
+        font-size: 48px;
       }
 
       .subheadline {
-          font-size: 16px;
+        font-size: 16px;
       }
-    
-    .vertical-center{
-      top: 30%;
-    }
+
+      .button-desktop {
+        visibility: hidden;
+      }
+
+      .button-mobile {
+        visibility: visible;
+        margin-top: -30px;
+      }
   }
 
 
@@ -172,12 +185,27 @@ $data = json_decode(file_get_contents('data.json'), true);
             <div class="container">
               <h1 class="fadeIn one headline">Arcadia City <br> Inquiry Form</h1>
               <h3 class="fadeIn two subheadline">Currently taking inquiries for <?php echo $data['mname'] ?> on <?php echo $data['mdate'] ?>.</h3> <br />
-              <div id="#language" class="fadeIn three container">
+              <!-- Desktop Version -->
+                <div id="#language" class="fadeIn three button-desktop">
                   <div id="buttons-wrapper">
                   <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-en.php';">English </button>
                   <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-m.php';">普通話 </button>
                   <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-c.php';">粵語 </button>
                   <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-es.php';">Español </button>
+                  </div>
+              </div>
+
+              <!-- Mobile Version -->
+                <div id="#language" class="fadeIn three button-mobile">
+                  <div id="buttons-wrapper">
+                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-en.php';">English </button>
+                  <br><br>
+                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-m.php';">普通話 </button>
+                  <br><br>
+                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-c.php';">粵語 </button>
+                  <br><br>
+                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-es.php';">Español </button>
+                  <br><br>
                   </div>
               </div>
             </div>
