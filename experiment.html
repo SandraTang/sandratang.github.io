@@ -15,6 +15,8 @@ $data = json_decode(file_get_contents('data.json'), true);
     <!-- End Custom Script -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Register for Public Comment">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://image.ibb.co/mjpZYd/Misc_1.png">
   </head>
 
 <style>
@@ -54,7 +56,7 @@ $data = json_decode(file_get_contents('data.json'), true);
   .vertical-center{
     position: absolute;
     left: 0;
-    top: 30%;
+    top: 25%;
     width: 100%;
     text-align: center;
   }
@@ -145,6 +147,7 @@ $data = json_decode(file_get_contents('data.json'), true);
   	font-size: 2vw;
   }
 
+  <!-- Mobile Changes -->
   @media only screen and (max-width: 800px) {
       .headline {
       font-size: 48px;
@@ -153,6 +156,10 @@ $data = json_decode(file_get_contents('data.json'), true);
       .subheadline {
           font-size: 16px;
       }
+    
+    .vertical-center{
+      top: 30%;
+    }
   }
 
 
