@@ -25,9 +25,8 @@ h4, h5, h6{
 }
 div.header {
   display:table;
-  width:100%;
-  <!-- Take this away for small screen sizes. -->
   table-layout: fixed;
+  width: 100%;
 }
 div.header span {
   display:table-cell;
@@ -55,4 +54,19 @@ div.header span {
 }
 .col-sm-4 h6{
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  div.header{
+    display:table;
+      table-layout: auto;
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  div.header span {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
 }
