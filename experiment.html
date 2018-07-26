@@ -25,21 +25,21 @@
     margin: 0;
     height: 100%;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(255, 58, 114);
+    font-family: 'Montserrat', sans-serif;
   }
   
   .landing-image {
     position: fixed;
     bottom: 0;
-    right: -50px;
+    right: -300px;
     height: 100vh;
     width: auto;
   }
   
   .headings {
     padding: 100px;
-    color: dark-grey;
-    font-family: 'Montserrat', sans-serif;
+    color: white;
   }
   
   .headline {
@@ -48,36 +48,45 @@
   }
   
   .subheadline {
-    font-size: 1.75vw;
+  	font-size: 1.75vw;
     font-weight: 500;
   }
   
   .btn-group-vertical {
-    padding-left: 100px; 
-    margin-top: -100px; 
+  	padding-left: 100px; 
+    margin-top: -90px; 
     width: 300px;
+  }
+  
+  .btn {
+  	color: white;
+    font-weight: bold;
+    outline-color: white;
+    outline-width: thick;
+    background: none;
   }
   
   /* Mobile */
   @media only screen and (max-width: 768px) {
 
     .landing-image {
-      height: 50vh;
+      height: 50vw;
+      right: 0px;
     }
     .headings {
-      padding: 70px;
+      padding: 60px;
     }
     .headline {
-      font-size: 60px;
+      font-size: 40px;
     }
 
     .subheadline {
-      font-size: 20px;
+      font-size: 16px;
     }
     
     .btn-group-vertical {
-      padding-left: 70px; 
-      margin-top: -50px;
+      padding-left: 60px; 
+      margin-top: -40px;
     }
   
   }
@@ -87,18 +96,19 @@
 <body>
 
 <div class="row">
-	<div class="col-sm-8">
+	<div class="col-sm-9">
     	<p class="headings"><span class="headline">ARCADIA CITY INQUIRY FORM</span><br><br><span class="subheadline">Currently taking inquiries for Test Meeting on Test 01, 2018 at 6:00 pm.</span></p>
         <div class="btn-group-vertical">
           <button type="button" class="btn btn-default">English</button>
           <button type="button" class="btn btn-default">Spanish</button>
-          <button type="button" class="btn btn-default">Chinese</button>
+          <button type="button" class="btn btn-default">SC</button>
+          <button type="button" class="btn btn-default">TC</button>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
     </div>
 </div>
 
-<img src="https://preview.ibb.co/jSJHb8/Misc_4.png" class="landing-image" alt="peacock feathers">
+<img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/01072808/Peacock-PNG-HD-1024x547.png" class="landing-image" alt="peacock feathers">
 
 </body>
