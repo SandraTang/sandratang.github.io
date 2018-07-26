@@ -25,7 +25,7 @@
     margin: 0;
     height: 100%;
     overflow: hidden;
-    background-color: rgb(237, 52, 104);
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -39,7 +39,7 @@
   
   .headings {
     padding: 100px;
-    color: white;
+    color: rgb(50,50,50);
   }
   
   .headline {
@@ -52,41 +52,47 @@
     font-weight: 500;
   }
   
-  .btn-group-vertical {
+  .button-group{
   	padding-left: 100px; 
-    margin-top: -90px; 
-    width: 300px;
+    margin-top: -90px;
   }
   
   .btn {
-  	color: white;
+  	color: rgb(50,50,50);
     font-weight: bold;
     outline-color: white;
     outline-width: thick;
     background: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
   /* Mobile */
   @media only screen and (max-width: 768px) {
 
     .landing-image {
-      height: 50vw;
+      height: 40vw;
+      min-height: 250px;
       right: 0px;
     }
     .headings {
-      padding: 60px;
+      padding: 10vw;
     }
     .headline {
-      font-size: 40px;
+      font-size: 10vw;
     }
 
     .subheadline {
-      font-size: 16px;
+      font-size: 4vw;
     }
     
-    .btn-group-vertical {
-      padding-left: 60px; 
-      margin-top: -40px;
+    .button-group {
+      padding-left: 10vw; 
+      margin-top: -7vw;
+    }
+    
+    .btn {
+      width: 50vw;
     }
   
   }
@@ -98,7 +104,7 @@
 <div class="row">
 	<div class="col-sm-9">
     	<p class="headings"><span class="headline">ARCADIA CITY INQUIRY FORM</span><br><br><span class="subheadline">Currently taking inquiries for Test Meeting on Test 01, 2018 at 6:00 pm.</span></p>
-        <div class="btn-group-vertical">
+        <div class="button-group">
           <button type="button" class="btn btn-default">English</button>
           <button type="button" class="btn btn-default">Spanish</button>
           <button type="button" class="btn btn-default">SC</button>
