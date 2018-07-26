@@ -1,218 +1,104 @@
-<?php
-$data = json_decode(file_get_contents('data.json'), true);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>City of Arcadia Meeting Registration</title>
-    <!-- Bootstrap core CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- End Boostrap -->
-    <!-- Custom Script CSS -->
-    <link href="CSS/landing.css" rel="stylesheet">
-    <!-- End Custom Script -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Register for Public Comment">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://image.ibb.co/mjpZYd/Misc_1.png">
-  </head>
+<head>
+  <title>Arcadia City Inquiry Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+  
+  <!-- Personal CSS Stylesheet -->
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://image.ibb.co/mjpZYd/Misc_1.png">
+</head>
 
 <style>
-
-  .column {
-      box-sizing: border-box;
-      float: left;
-      padding: 10px;
-      height: 100%
+  
+  html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 130, 160);
   }
-
-  img {
-      display: block;
-      max-width:100%;
-      max-height:100%;
-      width: auto;
-      height: auto;
-      margin-left:auto;
-      margin-right:auto;
+  
+  .landing-image {
+    position: fixed;
+    bottom: 0;
+    right: -50px;
+    height: 100vh;
+    width: auto;
   }
-
-  .peacock{
-      /* The image used */
-      background-image: url("http://cdn.chyz.ca/wp-content/uploads/2015/05/1748.jpg");
-
-      /* Set a specific height */
-      height: 100vh;
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-
+  
+  .headings {
+    padding: 100px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
   }
-
-  .vertical-center{
-    position: absolute;
-    left: 0;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-  }
-
-  .fadeIn {
-   opacity:0;
-   -webkit-animation:fadeIn ease-in 1;
-   -moz-animation:fadeIn ease-in 1;
-   animation:fadeIn ease-in 1;
-
-   -webkit-animation-fill-mode:forwards;
-   animation-fill-mode:forwards;
-
-   -webkit-animation-duration:0.3s;
-   -moz-animation-duration:0.3s;
-   animation-duration:0.3s;
-  }
-
-  .fadeIn.one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-  }
-
-  .fadeIn.two {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay:1.7s;
-  animation-delay: 1.7s;
-  }
-
-  .fadeIn.three {
-  -webkit-animation-delay: 3.2s;
-  -moz-animation-delay: 3.2s;
-  animation-delay: 3.2s;
-  }
-
-  .fadeIn.four {
-  -webkit-animation-delay: 3.7s;
-  -moz-animation-delay: 3.7s;
-  animation-delay: 3.7s;
-  }
-
-  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-
-
-  .centerPill{
-      position: relative;
-      top: 40%;
-      transform: translateY(-50%);
-      width:92vw;
-      max-width: 1080px;
-      padding:1vw;
-      margin:0 auto;
-      background: #FFF;
-      border-radius: 10px;
-      -webkit-border-radius:10px;
-      -moz-border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
-      -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
-      -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
-  }
-
-  input, select{
-      width:100%;
-      margin: .5rem 0;
-      padding: .5rem;
-      border-radius: 4px;
-      border: 1px solid #ddd;
-  }
-
-
-
-  body, html {
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-      max-width: 100%;
-  }
-
+  
   .headline {
-      font-size: 8vw;
+    font-size: 6vw;
+    font-weight: 200;
   }
-
+  
   .subheadline {
-  	font-size: 3vw;
+  	font-size: 1.75vw;
+    font-weight: 500;
   }
-
-  .button-desktop {
-    display: block;
+  
+  .btn-group-vertical {
+  	padding-left: 100px; 
+    margin-top: -100px; 
+    width: 300px;
   }
+  
+  /* Mobile */
+  @media only screen and (max-width: 768px) {
 
-  .button-mobile {
-    display: none;
+    .landing-image {
+      height: 50vh;
+    }
+    .headings {
+      padding: 70px;
+    }
+    .headline {
+      font-size: 60px;
+    }
+
+    .subheadline {
+      font-size: 20px;
+    }
+    
+    .btn-group-vertical {
+      padding-left: 70px; 
+      margin-top: -50px;
+    }
+  
   }
-
-  @media only screen and (max-width: 600px) {
-      .headline {
-        font-size: 48px;
-      }
-
-      .subheadline {
-        font-size: 18px;
-      }
-
-      .button-desktop {
-        display: none;
-      }
-
-      .button-mobile {
-        display: block;
-        margin-top: -20px;
-      }
-
-      .vertical-center{
-        top: 10%;
-      }
-  }
-
 
 </style>
 
-  <body id = "page-top">
-    <!-- Navigation -->
-    <header class="peacock">
-        <div class="text-center text-white vertical-center">
-            <div class="container">
-              <h1 class="fadeIn one headline">Arcadia City <br> Inquiry Form</h1>
-              <h3 class="fadeIn two subheadline">Currently taking inquiries for <?php echo $data['mname'] ?> on <?php echo $data['mdate'] ?>.</h3> <br />
-              <!-- Desktop Version -->
-                <div id="#language" class="fadeIn three button-desktop">
-                  <div id="buttons-wrapper">
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-en.php';">English </button>
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-m.php';">普通話 </button>
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-zh-c.php';">粵語 </button>
-                  <button type="button" class="btn btn-secondary active" onclick="window.location.href = 'form-es.php';">Español </button>
-                  </div>
-              </div>
+<body>
 
-              <!-- Mobile Version -->
-                <div id="#language" class="fadeIn three button-mobile">
-                  <div id="buttons-wrapper">
-                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-en.php';">English </button>
-                  <br>
-                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-zh-m.php';">普通話 </button>
-                  <br>
-                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-zh-c.php';">粵語 </button>
-                  <br>
-                  <button type="button" class="btn btn-secondary active" style="margin: 5px; width: 120px;" onclick="window.location.href = 'form-es.php';">Español </button>
-                  </div>
-              </div>
-            </div>
+<div class="row">
+	<div class="col-sm-8">
+    	<p class="headings"><span class="headline">ARCADIA CITY INQUIRY FORM</span><br><br><span class="subheadline">Currently taking inquiries for Test Meeting on Test 01, 2018 at 6:00 pm.</span></p>
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-default">English</button>
+          <button type="button" class="btn btn-default">Spanish</button>
+          <button type="button" class="btn btn-default">Chinese</button>
         </div>
+    </div>
+    <div class="col-sm-4">
+    </div>
+</div>
 
-    </header>
-  </body>
-</html>
+<img src="https://preview.ibb.co/jSJHb8/Misc_4.png" class="landing-image" alt="peacock feathers">
+
+</body>
