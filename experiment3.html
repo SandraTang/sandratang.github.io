@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Arcadia City Inquiry Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+  
+  <!-- Personal CSS Stylesheet -->
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://image.ibb.co/mjpZYd/Misc_1.png">
+</head>
+
+<style>
+  
+  html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://images.pond5.com/beautiful-green-leaves-and-bright-footage-012096746_prevstill.jpeg");
+    background-repeat: none;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .headings {
+    color: black;
+  }
+  
+  .headline {
+    font-size: 6vw;
+    font-weight: 300;
+  }
+  
+  .disclaimer {
+  	margin-top: -20px;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+  
+  .btn {
+  	color: black;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: none;
+  }
+  
+  .disclaimer-box {
+  	background: white;
+    padding: 50px;
+    margin: 70px;
+    border-radius: 10px;
+  }
+  
+  input {
+  	margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 768px) {
+  
+    .headings {
+      padding: 5vw;
+      padding-left: 7vw;
+    }
+    .headline {
+      font-size: 10vw;
+    }
+    .disclaimer {
+      font-size: 14px;
+    }
+    
+    .button-group {
+      padding-left: 0vw; 
+      margin-top: 2vw;
+    }
+    
+    .btn {
+      width:65vw;
+    }
+    
+    .disclaimer-box {
+      background: white;
+      padding: 10vw;
+      margin: 5vw;
+    }
+  
+  }
+</style>
+
+<body>
+
+<div class="row disclaimer-box">
+	<p>If the keyboard is in a different language, use the world icon on the keyboard to change it.</p>
+      <form id="registration_info_form" method="post" target="hiddeniframe" onsubmit="go_to_ending_page()" action="handle_submit.php">
+        <h4>Personal Information</h1>
+        Name (required): <br>
+        <input type="text" name="name" required autocorrect=off><br>
+        Address (optional): <br>
+        <input type="text" name="address" autocorrect=off><br>
+        Telephone (optional): <br>
+        <input type="tel" name="telephone" autocorrect=off><br>
+        Email (optional): <br>
+        <input type="email" name="email" autocorrect=off><br>
+        Agenda Item: <select name="item">
+            <option selected disabled hidden>Choose here</option>
+        </select>
+      </form>
+      <p>All information provided on this form is public information and may be disseminated.</p>
+      <button type="button" class="btn btn-default" onclick="go_to_disclaimer()">Back</button>
+      <button type="submit" class="btn btn-default" form="registration_info_form" name="Submit">Submit</button>
+    </div>
+
+
+
+</body>
