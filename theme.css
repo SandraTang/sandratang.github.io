@@ -1,32 +1,37 @@
+
 body{
-  background-color: rgb(245, 245, 245);
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight:100;
 }
-p{
+p {
   font-weight: 400;
 }
 div{
   padding: 10px;
   border-color: rgb(240, 240, 240);
 }
+iframe {
+  border: none;
+}
 h1, h2, h3, h4, h5, h6{
 font-weight: bold;
 text-transform: uppercase;
 }
-h1, h2, h3{
-  letter-spacing: 4px;
+h1, h2{
+  letter-spacing: 3px;
+  line-height: 1.5;
 }
-h4, h5, h6{
-  letter-spacing: 1px;
+h3, h4, h5, h6{
+  letter-spacing: 1.5px;
 }
 .thumbnail{
-  padding: 30px;
+  padding: 15px;
 }
 div.header {
   display:table;
+  width:100%;
   table-layout: fixed;
-  width: 100%;
 }
 div.header span {
   display:table-cell;
@@ -35,17 +40,10 @@ div.header span {
   letter-spacing: 2px;
   font-weight: 300;
 }
-.featured-image{
-  margin-bottom: 20px;
-  object-fit: cover;
-  max-height: 300px;
-  width: 100%
-}
-.img-thumbnail{
-  margin-bottom: 15px;
-  object-fit: cover;
-  max-height: 150px;
-  width: 100%
+.profile-pic{
+  min-width: 200px;
+  width: 20vw;
+  height: auto;
 }
 .carousel-photo {
   object-fit: cover;
@@ -56,17 +54,62 @@ div.header span {
   text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
-  div.header{
-    display:table;
-      table-layout: auto;
-      width: 100%;
-  }
+.thumbnail {
+  padding: 0px;
 }
 
-@media only screen and (max-width: 389px) {
-  div.header span {
-    letter-spacing: 1px;
-    font-size: 12px;
+.thumbnail-field {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.featured-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.dark {
+  filter: brightness(50%);
+}
+
+.container {
+   padding: 30px; 
+   padding-left: 20vw; 
+   padding-right: 20vw;
+}
+
+.tab-box {
+  padding: 30px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0; 
+  padding: 0;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  div.header{
+    display:table;
+    table-layout: auto;
+    width: 100%;
+  }
+
+  .container {
+     padding: 50px; 
   }
 }
