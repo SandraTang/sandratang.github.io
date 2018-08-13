@@ -24,6 +24,9 @@
     padding: 10px;
     border-color: rgb(240, 240, 240);
   }
+  iframe {
+  	border: none;
+  }
   h1, h2, h3, h4, h5, h6{
   font-weight: bold;
   text-transform: uppercase;
@@ -213,36 +216,48 @@
       <p>I use this repository to house my personal website which in turn showcases many of my creations, one being this website itself which I solely programmed.</p>
       <br>
       <!-- Website Preview -->
-      <iframe src="https://sandratang.github.io/" style="width: 100%; height: 40vw;">
+      <iframe id="repo-tab-0" src="https://sandratang.github.io/" style="width: 100%; height: 40vw;">
         <p>Your browser does not support iframes.</p>
       </iframe>
+      <script>
+        document.getElementById('repo-tab-0').contentDocument.location.reload(true);
+      </script>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Coding Club</h3>
       <p>The Arcadia High School Coding Club unites students passionate about computer science, fostering a community and teaching members through lessons, activities, and special events.</p>
       <br>
       <!-- Website Preview -->
-      <iframe src="http://ahscodingclub.com" style="width: 100%; height: 40vw;">
+      <iframe id="repo-tab-1" src="https://sandratang.github.io/" style="width: 100%; height: 40vw;">
         <p>Your browser does not support iframes.</p>
       </iframe>
+      <script>
+        document.getElementById('repo-tab-1').contentDocument.location.reload(true);
+      </script>
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>Ofera</h3>
       <p>The Ofera Foundation and its members serve as advocates for envrionmental protection by volunteering in local communities, educating the public on current issues, and more. In local contexts, the organization will provide volunteering opportunities to protect or improve regional ecology. Globally, Ofera aims to inform and educate the public about current environmental topics by publishing articles.</p>
       <br>
       <!-- Website Preview -->
-      <iframe src="http://oferafoundation.github.io" style="width: 100%; height: 40vw;">
+      <iframe id="repo-tab-2" src="https://sandratang.github.io/" style="width: 100%; height: 40vw;">
         <p>Your browser does not support iframes.</p>
       </iframe>
+      <script>
+        document.getElementById('repo-tab-2').contentDocument.location.reload(true);
+      </script>
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>Roller Kids' Club</h3>
       <p>The Roller Kids' Club aims to promote communal mental and physical well-being through the non-profit instruction of athletics, as well as to encourage friendship and productivity among the youth of the community.</p>
       <br>
       <!-- Website Preview -->
-      <iframe src="http://rollerkids.github.io" style="width: 100%; height: 40vw;">
+      <iframe id="repo-tab-3" src="https://sandratang.github.io/" style="width: 100%; height: 40vw;">
         <p>Your browser does not support iframes.</p>
       </iframe>
+      <script>
+        document.getElementById('repo-tab-3').contentDocument.location.reload(true);
+      </script>
     </div>
   </div>
 </div>
