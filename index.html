@@ -1,16 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sandra Tang</title>
+  <title>Webpage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
-  <link rel="stylesheet" href="sandratang.github.io/theme.css">
-  <link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
 </head>
+
+<style>
+  body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
+  }
+  p {
+    font-weight: 400;
+  }
+  div{
+    padding: 10px;
+    border-color: rgb(240, 240, 240);
+  }
+  h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  h1, h2{
+    letter-spacing: 3px;
+    line-height: 1.5;
+  }
+  h3, h4, h5, h6{
+    letter-spacing: 1.5px;
+  }
+  .thumbnail{
+    padding: 15px;
+  }
+  div.header {
+    display:table;
+    width:100%;
+    table-layout: fixed;
+  }
+  div.header span {
+    display:table-cell;
+    text-align:center;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .profile-pic{
+    min-width: 200px;
+    width: 20vw;
+    height: auto;
+  }
+  .carousel-photo {
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%
+  }
+  .col-sm-4 h6{
+    text-align: center;
+  }
+  
+  .thumbnail {
+  	padding: 0px;
+  }
+  
+  .thumbnail-field {
+  	padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .featured-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .dark {
+  	filter: brightness(50%);
+  }
+  
+  .container {
+  	 padding: 30px; 
+     padding-left: 20vw; 
+     padding-right: 20vw;
+  }
+  
+  .tab-box {
+  	padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  
+  .image-container {
+  	position: relative;
+    text-align: center;
+    color: white;
+    margin: 0; 
+    padding: 0;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 768px) {
+  	div.header{
+      display:table;
+      table-layout: auto;
+      width: 100%;
+  	}
+    
+    .container {
+       padding: 50px; 
+    }
+  }
+</style>
 
 <body>
 
@@ -23,160 +135,200 @@
   </div>
 </nav>
 
-<!-- Landing Page Image and words over it -->
-<img src="https://wallpaper-house.com/data/out/7/wallpaper2you_202136.jpg" style="object-fit: cover; width: 100%; height: 100vh;">
-<h1 style="margin: auto; position: absolute; top: 45vh; left: 19vw; font-size: 6vw;color: white; letter-spacing: 15px; font-weight: bold;">Sandra Tang</h1>
-<h3 style="margin: auto; position: absolute; top: 95vh; left: 25px; font-size: 10px; color: white;"><a href="#" style="color:white;">FACEBOOK</a> / <a href="#" style="color:white;">TWITTER</a> / <a href="#" style="color:white;">INSTAGRAM</a></h3>
+<!--Featured Image-->
+<div class="image-container">
+  <img src="https://static.photocdn.pt/images/articles/2017_1/iStock-545347988.jpg" class="featured-image dark">
+  <!--Title-->
+  <div class="centered">
+  	<h1 style="line-height: 1.5; text-align: center">SANDRA TANG</h1>
+    <hr>
+    <p>High School Front-End Developer and Indie Game Designer</p>
+  </div>
+</div>
+ 
+<!--Content-->
+<div class="container">
+  <h3>I am a Creator</h3>
+  <hr>
+  <p>Creativity and productivity drive my work, exploring the possibilities and, well, getting things done. It is the combination of head in the clouds and down to earth. </p>
+  <br>
+  <p>Here, you will discover the range of my interests, from computer science to photography to graphic design. </p>
+</div>
+
+<!-- Big Picture -->
+<div class="image-container">
+  <img src="http://irisbh.com.br/wp-content/uploads/2017/08/455647274_1280x720.jpg" class="featured-image dark">
+  <!--Title-->
+  <div class="centered">
+  	<h1 style="color: white; line-height: 1.5; text-align: center">Featured Project</h1>
+    <hr>
+    <h3>Cryptography Games</h3>
+    <p>When my high school's Science Olympiad Code Busters team had trouble finding cryptography games to test our skills, I programmed some cryptography games in Python 2 to help us prepare for the competition.</p>
+  </div>
+</div>
 
 
-<div class="container" style="align-content: center; padding: 30px;">
-  <div class="row">
+<div class="container">
+  <!-- Image -->
+  <div class="thumbnail">
+    <img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA4OC85MTEvb3JpZ2luYWwvZ29sZGVuLXJldHJpZXZlci1wdXBweS5qcGVn">
+    <br>
+    <p style="text-align: center;">This is a neat little caption.</p>
+  </div>
+  <br>
+  <p>A new study may have an answer. The study, which aimed to determine the "optimal age" of puppy cuteness, found that puppies are most appealing to humans at around 6 to 8 weeks of age. That's around the time when puppies are weaned from their mothers, leading the researchers to hypothesize that puppies reach peak cuteness right when they need human care the most.</p>
+  <br>
+  <!-- YouTube Video -->
+  <iframe width="100%" height="300" src="https://www.youtube.com/embed/7B3QCv_l4_Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <br><br>
+  <p>"Just as their mother is getting sick of them and is going to kick them out of the den and they're going to have to make their own way in life, at that age, that is exactly when they are most attractive to human beings," lead study author Clive Wynne, a professor of psychology and director of Arizona State University's Canine Science Collaboratory, said in a statement.</p>
+</div>
 
-    <!--MAIN AREA-->
-    <div class="col-sm-8">
-      <h2 class="thumbnail" style="text-align: center; color: white; background-color: teal;">FEATURED PROJECTS</h2>
-      <!-- Secret section removed, place here when ready -->
-      
-      <!-- Section -->
-      <div class="thumbnail">
-        <a href="https://onarollathletics.github.io" style="color: black">
-          <img class="featured-image" src="https://preview.ibb.co/isWCpT/Misc_2.png">
-          <h4>On a Roll Athletics Club</h4>
-        </a>
-        <p>Worked on a website for On a Roll Athletics Club, an organization that aims to promote communal mental and physical well-being through the non-profit instruction of athletics, as well as to encourage friendship and productivity among the youth of the community. </p>
-      </div>
-      
-      <!-- Section -->
-      <div class="thumbnail">
-        <a href="https://sandratang.github.io/cryptography" style="color: black">
-          <img class="featured-image" src="http://4.bp.blogspot.com/-QnRB3v3oOIY/VPoQJ1WmBvI/AAAAAAAAAFw/LjuHcIIgg-g/s1600/Seguridad-Informatica-y-Redes-parque-central.jpg">
-          <h4>Python Cryptography Games</h4>
-        </a>
-        <p>When my high school's Science Olympiad Code Busters team had trouble finding cryptography games to test our skills, I programmed some cryptography games in Python 2 to help us prepare for the competition.</p>
-      </div>
+<!-- CodeDay LA Section -->
+<div class="container">
+	<p>CodeDay is a worldwide event where student programmers, artists, musicians, actors, and everyone else can get together and build apps and games for 24 hours. Students of all skill levels are welcome — we have workshops and mentors who can help if you're new! At the beginning of CodeDay, everyone with an idea comes up and pitches it to the group. If you're on your own, or just without an idea, this is the time for you to find a team.</p>
+    <br>
+    <iframe src="https://codeday.org/la" style="width: 100%; height: 300px;">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+</div>
 
-      <!-- Section -->
-      <div class="thumbnail">
-        <a href="https://www.behance.net/sandra-tang" style="color: black">
-          <img class="featured-image" src="https://cdn-images-1.medium.com/max/2000/1*brnvZfO03DxrUO46NcFsIw.png">
-          <h4>Designs on Behance</h4>
-        </a>
-        <p>An online portfolio on Behance featuring some of my desgins.</p>
-      </div>
+<!-- Photography -->
+<div class="image-container">
+  <img src="http://akronphotographers.org/wp-content/uploads/2017/11/Photography-Camera-HD-Wallpaper1.jpg" class="featured-image dark">
+  <!--Title-->
+  <div class="centered">
+    <h1 style="color: white; line-height: 1.5; text-align: center">Photography</h1>
+    <hr>
+    <p>Visual adventures with my beloved Canon EOS Rebel T5i.</p>
+  </div>
+</div>
 
-      <!-- Section -->
-      <div class="thumbnail">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding: 0px; margin-bottom: 20px;">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+<!-- Repositories Tabs Section -->
+<div class="tab-box">
+  <h2>Repositories</h2>
+  <p>Here are some repositories I am working on on GitHub.</p>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><p>Personal Website</p></a></li>
+    <li><a data-toggle="tab" href="#menu1"><p>Coding Club</p></a></li>
+    <li><a data-toggle="tab" href="#menu2"><p>Ofera</p></a></li>
+    <li><a data-toggle="tab" href="#menu3"><p>Roller Kids' Club</p></a></li>
+  </ul>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" style="padding: 0px;">
-            <div class="item active" style="padding: 0px;">
-              <img src="https://www.lacity.org/sites/g/files/wph1101/f/styles/isotope_tiles_full_tile__680x410_/public/bigstock-Los-Angeles-California-USA--230874199.jpg?itok=-Va9FP8a" alt="Los Angeles" class="carousel-photo">
-            </div>
-
-            <div class="item" style="padding: 0px;">
-              <img src="https://i.pinimg.com/736x/3e/04/6a/3e046a54808dd0ae59bab6a9cde81ba6--time-travel-vintage-photography.jpg" alt="Chicago" class="carousel-photo">
-            </div>
-
-            <div class="item" style="padding: 0px;">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Corner_of_Wilshire_and_Western%2C_Los_Angeles.jpg/640px-Corner_of_Wilshire_and_Western%2C_Los_Angeles.jpg" alt="New york" class="carousel-photo">
-            </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <a href="https://sandratang.github.io/photography" style="color: black">
-          <h4>Photography</h4>
-        </a>
-        <p>Visual adventures with my beloved Canon EOS Rebel T5i. </p>
-      </div>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Personal Website</h3>
+      <p>You are looking at the result of this repository right now! </p>
     </div>
-
-    <!--SIDE BAR-->
-    <div class="col-sm-4">
-
-      <!--SECTION-->
-      <div class="thumbnail" style="margin-top: 20px; padding: 20px;">
-        <h4 style="text-align: center; letter-spacing: 2px;">REPOSITORIES</h4>
-        <p style="text-align: center;">GitHub repositories I'm working on.</p>
-        <div>
-          <a href="https://github.com/SandraTang/sandratang.github.io">
-            <img class="img-thumbnail" src="https://wallpaper-house.com/data/out/7/wallpaper2you_202136.jpg">
-            <h6>Personal Website</h6>
-          </a>
-        </div>
-        <!-- Removed repository, add when ready -->
-        <!--SECTION-->
-        <div>
-          <a href="https://github.com/onarollathletics/onarollathletics.github.io">
-            <img  class="img-thumbnail" src="https://preview.ibb.co/isWCpT/Misc_2.png">
-            <h6>On a Roll Athletics Club</h6>
-          </a>
-        </div>
-        <!--SECTION-->
-        <div>
-          <a href="https://github.com/arcadiacodingclub/Coding-Club">
-            <img class="img-thumbnail" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/12/shutterstock_238096621.jpg">
-            <h6>Arcadia High Coding Club</h6>
-          </a>
-        </div>
-      </div>
-
-      <!--SECTION-->
-      <div class="thumbnail" style="margin-top: 20px; padding: 20px;">
-        <h4 style="text-align: center; letter-spacing: 2px;">GAMES</h4>
-        <div>
-          <img class="img-thumbnail" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <h6>Game 1</h6>
-        </div>
-        <div>
-          <img class="img-thumbnail" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <h6>Game 2</h6>
-        </div>
-        <div>
-          <img class="img-thumbnail" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <h6>Game 3</h6>
-        </div>
-      </div>
-
-      <!--SECTION-->
-      <div class="thumbnail" style="margin-top: 20px; padding: 20px;">
-        <h4 style="text-align: center; letter-spacing: 2px;">MISCELLANEOUS</h4>
-        <div>
-          <img class="img-thumbnail" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <h6>Thing</h6>
-        </div>
-        <div>
-          <img class="img-thumbnail" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <h6>Thing</h6>
-        </div>
-        <div>
-          <img class="img-thumbnail" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350">
-          <h6>Thing</h6>
-        </div>
-      </div>
-
+    <div id="menu1" class="tab-pane fade">
+      <h3>Coding Club</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Ofera</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Roller Kids' Club</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
   </div>
 </div>
 
-<!-- Contact Image -->
+<!-- Behance -->
+<div class="image-container">
+  <img src="https://preview.ibb.co/m7OMap/Miscellaneous.png" class="featured-image dark">
+  <!--Title-->
+  <div class="centered">
+    <h1 style="color: white; line-height: 1.5; text-align: center">Designs on Behance</h1>
+    <hr>
+    <p>An online portfolio on Behance featuring some of my desgins.</p>
+  </div>
+</div>
 
-<img src="https://image.ibb.co/iVftYd/Contact_Background.png" style="object-fit: cover; width: 100%; height: auto;">
+<!-- Games -->
+<div class="container-fluid thumbnail-field">
+	<div class="row">
+    	<!-- Left Column -->
+        <h3 style="text-align: center; letter-spacing: 2px;">GAMES</h3>
+            <hr>
+            <p style="text-align: center;">I have been designing games ever since I was eleven years old. Here are some of my more recent creations.</p>
+    	<div class="col-sm-4">
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://wallpaper-house.com/data/out/7/wallpaper2you_202136.jpg">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://images.unsplash.com/photo-1508138142660-302e69e74271?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=723745f6e7639a75f8ca777830f1fa60&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://www.globallandscapesforum.org/wp-content/uploads/2017/11/situgunung-flipped-1600.jpg">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+        </div>
+        
+        <!-- Middle Column -->
+        <div class="col-sm-4">
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://wallpaper-house.com/data/out/7/wallpaper2you_202136.jpg">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://images.unsplash.com/photo-1508138142660-302e69e74271?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=723745f6e7639a75f8ca777830f1fa60&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://www.globallandscapesforum.org/wp-content/uploads/2017/11/situgunung-flipped-1600.jpg">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+        </div>
+        
+        <!-- Right Column -->
+    	<div class="col-sm-4">
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://wallpaper-house.com/data/out/7/wallpaper2you_202136.jpg">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://images.unsplash.com/photo-1508138142660-302e69e74271?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=723745f6e7639a75f8ca777830f1fa60&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+            <!--SECTION-->
+            <div class="thumbnail">
+            	<a href="https://github.com/SandraTang/sandratang.github.io">
+                  <img src="https://www.globallandscapesforum.org/wp-content/uploads/2017/11/situgunung-flipped-1600.jpg">
+                  <h6>Personal Website</h6>
+                </a>
+        	</div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
