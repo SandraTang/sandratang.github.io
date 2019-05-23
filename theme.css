@@ -68,6 +68,11 @@ div.header span {
   height: 100vh;
 }
 
+.side-image {
+  object-fit: cover;
+  width: 100%;
+}
+
 .dark {
   filter: brightness(50%);
 }
