@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sandra Tang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Personal Stylesheet -->
+  <link rel="stylesheet" href="sandratang.github.io/theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+  <link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
+</head>
+
+<body>
+
+<!-- Navigation Bar, Header -->
+<nav style="background-color: white; padding: 10px; position: fixed; width: 100%; z-index: 999">
+  <div class="header">
+    <span><a href="https://sandratang.github.io/" style="color:black;">HOME</a></span>
+    <span><a href="https://sandratang.github.io/about" style="color:black;">ABOUT</a></span>
+    <span><a href="https://sandratang.github.io/projects" style="color:black;">PROJECTS</a></span>
+    <span><a href="https://sandratang.github.io/contact" style="color:black;">CONTACT</a></span>
+  </div>
+</nav>
+
+<!--Featured Image-->
+<div class="image-container">
+  <img src="http://i67.tinypic.com/av4tvb.png" class="featured-image">
+  <!--Title-->
+  <div class="centered">
+  	<h1 style="line-height: 1.5; text-align: center">ABOUT</h1>
+    <hr>
+    <p>Sandra Tang</p>
+  </div>
+</div>
+
+<!--- Featured Stuff --->
+<div class="container">
+  <div class="row">
+        <div class="col-sm-5">
+			<h1>ABOUT THE CREATOR</h1>
+			<br>
+			<p>I’m Sandra Tang, a rising college freshman interested in computer science, graphic design, and psychology, among a whole host of other topics. This fall, I’ll be majoring in Computer Science and Engineering at MIT (Class of 2023). In my spare time, I enjoy coding minigames, drawing 8-bit art, baking, watching Brooklyn Nine-Nine, and laughing at memes.</p>
+		</div>
+        <div class="col-sm-1">
+		</div>
+        <div class="col-sm-6">
+			<img src="https://2jzyey24fqjic2086240p42h-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/iStock-636754212.jpg" class="side-image">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
