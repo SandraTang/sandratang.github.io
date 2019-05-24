@@ -53,15 +53,6 @@ div.header span {
   text-align: center;
 }
 
-.thumbnail {
-  padding: 0px;
-}
-
-.thumbnail-field {
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
-
 .featured-image {
   object-fit: cover;
   width: 100%;
