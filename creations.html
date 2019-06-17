@@ -152,6 +152,24 @@
       </div>
 	</div>
 </div>
+	
+<!--- Featured Stuff --->
+<div class="container">
+  <div class="row">
+		<div class="col-sm-6">
+			<a href="https://sandratang.github.io/recycle-app.html"><img src="http://i63.tinypic.com/244z3pz.png" class="side-image"></a>
+      <br><br>
+			<p style="text-align: center"><small>Recycling Resources was created by Sandra Tang, Rachel Loh, Cammie Wei, and Samantha Rivera in just a few hours at AI Hacks.</small></p>
+		</div>
+		<div class="col-sm-1">
+		</div>
+		<div class="col-sm-5">
+			<h3>Recycling Resources</h3>
+			<br>
+			<p>Recycle Resources is an application and friendly chatbot that informs the public how to properly dispose of potentially hazardous waste including batteries and old electronics. It was created in one weekend during AI Hacks, Southern California's first all-female high school hackathon.</p>
+		</div>
+	</div>
+</div>
 
 <!---Stuff Line 3--->
 <div class="container">
@@ -227,7 +245,7 @@
         <div class="col-sm-5">
 			<h3>Endless Snake</h3>
 			<br>
-			<p>Here's a little game I made while learning HTML5 Canvas. Use the arrow keys. Once it starts, it never ends. Well, until you reload or leave the page. </p>
+			<p>Here's a little game I made while learning HTML5 Canvas. Use the arrow keys or WASD. Once it starts, it never ends. Well, until you reload or leave the page. </p>
 		</div>
     </div>
 </div>
@@ -311,12 +329,10 @@
 </div>
 
 <script>
-
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 document.addEventListener("keydown", keyPush);
 setInterval(game, 1000/10);
-
 x = y = 200;
 xv = yv = score = gotten = gx = gy = 0;
 move = "none";
@@ -324,7 +340,6 @@ change = 20;
 tail = 2;
 tailX = [200];
 tailY = [200];
-
 function game() {
 	ctx.fillStyle = "black";
     ctx.fillRect(0, 0, c.width, c.height-40);
@@ -394,7 +409,7 @@ function game() {
     
     ctx.font = "12px Arial";
     ctx.fillStyle = "black";
-    ctx.fillText("Endless Snake Game by Sandra Tang. Use arrow keys. Score " + score, 10, 424);
+    ctx.fillText("Endless Snake Game by Sandra Tang. Use arrow keys or WASD. Score " + score, 10, 424);
     
 	ctx.fillStyle = "red";
     ctx.fillRect(gx, gy, change, change);
@@ -408,28 +423,46 @@ function game() {
     }
     
 }
-
 function keyPush(evt) {
 	switch(evt.keyCode) {
-    	case 37: 
+    	//left arrow and a
+        case 37: 
         	xv = 0 - change;
             yv = 0;
             break;
+        case 65: 
+        	xv = 0 - change;
+            yv = 0;
+            break;
+        //up arrow and w
         case 38:
         	xv = 0;
             yv = 0 - change;
             break;
+        case 87:
+        	xv = 0;
+            yv = 0 - change;
+            break;
+        //right arrow and d
         case 39:
         	xv = change;
             yv = 0;
             break;
+        case 68:
+        	xv = change;
+            yv = 0;
+            break;
+        //down arrow and s
         case 40:
+        	xv = 0;
+            yv = change;
+            break;
+        case 83:
         	xv = 0;
             yv = change;
             break;
     }
 }
-
 </script>
 
 </body>
