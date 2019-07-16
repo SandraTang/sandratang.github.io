@@ -61,6 +61,15 @@ div.header span {
   object-fit: cover;
   width: 100%;
 }
+
+.image-off {
+	object-fit: cover;
+  width: 80vw;
+  height: 30vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .dark {
   filter: brightness(50%);
 }
