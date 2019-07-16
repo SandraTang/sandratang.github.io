@@ -87,6 +87,12 @@ div.header span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.rounded-corners {
+  border-radius: 25px;
+  padding: 30px;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
   div.header{
