@@ -9,158 +9,264 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Personal Stylesheet -->
   <link rel="stylesheet" href="sandratang.github.io/theme.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
+  <!-- Import Work Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Import Roboto Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
 </head>
+
+<style> 
+
+/* Background */
+
+body {
+  background-color: #1c1c1c;
+}
+
+/* General Font */
+
+p, li {
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+/* Smooth Scrolling (Jumping) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Top Nav Bar */
+
+div.header {
+  display:table;
+  width:100%;
+  table-layout: fixed;
+  background-color: #1c1c1c;
+}
+
+div.header span {
+  display:table-cell;
+  border: none;
+  padding: 16px 12px 12px 12px;
+}
+
+.highlight:hover {
+  background-color: #383838;
+}
+
+.highlight a {
+  text-decoration: none;
+}
+
+.highlight {
+  text-align:center;
+  
+}
+
+nav {
+  background-color: white;
+  position: fixed; 
+  width: 100%; 
+  z-index: 999;
+}
+
+/* Boxes */
+
+.roundcorner {
+  border-radius: 25px;
+  padding: 20px;
+  margin: 15px 0px 15px 0px;
+}
+
+.boxlabel {
+  text-align:center;
+  padding: 75px 0px 75px 0px;
+}
+
+.boxlabel p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Videos */
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
 
 <body>
 
 <!-- Navigation Bar, Header -->
-<nav style="background-color: white; padding: 10px; position: fixed; width: 100%; z-index: 999">
+<nav>
   <div class="header">
-    <span><a href="https://sandratang.github.io/" style="color:black;">HOME</a></span>
-    <span><a href="https://sandratang.github.io/about" style="color:black;">ABOUT</a></span>
-    <span><a href="https://sandratang.github.io/creations" style="color:black;">CREATIONS</a></span>
-    <span><a href="https://sandratang.github.io/contact" style="color:black;">CONTACT</a></span>
+  	<span style="align-content: left"><img src="https://image.ibb.co/d86BUJ/Logo_Orange.png" style="width: 25px; height: auto;"></span>
+    <span class="highlight"><a href="https://sandratang.github.io" style="color:black;"><p>HOME</p></a></span>
+    <span class="highlight"><a href="https://sandratang.github.io/#contact" style="color:black;"><p>CONTACT</p></a></span>
   </div>
 </nav>
 
-<!--Featured Image-->
-<div class="image-container">
-  <img src="https://1.bp.blogspot.com/-MP9Ceg6WMgU/XUJl4V-oCXI/AAAAAAAAHEw/2OjHjfuZ9382ZmA93uEx03FlAM9Yw_xBACLcBGAs/s1600/644D11A8-3B36-4466-8E18-0C87FBC66B3F.JPG" class="featured-image dark">
-  <!--Title-->
-  <div class="centered">
-  	<h1 style="line-height: 1.5; text-align: center">My TGSSI Experience</h1>
-    <hr>
-    <p>The Gates Scholarship Summer Institute</p>
-  </div>
+<!-- Intro -->
+<div class="container" style="padding: 100px 0px 50px 0px; text-align: center;">
+	<div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-MP9Ceg6WMgU/XUJl4V-oCXI/AAAAAAAAHEw/2OjHjfuZ9382ZmA93uEx03FlAM9Yw_xBACLcBGAs/s1600/644D11A8-3B36-4466-8E18-0C87FBC66B3F.JPG); background-size: cover; background-position: center;"><h1>My TGSSI Experience</h1></div>
+    <br>
 </div>
 
 <!--- Featured Stuff --->
 <div class="container">
-<div class="row">
-<div class="col-sm-2">
-</div>
-<div class="col-sm-8">
-  <h3>My TGSSI Experience</h3>
-  <p><i>Perhaps one of my most wack but informative weekends</i><p>
-  <hr>
-  <img src="https://1.bp.blogspot.com/-cIgeg7i25PE/XUJlxxeLxHI/AAAAAAAAHEg/DMx45dmgb0U6EkQQJsQG7rUViE5I_DyrQCLcBGAs/s1600/IMG-1870.JPG" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>The 20/19 super squad at the photo booth!</small></p>
-  <br>
-  <p><b>A quick overview of what TGSSI and TGS are.<b>
-  The Gates Scholarship Summer Institute (TGSSI) is a four-day-long program run by the Bill and Melinda Gates Foundation and Hispanic Scholarship Fund. Bringing together all three-hundred annually selected Gates Scholars, it not only teaches attendees about the scholarship, college, and career-building but also provides opportunities to network and make friends. It is only one of the many benefits provided by The Gates Scholarship (TGS), a prestigious last-dollar undergraduate college scholarship for low-income minorities in the United States. Learn more about the scholarship <a href=”https://www.thegatesscholarship.org/about-gates”>here</a>.</p> 
-  <hr>
-  <p><b>Wednesday Night</b>
-  <br><br>
-  I hastily finish packing my bags and head to the airport for the first leg of a series of red-eye flights. After navigating through the hectic no-man's-land that is LAX, I finally make it into the terminal, past TSA, and to my gate. 
-  <br><br>
-  For some reason (probably to save that coin), the program staff placed a group of scholars and I (all from Los Angeles) on an unconventional triangle flight itinerary. It ran from LA to sweet Cincinnati, Ohio to Dallas, Texas (where the institute was being held).</p>
-  <br><br>
-  <img src="https://1.bp.blogspot.com/-kj1wdqJJGU0/XUJpxApo-II/AAAAAAAAHFc/3fbIozZmtDEn44yoPkIJqbsg7L2zgVlyACLcBGAs/s1600/IMG_0056.jpeg" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>The wack triangle itinerary flight victims.</small></p>
-  <hr>
-  <p><b>Thursday (Ungodly Hours Included)</b>
-  <br><br>
-  The early morning included sighting a Bill Gates doppelganger and some sick skeleton/fossil displays at the Ohio airport (which also happens to be Northern Tennessee? the souvenirs are confusing us). One flight later, we finally make it to yeehaw county, the beautiful land of Dallas. 
-  <br><br>
-  Upon entering the hotel, staff lead us to the welcoming set up area. My shuttle bus group spreads out as we wait to be handed name tags and business cards, like cars at the go-stop traffic light before a highway. They lead us to another row of tables and… shirts? Jackets? A whole backpack?? Man, Bill really out there pampering us. (Honestly, I’m going to be using that backpack and a lot of the other free goodies at college.) 
-  <br><br>
-  After table-hopping to meet new people, stuffing my empty shell of a body with dearly missed food, and receiving a room key, I bounced out and settled down for a good half hour in my hotel room. And by god, it was gorgeous. Two queen-sized beds, an automated curtain, tons of space, and a shining bathroom. 
-  <br><br>
-  The next few hours consist of lunch, mixing around, and talking. Coming to this program, I talked myself into being a bit more openly social, to face my fear of “networking”. (Even though it’s more like just meeting a ton of new people in a short time span, in this case.) 
-  <br><br>
-  By the time dinner and a fireside chat (listening into a program leader’s conversation with an esteemed guest) rolls around, I’ve been awake for thirty hours (I couldn’t catch a wink of sleep on the plane). As much as I’d love to listen and learn from the speaker, I physically cannot stay focused. While I catch myself periodically nodding off, the stage’s deep purple curtain begins moving and east-Asian languages fall like rain. The hallucinations have begun. 
-  <br><br>
-  Thankfully, the session concludes and we move onto team-building activities: fun-facts-about-each-other bingo (featuring all three hundred of us) and answering questions within the small groups we’ve been placed in with an intermission of late-night snacks! I think. My brain was pretty fried by then. But that didn’t stop me from hanging out after we were released! I decided to tag along with a group of friends and strangers to the rooftop terrace to explore and take aesthetic nighttime photos. </p>
-  <br><br>
-  <img src="https://1.bp.blogspot.com/-jaGjy-x-fvY/XUJmKvAZE7I/AAAAAAAAHFM/LZ4I-63E6QcrV92pwa3jG1kMLCQ9Hw-0gCLcBGAs/s1600/36476502-E183-4324-A808-A1527363BAAA.JPG" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>The lighting... so warm and aesthetic. </small></p>
-  <hr>
-  <p><b>Friday</b>
-  <br><br>
-  Ring ring ring! An alarm goes off in my dream. Uhg I wish it would just sto-- oh wait, that’s my actual alarm. That’s my actual alarm! I have to get to breakfast in a half hour! My roommate and I hastily get ready and rush down. Breakfast includes a fireside chat with the amazing Anne Chow, an enthusiastic speaker and president of national business at AT&T. 
-  <br><br>
-  We’re being held to a strict schedule. Our day starts at around 7:45 am and ends at 11:00 pm and is packed full of activities separated by little 15-minute breaks. Contrary to yesterday, I actually have enough energy to stay focused during our morning lecture lessons (for the most part). 
-  <br><br>
-  <i>For those who are curious, we learned about the scholarship itself (what exactly did we win?), how to academically succeed in college, thriving in a diverse setting, and personal wellness.</i>
-  <br><br>We’ve been assigned to sit with a new group for lunch, and eventually, I realize that it’s not just any regular lunch. The event organizers have us answer questions with our groups to get to know one another better. Also, the food is fancy. Like unfamiliar fancy. My table group tries to dissect and understand each item, and I don’t think I’ve laughed harder at the event than now. By the way, throughout every non-breakfast meal, waiters walk around to make sure we’re keeping up professional dining etiquette like putting our bread plate on the right side, eating with the correct fork, and placing napkins on our laps. 
-	<br><br>
+	<h3>A quick overview of what TGSSI and TGS are.</h3>
+    <br><br>
+    <p>The Gates Scholarship Summer Institute (TGSSI) is a four-day-long program run by the Bill and Melinda Gates Foundation and Hispanic Scholarship Fund. Bringing together all three-hundred annually selected Gates Scholars, it not only teaches attendees about the scholarship, college, and career-building but also provides opportunities to network and make friends. It is only one of the many benefits provided by The Gates Scholarship (TGS), a prestigious last-dollar undergraduate college scholarship for low-income minorities in the United States. Learn more about the scholarship <a href=”https://www.thegatesscholarship.org/about-gates”>here</a>.</p> 
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-cIgeg7i25PE/XUJlxxeLxHI/AAAAAAAAHEg/DMx45dmgb0U6EkQQJsQG7rUViE5I_DyrQCLcBGAs/s1600/IMG-1870.JPG); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>The 20/19 super squad at the photo booth!</small></p>
+    <br>
+    <hr>
+    <br>
+    <h3>Wednesday Night</h3>
+    <br>
+    <p>I hastily finish packing my bags and head to the airport for the first leg of a series of red-eye flights. After navigating through the hectic no-man's-land that is LAX, I finally make it into the terminal, past TSA, and to my gate.
+    <br><br>
+    For some reason (probably to save money), the program staff placed a group of scholars and I (all from Los Angeles) on an unconventional triangle flight itinerary. It ran from LA to sweet Cincinnati, Ohio to Dallas, Texas (where the institute was being held).</p>
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-kj1wdqJJGU0/XUJpxApo-II/AAAAAAAAHFc/3fbIozZmtDEn44yoPkIJqbsg7L2zgVlyACLcBGAs/s1600/IMG_0056.jpeg); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>The triangle itinerary flight victims.</small></p>
+    <br>
+    <hr>
+    <br>
+    <h3>Thursday (Ungodly Hours Included)</h3>
+    <br>
+    <p>The early morning included sighting a Bill Gates doppelganger and some sick skeleton/fossil displays at the Ohio airport (which also happens to be Northern Tennessee? the souvenirs are confusing us). One flight later, we finally make it to yeehaw county, the beautiful land of Dallas. 
+    <br><br>
+    Upon entering the hotel, staff lead us to the welcoming set up area. My shuttle bus group spreads out as we wait to be handed name tags and business cards, like cars at the go-stop traffic light before a highway. They lead us to another row of tables and… shirts? Jackets? A whole backpack?? Man, Bill really out there pampering us. (Honestly, I’m going to be using that backpack and a lot of the other free goodies at college.) 
+    <br><br>
+    After table-hopping to meet new people, stuffing my empty shell of a body with dearly missed food, and receiving a room key, I bounced out and settled down for a good half hour in my hotel room. And by god, it was gorgeous. Two queen-sized beds, an automated curtain, tons of space, and a shining bathroom. 
+    <br><br>
+    The next few hours consist of lunch, mixing around, and talking. Coming to this program, I talked myself into being a bit more openly social, to face my fear of “networking”. (Even though it’s more like just meeting a ton of new people in a short time span, in this case.) 
+    <br><br>
+    By the time dinner and a fireside chat (listening into a program leader’s conversation with an esteemed guest) rolls around, I’ve been awake for thirty hours (I couldn’t catch a wink of sleep on the plane). As much as I’d love to listen and learn from the speaker, I physically cannot stay focused. While I catch myself periodically nodding off, the stage’s deep purple curtain begins moving and east-Asian languages fall like rain. The hallucinations have begun.
+    <br><br>
+    Thankfully, the session concludes and we move onto team-building activities: fun-facts-about-each-other bingo (featuring all three hundred of us) and answering questions within the small groups we’ve been placed in with an intermission of late-night snacks! I think. My brain was pretty fried by then. But that didn’t stop me from hanging out after we were released! I decided to tag along with a group of friends and strangers to the rooftop terrace to explore and take aesthetic nighttime photos.</p>
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-jaGjy-x-fvY/XUJmKvAZE7I/AAAAAAAAHFM/LZ4I-63E6QcrV92pwa3jG1kMLCQ9Hw-0gCLcBGAs/s1600/36476502-E183-4324-A808-A1527363BAAA.JPG); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>The lighting... so warm and aesthetic. </small></p>
+    <br>
+    <hr>
+    <br>
+    <h3>Friday</h3>
+    <br>
+    <p>Ring ring ring! An alarm goes off in my dream. Uhg I wish it would just sto-- oh wait, that’s my actual alarm. That’s my actual alarm! I have to get to breakfast in a half hour! My roommate and I hastily get ready and rush down. Breakfast includes a fireside chat with the amazing Anne Chow, an enthusiastic speaker and president of national business at AT&T. 
+    <br><br>
+    We’re being held to a strict schedule. Our day starts at around 7:45 am and ends at 11:00 pm and is packed full of activities separated by little 15-minute breaks. Contrary to yesterday, I actually have enough energy to stay focused during our morning lecture lessons (for the most part). 
+    <br><br>
+    <i>For those who are curious, we learned about the scholarship itself (what exactly did we win?), how to academically succeed in college, thriving in a diverse setting, and personal wellness.</i>
+    <br><br>
+    We’ve been assigned to sit with a new group for lunch, and eventually, I realize that it’s not just any regular lunch. The event organizers have us answer questions with our groups to get to know one another better. Also, the food is fancy. Like unfamiliar fancy. My table group tries to dissect and understand each item, and I don’t think I’ve laughed harder at the event than now. By the way, throughout every non-breakfast meal, waiters walk around to make sure we’re keeping up professional dining etiquette like putting our bread plate on the right side, eating with the correct fork, and placing napkins on our laps. 
+    <br><br>
 	A few more lectures later, we’re listening to a panel of first-year college students provide miscellaneous advice and sharing what they’ve learned over the past few months. It’s a nice refresher to listen to people our age!
+    <br>
 	<hr>
-  <p><b>The Balloon Chair Contest</b>
-  <br><br>
-  The most notable event of that evening was the balloon-chair building competition! Two squads are paired up, so my squad 19 because the super squad of 19 and 20! (Or as we like to call ourselves, Squad 2019.) 
-  <br><br>
-  Each super squad is given about fifty balloons, a roll of tape, and about half an hour to build. My team worked together so well! Initially, we were thinking of tying together four balloons like the d-orbitals (except for the one that looks like a ring pop), but we settled on tying together two and taping a bunch together to make a checkered rectangular prism. The balloons were blown up worryingly large. On top, we put the tape in a lattice pattern to give it more strength. That was the feature that gave the chair its name: the Lattice Lounge. (Small three-balloon footrest included!) 
-  <br><br>
-  We had a short break to get some food and relax before presenting our amazing creation to the judges. But did we relax? Absolutely not. Once we got those pretzels, the speaker was blaring and we sang our Lattice Lounge remix of Old Town Road. The grind don’t stop for Squad 2019. 
-  <br><br>
-  Snack time ended and we had to head back to the room and watch group presentations which consisted of creative elevator pitches and a structure test, aka Staff Member Talia sits on the chair for ten consecutive seconds. Towards the end of the second group's elevator pitch… is that what I think it is? Did they… No… They didn’t just… They stole our Old Town Road remix idea!! Squad 2019 scrambled to create another musical elevator pitch. 
-  <br><br>
-  We were the last group chosen to present. Only what can be described as abstract interpretive dance with the balloon chair ensued as our two chosen speakers told of the Lattice Lounge’s amazing qualities with a few inside jokes sprinkled in. The speech closed with our own remix of We Will Rock You by Queen. 
-  <br><br>
-  When it came time for Talia to test the chair, we were nervous. Our elevator pitch was beautiful, a cinematic masterpiece. But would the chair pass the test? Talia sat down. Pop! One balloon down… Try again, we willed. She sat down again, leaned back, lifted her legs from the ground, and we began counting. One, two, three… Our showpiece was holding up. Holding up roughly 150 pounds. Four, five, six… We chanted in apprehension. Seven, eight, nine… TEN! We did it! But if you couldn’t tell yet, Squad 2019 doesn’t just do the bare minimum. No, we go above and beyond. Paul, you should try sitting on the chair, we implored. He acquiesced, and that is the story of how we built a chair out of balloons that could hold 250 pounds. 
-  <br><br>
-  Now, results time. With seven of us sitting on the chair (at once), the super squad nervously waited. First place… Squads 19 and 20. We won!! Our wild group ran up crazily, jumping and hugging each other. We did it!! 
-  <br><br>
-  <img src="https://1.bp.blogspot.com/-pCSDwCoWGQM/XUJlxQ-N98I/AAAAAAAAHEc/Zzh1GYUX2SIYgjEAo9Im2GABAtQGzA_CQCLcBGAs/s1600/IMG-1868.JPG" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>Squad 2019! You can barely see the chair with the whole lot of us sitting on it.</small></p>
-  <hr>
-  <p><b>Party Time</b>
-  <br><br>
-  Once all the activities were completed, we were finally released for the day. Sleep? Nah, it’s party time. After the terrace photoshoot yesterday, the whole group hung out in one girl’s hotel room talking about Harvard’s secret societies and other schools’ quirks. We decided to return to that room the next night, tonight. But there’s a catch: you have to bring food. 
-  <br><br>
-  Secretly snatched Cheetos in hand, I knocked on the hotel room door with my friends. “Room service,” my friend boomed, pretending to be hotel staff. Anyway, we were let in (cautiously) and a night of games, food, and stories ensued.</p>
-  <hr>
-  <p><b>Saturday</b>
-  <br><br>
-  It’s the day! It’s the day we go to Six Flags! Right…? Someone said we might be going to a museum… But the secret activity is scheduled for five hours… what am I going to do in a museum for five whole hours?? I’d literally fall asleep… 
-  <br><br>
-  At breakfast, our squad leader tried to dispel the rumors, but through some great detective work (realizing that the drive distance to Six Flags matched the time allotted on our schedule and just hoping, HOPING, we weren’t actually going to a museum), we confirmed that it would be the amusement park. First, Ruth Castillo, a staff member, gave us a lesson on how to succeed in interviews, job applications, and other post-college events. She was so energetic and her lecture was so interactive that I can say her segment was one of my favorites. 
-  <br><br>
-  Finally, the time came. We loaded onto the buses, and lo and behold, roller coasters soon towered above us. We arrived at Six Flags Over Texas. 
-  <br><br>
-  After eating a scrumptious Texan lunch, my buds and I headed to the Batman area where all the scary rides are. But then the moody weather of Texas began… Rain, rain! Falling from the sky! We skedaddled to the only indoor ride and spilled tea in line but only made it halfway before we got the message to return to the buses. Bill Gates had another activity in mind to replace our dismal experience at Six Flags. (Ok to be fair, it wasn’t really dismal; I rode a grand total of zero rides but talking with friends was super fun.)
-  <br><br>
-  The brilliant new activity? A talent show. Huh? What’s that? Our super squad has no talent other than creating balloon chairs? What a pity. Guess we’ll do live ASMR. 
-  <br><br>
-  We really did live ASMR in front of an audience of America’s 300 brightest scholars. Not to mention the staff. Surprisingly, the audience enjoyed it. The first wave of laughter was my first wave of relief. Thank god. I sacrificed my dignity to do this. Anything for the squad. 
-  <br><br>
-  The other highlights of the talent show included a reenactment of the titanic, Wii Sports But With People™, and beautiful singing with Aladdin. It ended at midnight, and, you guessed it. I didn’t sleep right away (again). That night, a group of friends and I feasted on cake from an engagement party and I learned how to properly play Goldfish. (It’s a mind game! People usually regard it as child’s play, but no, it is way more than that…) 
-  <hr>
-  <p><b>Saturday</b>
-  <br><br>
-  After many nights of barely sleeping, I hauled myself up to take the group photo. Yes, all three hundred of us. All sleep deprived. Prime condition, I’d say. 
-  <br><br>
-  We took individual photos, completed the TGSSI completion survey, and ate breakfast. And that was it. After a ceremony and speech with multiple rounds of applause, that was the end. 
-  <br><br>
-  When the program concluded, I felt simultaneous waves of “thank god, I can finally sleep” and “I’m really going to miss everyone” wash over me. Each of my groups of friends and MIT buds rounded each other up to take a ton of photos and create group chats. I got sent around everywhere trying to find transportation to the airport after my flight got rescheduled, but eventually, I was on my way. Home. 
-  <br><br>
-  Haha, just kidding. That flight also got canceled and I spent the night at the airport in an Unaccompanied Minor room. Finally, the next day, I was able to return to home sweet home California. 
-  <br><br>
-  All in all, I’m overwhelmingly thankful for the opportunity to attend TGSSI. It was an amazingly fun, informative, and helpful event that brought all of us 300 scholars together. Thank you, Bill and Melinda Gates. Keep making the world a better place.</p>
-  <hr>
-  <img src="https://1.bp.blogspot.com/-oSrrN_jJ6A0/XUJlxyrXyyI/AAAAAAAAHEk/EazpsLWe-Is29So2SWH6yMgZTB1vt_0_gCLcBGAs/s1600/IMG-1869.jpg" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>My roommate, two friends, and me!</small></p>
-  <br><br>
-  <img src="https://1.bp.blogspot.com/-QG7DQk-3osw/XUJl0Alcl5I/AAAAAAAAHEo/F_sT5ckuxjILf7_SrnWGGoCT-ZFVYC2EgCLcBGAs/s1600/E99B3EFE-6FD7-42DD-92E0-435FA5BC6AE4.JPG" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>The MITten gang! Go beavers!</small></p>
-  <br><br>
-  <img src="https://1.bp.blogspot.com/-9aU1f6-tNUg/XUJl11oEnHI/AAAAAAAAHEs/xXbJ3EwXIkkXhumgmyY5UABm6eqmrhYkwCLcBGAs/s1600/1FBA89E5-6D9E-47BE-9224-7268399975D6.JPG" class="side-image">
-  <br><br>
-  <p style="text-align: center"><small>Selfies in the hotel rooms! We've named ourselves the "sugar babies".</small></p>
-</div>
-<div class="col-sm-2">
-</div>
-</div>
-</div>
+    <br>
+    <h3>The Balloon Chair Contest</h3>
+    <br>
+    <p>The most notable event of that evening was the balloon-chair building competition! Two squads are paired up, so my squad 19 because the super squad of 19 and 20! (Or as we like to call ourselves, Squad 2019.) 
+    <br><br>
+    Each super squad is given about fifty balloons, a roll of tape, and about half an hour to build. My team worked together so well! Initially, we were thinking of tying together four balloons like the d-orbitals (except for the one that looks like a ring pop), but we settled on tying together two and taping a bunch together to make a checkered rectangular prism. The balloons were blown up worryingly large. On top, we put the tape in a lattice pattern to give it more strength. That was the feature that gave the chair its name: the Lattice Lounge. (Small three-balloon footrest included!)
+    <br><br>
+    We had a short break to get some food and relax before presenting our amazing creation to the judges. But did we relax? Absolutely not. Once we got those pretzels, the speaker was blaring and we sang our Lattice Lounge remix of Old Town Road. The grind don’t stop for Squad 2019. 
+    <br><br>
+    Snack time ended and we had to head back to the room and watch group presentations which consisted of creative elevator pitches and a structure test, aka Staff Member Talia sits on the chair for ten consecutive seconds. Towards the end of the second group's elevator pitch… is that what I think it is? Did they… No… They didn’t just… They stole our Old Town Road remix idea!! Squad 2019 scrambled to create another musical elevator pitch. 
+    <br><br>
+    We were the last group chosen to present. Only what can be described as abstract interpretive dance with the balloon chair ensued as our two chosen speakers told of the Lattice Lounge’s amazing qualities with a few inside jokes sprinkled in. The speech closed with our own remix of We Will Rock You by Queen. 
+    <br><br>
+    When it came time for Talia to test the chair, we were nervous. Our elevator pitch was beautiful, a cinematic masterpiece. But would the chair pass the test? Talia sat down. Pop! One balloon down… Try again, we willed. She sat down again, leaned back, lifted her legs from the ground, and we began counting. One, two, three… Our showpiece was holding up. Holding up roughly 150 pounds. Four, five, six… We chanted in apprehension. Seven, eight, nine… TEN! We did it! But if you couldn’t tell yet, Squad 2019 doesn’t just do the bare minimum. No, we go above and beyond. Paul, you should try sitting on the chair, we implored. He acquiesced, and that is the story of how we built a chair out of balloons that could hold 250 pounds. 
+    <br><br>
+    Now, results time. With seven of us sitting on the chair (at once), the super squad nervously waited. First place… Squads 19 and 20. We won!! Our wild group ran up crazily, jumping and hugging each other. We did it!!</p>
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-pCSDwCoWGQM/XUJlxQ-N98I/AAAAAAAAHEc/Zzh1GYUX2SIYgjEAo9Im2GABAtQGzA_CQCLcBGAs/s1600/IMG-1868.JPG); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>Squad 2019! You can barely see the chair with the whole lot of us sitting on it.</small></p>
+    <br>
+    <hr>
+    <br>
+    <h3>Party Time</h3>
+    <br><br>
+    <p>Once all the activities were completed, we were finally released for the day. Sleep? Nah, it’s party time. After the terrace photoshoot yesterday, the whole group hung out in one girl’s hotel room talking about Harvard’s secret societies and other schools’ quirks. We decided to return to that room the next night, tonight. But there’s a catch: you have to bring food. 
+    <br><br>
+    Secretly snatched Cheetos in hand, I knocked on the hotel room door with my friends. “Room service,” my friend boomed, pretending to be hotel staff. Anyway, we were let in (cautiously) and a night of games, food, and stories ensued.</p>
+    <br>
+    <hr>
+    <br>
+    <h3>Saturday</h3>
+    <br><br>
+    <p>It’s the day! It’s the day we go to Six Flags! Right…? Someone said we might be going to a museum… But the secret activity is scheduled for five hours… what am I going to do in a museum for five whole hours?? I’d literally fall asleep...
+    <br><br>
+    At breakfast, our squad leader tried to dispel the rumors, but through some great detective work (realizing that the drive distance to Six Flags matched the time allotted on our schedule and just hoping, HOPING, we weren’t actually going to a museum), we confirmed that it would be the amusement park. First, Ruth Castillo, a staff member, gave us a lesson on how to succeed in interviews, job applications, and other post-college events. She was so energetic and her lecture was so interactive that I can say her segment was one of my favorites. 
+    <br><br>
+    Finally, the time came. We loaded onto the buses, and lo and behold, roller coasters soon towered above us. We arrived at Six Flags Over Texas. 
+    <br><br>
+    After eating a scrumptious Texan lunch, my buds and I headed to the Batman area where all the scary rides are. But then the moody weather of Texas began… Rain, rain! Falling from the sky! We skedaddled to the only indoor ride and spilled tea in line but only made it halfway before we got the message to return to the buses. Bill Gates had another activity in mind to replace our dismal experience at Six Flags. (Ok to be fair, it wasn’t really dismal; I rode a grand total of zero rides but talking with friends was super fun.)
+    <br><br>
+    The brilliant new activity? A talent show. Huh? What’s that? Our super squad has no talent other than creating balloon chairs? What a pity. Guess we’ll do live ASMR. 
+    <br><br>
+    We really did live ASMR in front of an audience of America’s 300 brightest scholars. Not to mention the staff. Surprisingly, the audience enjoyed it. The first wave of laughter was my first wave of relief. Thank god. I sacrificed my dignity to do this. Anything for the squad. 
+    <br><br>
+    The other highlights of the talent show included a reenactment of the titanic, Wii Sports But With People™, and beautiful singing with Aladdin. It ended at midnight, and, you guessed it. I didn’t sleep right away (again). That night, a group of friends and I feasted on cake from an engagement party and I learned how to properly play Goldfish. (It’s a mind game! People usually regard it as child’s play, but no, it is way more than that...) 
+    <br>
+    <hr>
+    <br>
+    <h3>Saturday</h3>
+    <br><br>
+    <p>After many nights of barely sleeping, I hauled myself up to take the group photo. Yes, all three hundred of us. All sleep deprived. Prime condition, I’d say. 
+    <br><br>
+    We took individual photos, completed the TGSSI completion survey, and ate breakfast. And that was it. After a ceremony and speech with multiple rounds of applause, that was the end. 
+    <br><br>
+    When the program concluded, I felt simultaneous waves of “thank god, I can finally sleep” and “I’m really going to miss everyone” wash over me. Each of my groups of friends and MIT buds rounded each other up to take a ton of photos and create group chats. I got sent around everywhere trying to find transportation to the airport after my flight got rescheduled, but eventually, I was on my way. Home. 
+    <br><br>
+    Haha, just kidding. That flight also got canceled and I spent the night at the airport in an Unaccompanied Minor room. Finally, the next day, I was able to return to home sweet home California. 
+    <br><br>
+    All in all, I’m overwhelmingly thankful for the opportunity to attend TGSSI. It was an amazingly fun, informative, and helpful event that brought all of us 300 scholars together. Thank you, Bill and Melinda Gates. Keep making the world a better place.</p>
+    <br>
+    <hr>
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-oSrrN_jJ6A0/XUJlxyrXyyI/AAAAAAAAHEk/EazpsLWe-Is29So2SWH6yMgZTB1vt_0_gCLcBGAs/s1600/IMG-1869.jpg); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>My roommate, two friends, and me!</small></p>
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-QG7DQk-3osw/XUJl0Alcl5I/AAAAAAAAHEo/F_sT5ckuxjILf7_SrnWGGoCT-ZFVYC2EgCLcBGAs/s1600/E99B3EFE-6FD7-42DD-92E0-435FA5BC6AE4.JPG); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>The MITten gang! Go beavers!</small></p>
+    <br><br>
+    <div class="roundcorner boxlabel" style="background: url(https://1.bp.blogspot.com/-9aU1f6-tNUg/XUJl11oEnHI/AAAAAAAAHEs/xXbJ3EwXIkkXhumgmyY5UABm6eqmrhYkwCLcBGAs/s1600/1FBA89E5-6D9E-47BE-9224-7268399975D6.JPG); background-size: cover; background-position: center; height: 60vw;"></div>
+    <br>
+    <p style="text-align: center"><small>Selfies in the hotel rooms! We've named ourselves the "sugar babies".</small></p>
+<br>
+<br>
 
 </body>
 </html>
