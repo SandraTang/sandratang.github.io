@@ -18,15 +18,31 @@
 
 <style> 
 
+/* Background */
+
 body {
   background-color: #1c1c1c;
 }
+
+/* General Font */
+
+p, li {
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+/* Top Nav Bar */
 
 div.header {
   display:table;
   width:100%;
   table-layout: fixed;
-  background-color: #2b2b2b;
+  background-color: #1c1c1c;
 }
 div.header span {
   display:table-cell;
@@ -54,15 +70,7 @@ nav {
   z-index: 999;
 }
 
-p {
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-}
-
-h1, h2, h3 {
-  font-family: 'Roboto Mono', monospace;
-  color: white;
-}
+/* Boxes */
 
 .roundcorner {
   border-radius: 25px;
@@ -85,7 +93,7 @@ h1, h2, h3 {
 }
 
 </style>
-</head>
+
 <body>
 
 <!-- Navigation Bar, Header -->
@@ -147,16 +155,37 @@ h1, h2, h3 {
 </div>
 <br>
 
-<!-- More -->
-<div class="container" style="padding: 100px 30px 100px 30px; text-align: right;">
+<!-- Summer -->
+<div class="container" style="padding: 100px 30px 50px 30px; text-align: left;">
 	<div class="row">
     	<div class="col-sm-6">
-        	<img src="https://miro.medium.com/proxy/1*zlt_wRZCGofSbmSqduds9w.png" style="width: 100%; height: auto;">
+        	<h1>This summer I am... </h1>
+            <br>
+            <ul>
+            <li>working full-time as an undergraduate researcher for MIT's Urban Risk Lab on a life-saving project called “Artificial Intelligence for Real-Time Disaster Response”</li>
+            <li>teaching “Game Design and Development with Minecraft and Java” through MIT’s summer HSSP program</li>
+            <li>leading ADI (Asian Diversity Inc.) Ambassador's summer leadership and soft skills program</li>
+            <li>creating video games in my free time using the on-the-rise program Godot</li>
+            </ul>
         </div>
         <div class="col-sm-6">
-        	<h1>What I'm Doing This Summer</h1>
+        	<img src="https://images.squarespace-cdn.com/content/v1/5b647b16e2ccd1199a907956/1534357451726-K3W44YC0GD2DN31TRAUT/ke17ZwdGBToddI8pDm48kOoleP8Qh62_DWwV-DBJ7cQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dqXKUy585X8F4XBEmlwNYGeHE14l2SogXCXhqsxfJCh1oRwB-dUGsSquCnVTFQcaRg/03_cards.jpg" style="width: 100%; height: auto;">
+        </div>
+    </div>
+</div>
+
+<!-- Featured Project -->
+<div class="container" style="padding: 50px 30px 50px 30px; text-align: left;">
+	<div class="row">
+    	<div class="col-sm-6">
+        	<iframe width="100%" height="315px" src="https://www.youtube.com/embed/JyLEyuY28_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6">
+        	<h1>Featured Project</h1>
+            <h4>Quake Shake, Same Home Different Hacks Best Educational Hack 2020</h4>
             <br>
-            <p>This summer, I am working full-time as an undergraduate researcher for a project called “Artificial Intelligence for Real-Time Disaster Response”, teaching “Game Design and Development with Minecraft and Java” through MIT’s summer HSSP program, and creating video games in Godot.</p>
+            <p>Over the second weekend of June 2020, I solo-developed Quake Shake, an educational game that teaches kids earthquake safety in a fun and interactive way. It covers all major aspects of dealing with earthquakes, from preparation, what to do in multifarious situations during an earthquake, and dealing with the aftermath.</p>
+            <p>See the the Devpost submission to the hackathon <a href="https://devpost.com/software/quake-shake">here</a>. 
         </div>
     </div>
 </div>
