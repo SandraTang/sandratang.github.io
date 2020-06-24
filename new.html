@@ -91,6 +91,22 @@ nav {
   vertical-align: middle;
 }
 
+/* Videos */
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 </style>
 
 <body>
@@ -158,6 +174,8 @@ nav {
 <div class="container" style="padding: 100px 30px 50px 30px; text-align: left;">
 	<div class="row">
     	<div class="col-sm-6">
+        	<img src="https://images.squarespace-cdn.com/content/v1/5b647b16e2ccd1199a907956/1534357451726-K3W44YC0GD2DN31TRAUT/ke17ZwdGBToddI8pDm48kOoleP8Qh62_DWwV-DBJ7cQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dqXKUy585X8F4XBEmlwNYGeHE14l2SogXCXhqsxfJCh1oRwB-dUGsSquCnVTFQcaRg/03_cards.jpg" style="width: 100%; height: auto;">
+            <br>
         	<h1>This summer I am... </h1>
             <br>
             <ul>
@@ -166,21 +184,12 @@ nav {
             <li>leading ADI (Asian Diversity Inc.) Ambassador's summer leadership and soft skills program</li>
             <li>creating video games in my free time using the on-the-rise program Godot</li>
             </ul>
+            <br>
+            <br>
         </div>
         <div class="col-sm-6">
-        	<img src="https://images.squarespace-cdn.com/content/v1/5b647b16e2ccd1199a907956/1534357451726-K3W44YC0GD2DN31TRAUT/ke17ZwdGBToddI8pDm48kOoleP8Qh62_DWwV-DBJ7cQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dqXKUy585X8F4XBEmlwNYGeHE14l2SogXCXhqsxfJCh1oRwB-dUGsSquCnVTFQcaRg/03_cards.jpg" style="width: 100%; height: auto;">
-        </div>
-    </div>
-</div>
-
-<!-- Featured Project -->
-<div class="container" style="padding: 50px 30px 50px 30px; text-align: left;">
-	<div class="row">
-    	<div class="col-sm-6">
-        	<iframe width="100%" height="315px" src="https://www.youtube.com/embed/JyLEyuY28_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col-sm-6">
-        	<h1>Featured Project</h1>
+        	<div class="iframe-container"><iframe width="560px" height="315px" src="https://www.youtube.com/embed/JyLEyuY28_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <h1>Featured Project</h1>
             <h4>Quake Shake, Same Home Different Hacks Best Educational Hack 2020</h4>
             <br>
             <p>Over the second weekend of June 2020, I solo-developed Quake Shake, an educational game that teaches kids earthquake safety in a fun and interactive way. It covers all major aspects of dealing with earthquakes, from preparation, what to do in multifarious situations during an earthquake, and dealing with the aftermath.</p>
@@ -188,6 +197,7 @@ nav {
         </div>
     </div>
 </div>
+
 
 </body>
 </html>
