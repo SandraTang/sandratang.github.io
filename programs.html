@@ -16,107 +16,6 @@
   <link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
 </head>
 
-<style> 
-
-/* Background */
-
-body {
-  background-color: #1c1c1c;
-}
-
-/* General Font */
-
-p, li {
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Mono', monospace;
-  color: white;
-}
-
-/* Smooth Scrolling (Jumping) */
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Top Nav Bar */
-
-div.header {
-  display:table;
-  width:100%;
-  table-layout: fixed;
-  background-color: #1c1c1c;
-}
-
-div.header span {
-  display:table-cell;
-  border: none;
-  padding: 16px 12px 12px 12px;
-}
-
-.highlight:hover {
-  background-color: #383838;
-}
-
-.highlight a {
-  text-decoration: none;
-}
-
-.highlight {
-  text-align:center;
-  
-}
-
-nav {
-  background-color: white;
-  position: fixed; 
-  width: 100%; 
-  z-index: 999;
-}
-
-/* Boxes */
-
-.roundcorner {
-  border-radius: 25px;
-  padding: 20px;
-  margin: 15px 0px 15px 0px;
-}
-
-.boxlabel {
-  text-align:center;
-  padding: 75px 0px 75px 0px;
-}
-
-.boxlabel p {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 20px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Videos */
-
-.iframe-container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 0;
-}
-.iframe-container iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-</style>
-
 <body>
 
 <!-- Navigation Bar, Header -->
@@ -136,7 +35,9 @@ nav {
 
 <!-- Hard Wrap -->
 
-<div class="container" id="hard-wrap" style="padding: 30px">
+<div id="hard-wrap"></div>
+
+<div class="container" style="padding: 30px">
 	<h3>Hard Wrap</h3>
     <br>
     <p>Play Hard Wrap <a href="https://gamejolt.com/games/hardwrap/296847">here</a>.</p>
@@ -144,19 +45,17 @@ nav {
     <p>Hard Wrap is a strategic dodging and shooting action game where you fend off an endless stream of monsters. However, unlike many similar games, you can't spam your way to success—your own lasers wrap around the screen and can hit you if you're not careful! Also, you have the ability to teleport.</p>
 </div>
 
-<br><hr><br>
-
 <!-- Snake -->
 
-<div class="container" id="snake">
+<div id="snake"></div>
+
+<div class="container" style="padding: 30px">
 	<div class="row">
-    	<div class="col-sm-6">
+    	<div class="col-sm-8">
 				<canvas id="myCanvas" width="400" height="440" style="border:1px solid #d3d3d3; margin-left: auto; margin-right: auto; display: block; width: 400px;">Darn! Your browser doesn't support this game.</canvas>
 				<script src="sandratang.github.io/endless-snake.js"></script>
         </div>
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-5">
+        <div class="col-sm-4">
 			<h3>Endless Snake</h3>
 			<br>
 			<p>Here's a little game I made while learning HTML5 Canvas and Javascript. Use the arrow keys or WASD. Once it starts, it never ends. Well, until you reload or leave the page.</p>
@@ -164,11 +63,11 @@ nav {
     </div>
 </div>
 
-<br><hr><br>
-
 <!-- Recycling -->
 
-<div class="container" id="recycling-resources" style="padding: 30px">
+<div id="recycling-resources"></div>
+
+<div class="container" style="padding: 30px">
 	<h3>Recycling Resources</h3>
     <br>
     <p>Play Hard Wrap <a href="https://gamejolt.com/games/hardwrap/296847">here</a>.</p>
