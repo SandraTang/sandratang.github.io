@@ -1,7 +1,7 @@
 /* Background */
 
 body {
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
 }
 
 /* General Font */
@@ -28,7 +28,7 @@ div.header {
   display:table;
   width:100%;
   table-layout: fixed;
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
 }
 
 div.header span {
@@ -38,7 +38,7 @@ div.header span {
 }
 
 .highlight:hover {
-  background-color: #383838;
+  background-color: #212121;
 }
 
 .highlight a {
