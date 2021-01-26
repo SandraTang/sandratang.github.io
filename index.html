@@ -8,310 +8,57 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Personal Stylesheet -->
-  <link rel="stylesheet" href="sandratang.github.io/theme.css">
-  <!-- Import Work Sans -->
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- Import Roboto Mono -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- Import Roboto Medium and Bold -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Logo --> 
   <link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
 </head>
 
+<style>
+	/* General Font */
+	p, li {font-family: 'Roboto', sans-serif;}
+	h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif;}
+	a, a:hover{color: #ff781a;}
+	/* Other */
+	.icon {border-radius: 10px; width: 30px; height: auto; margin: 10px;}
+	/* Videos */
+	.iframe-container{position: relative; width: 100%; padding-bottom: 56.25%; height: 0;}
+	.iframe-container iframe{position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+	/* Google Slides */
+	.google-slides-container{position: relative; width: 100%; padding-top: 60%; overflow: hidden;}
+	.google-slides-container iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+</style>
+
 <body>
 
-<!-- Navigation Bar, Header -->
-<nav>
-  <div class="header">
-  	<a href="https://sandratang.github.io"><span style="align-content: left; padding: 0px 0px 0px 16px;"><img src="https://image.ibb.co/d86BUJ/Logo_Orange.png" style="width: 25px; height: auto;"></span></a>
-    <span class="highlight"><a href="https://sandratang.github.io" style="color:black;"><p>HOME</p></a></span>
-    <span class="highlight"><a href="https://sandratang.github.io/#contact" style="color:black;"><p>CONTACT</p></a></span>
-  </div>
-</nav>
-
 <!-- Intro -->
-<div class="container" style="padding: 150px 30px 100px 30px; text-align: center;">
-	<h1>Hi! I'm Sandra Tang.</h1>
-    <br>
-    <p>MIT '23 / Computer Science Major / Design Minor</p>
+<div class="container" style="padding-top: 150px; margin-bottom: 30px; text-align: center;">
+	<!-- Logo -->
+	<img src='https://piskel-imgstore-b.appspot.com/img/e6ad4568-5f94-11eb-9883-5d2453673c3c.gif' 
+  	onmouseover="this.src='https://piskel-imgstore-b.appspot.com/img/e84bc866-5f94-11eb-b56a-5d2453673c3c.gif';" 
+  	onmouseout="this.src='https://piskel-imgstore-b.appspot.com/img/e9c5f128-5f94-11eb-bac1-5d2453673c3c.gif';" 
+  	style="height: 50px; width: auto;"/></a>
+  	<!-- Info -->
+	<h1>Sandra S <b style="color: #ff781a;">Tang</b></h1>
+    <p>MIT '23 / Computer Science and Design / Incoming Google STEP Intern</p>
+    <p>stangs@mit.edu / sandratang01@gmail.com</p>
 </div>
 
-<!-- About Me -->
-
-<div class="container">
-	<div class="roundcorner boxlabel" style="background: url(https://i.pinimg.com/originals/45/0d/25/450d258a4fa06e6175b91581d3c7d13b.jpg); background-size: cover; background-position: center; padding: 50px;"><span style="font-family: 'Work Sans', sans-serif; color: white;">
-    I'm an MIT sophomore working as an MIT Urban Risk Lab Undergraduate Machine Learning Researcher. On campus, I serve as the MacGregor House Entry Chair and am involved with Chop Stir Hack, Technique, the 2024 Puzzle Hunt Team, and Happy Club. In my free time, I solo-develop video games, create art, explore, and cook.</span></div>
-</div>
-
-<!-- Rounded Boxes -->
-
-<div class="container">
-	<!-- New Row -->
-	<div class="row">
-    	<div class="col-sm-4">
-        	<a href="#contact"><div class="roundcorner boxlabel" style="background: url(https://media1.giphy.com/media/3o6ZtdlxpyD8jtBkg8/giphy.gif?cid=ecf05e4773240a39955c0c5761a2a5738bef127c7a1263c9&rid=giphy.gif); background-size: cover; background-position: center;"><p>contact</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="https://docs.google.com/drawings/d/e/2PACX-1vQWt9g85CkBu6Vet9DyfvpcUtg-FTjpIp4F10cGJxxHzXVmLZrOVwLHP9X6h4sXls_xAxnRJgAuxbTY/pub?w=816&amp;h=1056"><div class="roundcorner boxlabel" style="background: url(https://media2.giphy.com/media/l3fQue6kGydX1azMQ/giphy.gif); background-size: cover; background-position: center;"><p>resume</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="https://www.linkedin.com/"><div class="roundcorner boxlabel" style="background: url(https://media0.giphy.com/media/jIh63Iffagornw64Hp/giphy.gif); background-size: cover; background-position: center;"><p>linkedin</p></div></a>
-        </div>
-    </div>
-    <!-- New Row -->
-	<div class="row">
-    	<a href="https://github.com/SandraTang"><div class="col-sm-4">
-        	<div class="roundcorner boxlabel" style="background: url(https://i.gifer.com/AuXk.gif); background-size: cover; background-position: center;"><p>github</p></div>
-        </div></a>
-        <div class="col-sm-4">
-        	<a href="https://www.behance.net/sandra-tang"><div class="roundcorner boxlabel" style="background: url(https://cdn.dribbble.com/users/808627/screenshots/4561264/4_1.gif); background-size: cover; background-position: center;"><p>behance</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="#articles"><div class="roundcorner boxlabel" style="background: url(https://media0.giphy.com/media/l41YcgNSPj6Wy1KyQ/giphy.gif); background-size: cover; background-position: center;"><p>articles</p></div></a>
-        </div>
-    </div>
-    <!-- New Row -->
-	<div class="row">
-    	<div class="col-sm-4">
-        	<a href="https://stangs.itch.io/"><div class="roundcorner boxlabel" style="background: url(https://i.gifer.com/7sXm.gif); background-size: cover; background-position: center;"><p>itch.io</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="https://devpost.com/SandraTang?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><div class="roundcorner boxlabel" style="background: url(https://i.gifer.com/7sXq.gif); background-size: cover; background-position: center;"><p>devpost</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="#programs"><div class="roundcorner boxlabel" style="background: url(https://i.gifer.com/6XK1.gif); background-size: cover; background-position: center;"><p>programs</p></div></a>
-        </div>
-    </div>
-    <!-- Row Ends -->
-</div>
-<br>
-
-<!-- Paragraphs -->
-
-<div class="container" style="padding: 150px 30px 50px 30px; text-align: left;">
-	<div class="row">
-    	<div class="col-sm-6">
-        	<img src="https://images.squarespace-cdn.com/content/v1/5b647b16e2ccd1199a907956/1534357451726-K3W44YC0GD2DN31TRAUT/ke17ZwdGBToddI8pDm48kOoleP8Qh62_DWwV-DBJ7cQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dqXKUy585X8F4XBEmlwNYGeHE14l2SogXCXhqsxfJCh1oRwB-dUGsSquCnVTFQcaRg/03_cards.jpg" style="width: 100%; height: auto;">
-            <br>
-        	<h3>Featured Repository</h3>
-            <br>
-            <p>Image classification algorithms written during 2020 Summer either for or to learn for my UROP (undergraduate research) at MIT's Urban Risk Lab.</p>
-            <ul>
-              <li><b>Algorithms: </b>Convoluted Neural Network, Random Forest, XGBoost</li>
-              <li><b>Libraries: </b>Tensorflow, Pandas, Keras, Seaborn, Matplotlib, Numpy</li>
-            </ul>
-            <br>
-            <p>See the Gitub repository <a href="https://github.com/SandraTang/Damage-Image-Classification">here</a>.</p>
-            <br>
-            <br>
-        </div>
-        <div class="col-sm-6">
-        	<div class="iframe-container"><iframe width="560px" height="315px" src="https://www.youtube.com/embed/JyLEyuY28_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <h3>Featured Project</h3>
-            <h5>Quake Shake, Same Home Different Hacks Best Educational Hack 2020</h5>
-            <br>
-            <p>Over the second weekend of June 2020, I solo-developed Quake Shake, an educational game that teaches kids earthquake safety in a fun and interactive way. It covers all major aspects of dealing with earthquakes, from preparation, what to do in multifarious situations during an earthquake, and dealing with the aftermath.</p>
-            <p>See the the Devpost submission to the hackathon <a href="https://devpost.com/software/quake-shake">here</a>.</p>
-            <p>Try out the game <a href="https://stangs.itch.io/quake-shake">here</a> on itch.io.</p>
-        </div>
-    </div>
-</div>
-
-<!-- All Programs -->
-
-<div class="container" id="programs" style="padding: 50px 30px 50px 30px; text-align: center;">
-  <h3>All Programs</h3>
-  <br>
-  <p>games, hackathon submissions, websites, and applications that I've coded (excluding coursework, applications created for research, etc.)</p>
-  <br>
-  <div class="panel-group" id="accordion">
-  	<!-- Start Section -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Created in College</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-        	<!-- New Row -->
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="https://stangs.itch.io/quake-shake"><div class="roundcorner boxlabel" style="background: url(https://i.pinimg.com/originals/d6/ec/f4/d6ecf4d539200a50129075095d51b7af.gif); background-size: cover; background-position: center;"><p>Quake<br>Shake</p></div></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://stangs.itch.io/message-hunt"><div class="roundcorner boxlabel" style="background: url(https://i.pinimg.com/originals/96/e3/25/96e325723df9868622e35559ace32635.gif); background-size: cover; background-position: center;"><p>Message<br>Hunt</p></div></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://minecraftgamedev.github.io/resources/"><div class="roundcorner boxlabel" style="background: url(https://i.pinimg.com/originals/28/d0/71/28d07105a480b923ebf544f90131e0d2.gif); background-size: cover; background-position: center;"><p>Game Dev<br>and Design</p></div></a>
-                </div>
-            </div>
-            <!-- Row Ends -->
-        </div>
-      </div>
-    </div>
-    <!-- Start Section -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Created in Grade School</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body" style="text-align: left;">
-        	<!-- New Row -->
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="https://sandratang.github.io/programs#hard-wrap">
-                    <div class="roundcorner boxlabel" 
-                    style="background: url(https://i.gifer.com/7Z9m.gif); 
-                    background-size: cover; background-position: center;">
-                    <p>Hard Wrap (CodeDay 2017 Best Game)</p></div></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://sandratang.github.io/programs#recycling-resources">
-                    <div class="roundcorner boxlabel" 
-                    style="background: url(https://i.gifer.com/uj.gif); 
-                    background-size: cover; background-position: center;">
-                    <p>Recycling Resources<br>(AI Hacks 2019)</p></div></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://sandratang.github.io/cryptography">
-                    <div class="roundcorner boxlabel" 
-                    style="background: url(https://cdn.lowgif.com/full/cf8fb17d55ae0f67-may-30-2018-envision.gif); 
-                    background-size: cover; background-position: center;">
-                    <p>Cryptography Games and Encryptors</p></div></a>
-                </div>
-            </div>
-            <!-- Row Ends -->
-            <!-- New Row -->
-            <div class="row">
-                <div class="col-sm-4">
-                	<!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #e34124; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://www.khanacademy.org/computer-programming/cdla-javascript-dodging-game/6471700591837184" style="color: white;"><b>Trippy Dodger</b></a>
-                    <br><br>
-                    Avoid red circles in this trippy side-scrolling dodging game created in Javascript on Khan Academy.</p></div>
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #24a3e3; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/111934418/" style="color: white;"><b>Winter</b></a>
-                    <br><br>
-                    Avoid snowballs and the occasional stream of snow.</p></div>
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #1ac72b; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/190569935/" style="color: white;"><b>Get Green</b></a>
-                    <br><br>
-                    This eponymously named minigame tells you exactly what to do: click the green square. As simple as this sounds, the game has unexpected twists and challenges that appear as you progress.</p></div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #c71a85; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/149778565/" style="color: white;"><b>Pengine</b></a>
-                    <br><br>
-                    This post-drawing modification program records your drawings and automatically redraws and animates them.</p></div>
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #2ad1aa; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/199134770/" style="color: white;"><b>Skyways</b></a>
-                    <br><br>
-                    Avoid giant hail and collect coins while running on an abandoned skyway in this pixelated arcade game.</p></div>
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #851bd1; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/298776707/" style="color: white;"><b>Camilla's Ascent</b></a>
-                    <br><br>
-                    Help an empire's princess scale a mountain in order to retrieve an important weapon and gain favor with her subjects.</p></div>
-                </div>
-                <div class="col-sm-4">
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #e69927; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/170067068/" style="color: white;"><b>Ensnared</b></a>
-                    <br><br>
-                    Embark on a quest to find trans-universe transportation artifacts that will help you return home.</p></div>
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #f0c016; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/155456638/" style="color: white;"><b>Punchy the Cat</b></a>
-                    <br><br>
-                    Destroy enemies with your fiery punches in this chaotic game created for my brother.</p></div>
-                    <!-- Box -->
-                    <div class="roundcorner" 
-                    style="background: #2a25b8; 
-                    background-size: cover; background-position: center;">
-                    <p><a href="https://scratch.mit.edu/projects/120755664/" style="color: white;"><b>Split Second</b></a>
-                    <br><br>
-                    Think fast! Follow the new directions that appear on the screen every few seconds. </p></div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!-- Start Section -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Websites</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-        	<!-- New Row -->
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="#"><div class="roundcorner boxlabel" style="background: url(https://i2.wp.com/www.carlmacki.com/wordpress/wp-content/uploads/2018/10/florian-de-looij-3.gif?resize=400%2C400&ssl=1); background-size: cover; background-position: center;"><p>MIT 2024<br>Puzzle Hunt</p></div></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://oferafoundation.github.io/"><div class="roundcorner boxlabel" style="background: url(https://i.gifer.com/B42N.gif); background-size: cover; background-position: center;"><p>Ofera<br>Foundation</p></div></a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://rollerkids.github.io/"><div class="roundcorner boxlabel" style="background: url(https://steamuserimages-a.akamaihd.net/ugc/93852611674339364/41DA8AE39BFCB486054908392B682EA374E59A1B/); background-size: cover; background-position: center;"><p>Roller<br> Kid's Club</p></div></a>
-                </div>
-            </div>
-            <!-- Row Ends -->
-        </div>
-      </div>
-    </div>
-    <!-- End Section -->
-  </div> 
-</div>
-
-<!-- Articles -->
-
-<div class="container" id="articles" style="padding: 50px 30px 50px 30px;">
-	<h3 style="text-align: center;">Articles</h3>
-    <br>
-	<!-- New Row -->
-	<div class="row">
-    	<div class="col-sm-4">
-        	<a href="https://sandratang.github.io/arnt"><div class="roundcorner boxlabel" style="background: url(https://i.gifer.com/UAf3.gif); background-size: cover; background-position: center;"><p>Active Recall<br>Note-Taking</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="https://sandratang.github.io/tgssi"><div class="roundcorner boxlabel" style="background: url(https://i.imgur.com/gXhX6N3.gif); background-size: cover; background-position: center;"><p>Gates Summer<br>Institute</p></div></a>
-        </div>
-        <div class="col-sm-4">
-        	<a href="https://sandratang.github.io/questbridge-simplified"><div class="roundcorner boxlabel" style="background: url(https://apis-web.com/wp-content/uploads/2018/08/tumblr_o4rr8huvnP1tcuj64o1_400.gif); background-size: cover; background-position: center;"><p>Questbridge<br>Simplified</p></div></a>
-        </div>
-    </div>
-</div>
-
-<!-- Contact -->
-
-<div class="container" id="contact" style="padding: 50px 30px 50px 30px; text-align: center;">
-	<h3>Contact</h3>
-    <br>
-    <p><b>College Email</b> stangs@mit.edu</p>
-    <p><b>Personal</b> sandratang01@gmail.com</p>
+<!-- Links -->
+<div style="text-align: center;">
+	<!-- Box fits content, centered with "margin: 0 auto;" -->
+	<div class="row" style="width: fit-content; border-radius: 25px; background-color: #fafafa; padding: 20px; margin: 0 auto;">
+		<!-- Programming --> 
+		<a href="https://www.linkedin.com/in/sandra-tang/"><img class="icon" src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"/></a>
+		<a href="https://github.com/SandraTang"><img class="icon" src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
+		<a href="https://gitlab.com/SandraTang"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-512/gitlab-3-555563.png"/></a>
+		<!-- Design --> 
+		<a href="https://www.behance.net/sandra-tang"><img class="icon" src="https://img.icons8.com/ios-glyphs/30/000000/behance.png"/></a>
+		<!-- Game Development --> 
+		<a href="https://stangs.itch.io/"><img class="icon" src="https://img.icons8.com/ios-glyphs/30/000000/itch-io.png"/></a>
+		<a href="https://devpost.com/SandraTang"><img class="icon" src="https://img.icons8.com/ios-glyphs/30/000000/steam-circled.png"/></a>
+	</div>
 </div>
 
 </body>
