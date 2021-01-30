@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sandra Tang</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- Personal Stylesheet -->
-  <!-- Import Roboto Medium and Bold -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Logo --> 
-  <link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
+	<title>Sandra Tang</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Personal Stylesheet -->
+	<!-- Import Roboto Medium and Bold -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Logo --> 
+	<link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
 </head>
 
 <style>
@@ -22,12 +22,14 @@
 	a, a:hover{color: #ff781a;}
 	/* Other */
 	.icon {border-radius: 10px; width: 30px; height: auto; margin: 10px;}
+	html {scroll-behavior: smooth; overflow: scroll; overflow-x: hidden;}
+	::-webkit-scrollbar {width: 0px; background: transparent;}
 	/* Videos */
-	.iframe-container{position: relative; width: 100%; padding-bottom: 56.25%; height: 0;}
-	.iframe-container iframe{position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+	.iframe-container{position: relative; width: 100%; padding-top: 60%; overflow: hidden;}
+	.iframe-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 	/* Google Slides */
 	.google-slides-container{position: relative; width: 100%; padding-top: 60%; overflow: hidden;}
-	.google-slides-container iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	.google-slides-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 </style>
 
 <body>
@@ -36,10 +38,10 @@
 <div class="container" style="padding-top: 150px; margin-bottom: 30px; text-align: center;">
 	<!-- Logo -->
 	<img src="https://i.ibb.co/fQhNwqP/Logo.png" style="height: 50px; width: auto;"/></a>
-  	<!-- Info -->
+	<!-- Info -->
 	<h1>Sandra S <b style="color: #ff781a;">Tang</b></h1>
-    <p>MIT '23 / Computer Science and Design / Incoming Google STEP Intern</p>
-    <p>stangs@mit.edu / sandratang01@gmail.com</p>
+	<p>MIT '23 / Computer Science and Design / Incoming Google STEP Intern</p>
+	<p>stangs@mit.edu / sandratang01@gmail.com</p>
 </div>
 
 <!-- Links -->
@@ -57,7 +59,68 @@
 		<a href="https://www.behance.net/sandra-tang"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/behance.png"/></a>
 		<a href="https://dribbble.com/sandratang"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/42-dribbble-512.png"/></a>
 	</div>
+	<a href="#featured"><img src="https://assets.stickpng.com/images/58f8bd170ed2bdaf7c128308.png" style="width: 20px; height: auto; margin: 120px 0 120px 0;"/></a>
 </div>
+
+<!-- Featured -->
+<div class="container" id="featured" style="width: 500px; margin-bottom: 100px; opacity: 0;">
+	<!-- Tabs -->
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#1"><h5>Research</h5></a></li>
+		<li><a data-toggle="tab" href="#2"><h5>HeartAcuity</h5></a></li>
+		<li><a data-toggle="tab" href="#3"><h5>Quake Shake</h5></a></li>
+		<li><a data-toggle="tab" href="#4"><h5>Logo</h5></a></li>
+	</ul>
+	<!-- Content -->
+	<div class="tab-content">
+		<div id="1" class="tab-pane fade in active">
+			<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTl-JshqPsuTvijLl88HbI2KiL3kPTsB6eEeWF2thWbYSom1VDKTLMxy8uwLkus1Z6qAhRZnUNN7W5g/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			<h3>MIT Urban Risk Lab Machine Learning Research</h3>
+			<p>During my college sophomore summer (2020), I wrote machine learning models to classify damage severity during on-going natural disasters to help emergency responders immediately know which areas were at the highest risk to efficiently save lives. </p>
+			<br>
+			<a href="https://github.com/SandraTang/Damage-Image-Classification"><button type="button" class="btn">Github Repository</button></a>
+		</div>
+		<div id="2" class="tab-pane fade">
+			<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRD-UcZCSMR4SHFPiggbMGonpqCOqlIOjY_unB-u-UZrfzoKks1Hu1yQeWqflVrW4QHPpxC927aEHO0/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			<h3>HeartAcuity — iOS Heart Health App</h3>
+			<p>HeartAcuity interprets your heartbeats and basic info with numerous machine learning models to predict your probability of having specific heart diseases. HeartAcuity was created during HackMIT 2020 by Abishek Ashok, Sandra Tang, Sabrina Romero, and Eliot Huh over the course of 36 hours. I wrote Random Forest and XGBoost regression models, tuned the hyperparamaters with GridSearchCV, and created visualizations of the results (such as a confusion matrix) with Matplotlib and Seaborn.</p>
+			<br>
+			<a href="https://github.com/SandraTang/Heart-Acuity"><button type="button" class="btn">Github Repository</button></a>
+		</div>
+		<div id="3" class="tab-pane fade">
+			<iframe width="100%" height="281px" src="https://www.youtube.com/embed/JyLEyuY28_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h3>Quake Shake — MLH Same Home Different Hacks Best Educational Hack</h3>
+			<p>Quake Shake an educational game that teaches kids earthquake safety in a fun and interactive way. The game covers all major aspects of dealing with earthquakes including preparation, what to do in multifarious situations during an earthquake, and dealing with the aftermath. The game was developed with Godot, programmed with GD Script, and illustrated with artwork created in Piskel.</p>
+			<br>
+			<a href="https://devpost.com/software/quake-shake"><button type="button" class="btn">Devpost Page</button></a> <a href="https://stangs.itch.io/quake-shake"><button type="button" class="btn">Itch.io Page</button></a>
+		</div>
+		<div id="4" class="tab-pane fade">
+			<img src="https://cdn.dribbble.com/users/6899019/screenshots/15010098/media/f41df1a2ad5092d22982ce20d7b1d450.png?compress=1&resize=1600x1200" style="width: 100%; height: auto;"/>
+			<h3>Personal Responsive Logo</h3>
+			<p>My personal logo is a simple yes recognizable shape. The concept is S (first initial) + tangerine (last name).</p> 
+			<br>
+			<a href="https://www.behance.net/gallery/67494769/Personal-Branding"><button type="button" class="btn">Behance Post</button></a> <a href="https://dribbble.com/shots/15010098-Sandra-Tang-Responsive-Logo"><button type="button" class="btn">Dribble Post</button></a>
+		</div>
+	</div>
+</div>
+
+<script> // Thank you "myfunkyside" on StackOverflow
+	$(window).on("load",function() {
+		$(window).scroll(function() {
+			var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+			$("#featured").each(function() {
+				/* Check location of each desired element */
+				var objectBottom = $(this).offset().top + $(this).outerHeight();
+				/* If element completely within bounds of window, fade in */
+				if (objectBottom < windowBottom) { // Object comes into view (scrolling down)
+					if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
+				} else { //object goes out of view (scrolling up)
+					if ($(this).css("opacity")==1) {$(this).fadeTo(200,0);}
+				}
+			});
+		}).scroll(); // Invoke scroll-handler on page-load
+	});
+</script>
 
 </body>
 </html>
