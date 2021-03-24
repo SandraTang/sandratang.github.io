@@ -1,6 +1,16 @@
 mode = 0;
 page = 0;
 
+// quiz info
+showAnswer = false;
+startType = "F";
+endtype = "Celcius";
+startTemp = -40;
+endTemp = -40;
+degree = round(startTemp) + "°" + startType;
+trueFalse = 1;
+value = endTemp;
+
 function setup() {
   createCanvas(390, 667);
   textAlign(CENTER, CENTER);
@@ -17,6 +27,8 @@ function setup() {
   //w = requestWeather('data/cambridge.json');
   //w = requestWeather('data/indianapolis.json');
   //w = requestWeather('data/medfield.json');
+  
+  quizInfo();
 }
 
 function draw() {
@@ -79,19 +91,56 @@ function learn() {
   text("(°C × 9/5) + 32 = °F", width/2, height*0.5+20);
 }
 
+function quizInfo() {
+  // generate info
+  startType = random(1);
+  if (startType == 1) {
+     startType = "F";
+     endType = "Celcius";
+     startTemp = random(-40, 120);
+     endTemp = (startTemp-32)*(5/9);
+  } else {
+    startType = "C";
+    endType = "Fahrenheit";
+    startTemp = random(-40, 50);
+    endTemp = startTemp * (9/5) + 32;
+  }
+  degree = round(startTemp) + "°" + startType;
+  trueFalse = random(0, 1);
+  if (trueFalse==1) {
+    value = endTemp;
+  } else {
+    if (random(0, 1) == 0) {
+      value = endTemp + random(5, 20);
+    } else {
+      value = endTemp - random(5, 20);
+    }
+  }
+  value = round(value);
+}
+
 function quiz() {
   fill(255);
   textSize(30);
   text("Quiz", width/2, height*0.2);
+  // display info
   textSize(15);
   // question
-  degree = "50°F";
-  opposite = "Celcius";
-  text("What is " + degree + " in " + opposite + "?", width/2, height*0.3);
-  // answers
-  text("10°C", width/2, height*0.45);
-  text("15°C", width/2, height*0.55);
-  text("20°C", width/2, height*0.65);
+  text("True or false?", width/2, height*0.3);
+  text(degree + " in " + endType + " is " + value, width/2, height*0.3 + 15);
+  if (showAnswer) {
+    if (trueFalse==1) {
+      text("True - Correct", width/2, height*0.45);
+      text("False - Incorrect", width/2, height*0.55);
+    } else {
+      text("True - Incorrect", width/2, height*0.45);
+      text("False - Correct", width/2, height*0.55);
+    }
+  } else {
+    text("True", width/2, height*0.45);
+    text("False", width/2, height*0.55);
+  }
+  text("Next", width/2, height*0.65);
   noFill();
   stroke(255);
   rect(width/3, height*0.4, width/3, height*0.1);
@@ -256,6 +305,11 @@ function mouseClicked() {
   if (mouseX >= 0 && mouseX < width/3 && mouseY >= height*0.94 && mouseY <= height) {page=0; draw();}
   if (mouseX >= width/3 && mouseX < 2*width/3 && mouseY >= height*0.94 && mouseY <= height) {page=1; draw();}
   if (mouseX >= 2*width/3 && mouseX < width && mouseY >= height*0.94 && mouseY <= height) {page=2; draw();}
+  // quiz answer (true/false)
+  if (mouseX >= width/3 && mouseX <= 2*width/3 && mouseY >= height*0.4 && mouseY < height*0.5) {showAnswer = true; draw();}
+  if (mouseX >= width/3 && mouseX <= 2*width/3 && mouseY >= height*0.5 && mouseY < height*0.6) {showAnswer = true; draw();}
+  // next
+  if (mouseX >= width/3 && mouseX <= 2*width/3 && mouseY >= height*0.6 && mouseY < height*0.7) {showAnswer = false; quizInfo(); draw();}
 }
 
 function twelveHour(input) {
