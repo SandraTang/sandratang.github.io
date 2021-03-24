@@ -43,11 +43,29 @@ function draw() {
 function bar() {
   fill(255);
   rect(0, height*0.94, width, height*0.06);
+  // switch page
   fill(c);
   textSize(15);
-  text("Weather", width/6, height*0.975);
-  text("Learn", width/2, height*0.975);
-  text("Quiz", 5*width/6, height*0.975);
+  switch(page) {
+      case 1: 
+        text("Learn", width/2, height*0.975);
+        fill(150);
+        text("Weather", width/6, height*0.975);
+        text("Quiz", 5*width/6, height*0.975); 
+        break;
+      case 2: 
+        text("Quiz", 5*width/6, height*0.975); 
+        fill(150);
+        text("Weather", width/6, height*0.975);
+        text("Learn", width/2, height*0.975);
+        break;
+      default:
+        text("Weather", width/6, height*0.975);
+        fill(150);
+        text("Learn", width/2, height*0.975);
+        text("Quiz", 5*width/6, height*0.975); 
+        break;
+    }
 }
 
 function learn() {
