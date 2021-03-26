@@ -94,7 +94,7 @@ function learn() {
 function quizInfo() {
   // generate info
   startType = random(1);
-  if (startType == 1) {
+  if (startType > 0.5) {
      startType = "F";
      endType = "Celcius";
      startTemp = random(-40, 120);
@@ -107,10 +107,10 @@ function quizInfo() {
   }
   degree = round(startTemp) + "°" + startType;
   trueFalse = random(0, 1);
-  if (trueFalse==1) {
+  if (trueFalse > 0.5) {
     value = endTemp;
   } else {
-    if (random(0, 1) == 0) {
+    if (random(0, 1) > 0.5) {
       value = endTemp + random(5, 20);
     } else {
       value = endTemp - random(5, 20);
@@ -129,7 +129,7 @@ function quiz() {
   text("True or false?", width/2, height*0.3);
   text(degree + " in " + endType + " is " + value, width/2, height*0.3 + 15);
   if (showAnswer) {
-    if (trueFalse==1) {
+    if (trueFalse > 0.5) {
       text("True - Correct", width/2, height*0.45);
       text("False - Incorrect", width/2, height*0.55);
     } else {
