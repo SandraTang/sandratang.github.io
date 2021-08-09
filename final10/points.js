@@ -99,7 +99,7 @@ function info() {
   y = boxTop + boxHeight * (6/8) + 25;
   text(title[selectedIndex], x, y);
   textFont(normal, 12);
-  text(genre[selectedIndex] + " game on " + program[selectedIndex], x, y+20);
+  text(genre[selectedIndex], x, y+20);
   fill(40, 247, 192);
   textAlign(CENTER, TOP);
   textFont(fancy, 24);
