@@ -1,81 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HeartAcuity</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	<title>Sandra Tang</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Personal Stylesheet -->
+	<link rel="stylesheet" href="sandratang.github.io/theme.css">
+	<!-- Import Roboto Medium and Bold -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Logo --> 
+	<link rel="icon" type="image/png" href="https://image.ibb.co/d86BUJ/Logo_Orange.png">
 </head>
-
-<style>
-
-body {
-  background-color: #F9705E;
-}
-
-p {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
-
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 700;
-}
-
-.button {
-  background-color: white;
-  border: none;
-  color: #F9705E;
-  padding: 20px;
-  text-align: center;
-  border-radius: 40px;
-}
-
-</style>
 
 <body>
 
+<!-- Navigation Bar, Header -->
+<nav>
+	<div class="header">
+	<span style="align-content: left"><a href="https://sandratang.github.io"><img src="https://image.ibb.co/d86BUJ/Logo_Orange.png" style="width: 25px; height: auto;"></a></span>
+	<span class="highlight"><a href="https://sandratang.github.io" style="color:black;"><p>HOME</p></a></span>
+	<span class="highlight"><a href="https://sandratang.github.io/#contact" style="color:black;"><p>CONTACT</p></a></span>
+	</div>
+</nav>
+
 <!-- Intro -->
-<div class="container" style="padding: 80px 30px 80px 30px; text-align: center; color: white;">
-	<img src="https://1.bp.blogspot.com/EaDWqLy4i1jdJ7gLvfU29lGnq6CVcy3lGO0vPlXAFSPqOOnTKcql9_cZulzcgFE9oWmUUaCSOqM=s800" style="width: 80px;">
-    <img src="https://i.ibb.co/2Pccv3v/Heart-Acuity-Logo-White.png" alt="Heart-Acuity-Logo-White" border="0">
-    <h1 style="font-size: 64px;">HeartAcuity</h1>
-    <p>your personal heart health helper</p>
-    <br>
-    <button class="button button4" id="download"><a href="#" style="text-decoration: none; color: #F9705E;" id="download-text">Download for iOS</a></button>
+<div style="margin-bottom: 10vh;">
+	<div class="container" style="padding-top: 15vh; margin-bottom: 30px; text-align: center;">
+		<h1>Heart<b style="color: #ff781a;">Acuity</b></h1>
+		<p>iOS Heart Health App developed for Hack MIT</p>
+	</div>
+
+	<!-- Links -->
+	<div style="text-align: center;">
+		<!-- Box fits content, centered with "margin: 0 auto;" -->
+		<div class="row" style="width: fit-content; border-radius: 25px; background-color: #fafafa; padding: 20px; margin: 0 auto; width: 80vw;">
+			<p>HeartAcuity interprets your heartbeats and basic info with numerous machine learning models to predict your probability of having specific heart diseases. HeartAcuity was created during HackMIT 2020 by Abishek Ashok, Sandra Tang, Sabrina Romero, and Eliot Huh over the course of 36 hours. I wrote Random Forest and XGBoost regression models, tuned the hyperparamaters with GridSearchCV, and created visualizations of the results (such as a confusion matrix) with Matplotlib and Seaborn.</p>
+		</div>
+		<br/>
+		<a href="https://github.com/SandraTang/Heart-Acuity"><button type="button" class="btn">Github Repository</button></a>
+	</div>
 </div>
 
-<!-- Section -->
-<div class="container" style="background-color: white; border-radius: 20px; padding: 30px;>
-	<div class="row">
-    	<div class="col-sm-4">
-        	<img src="https://img.icons8.com/fluent-systems-regular/96/000000/heart-with-pulse.png" style="width: 15%">
-            <h3>What does HeartAcuity do?</h3>
-            <p>HeartAcuity interprets your heartbeat data and sends out an alert if you are consistently predicted to be at risk of any heart diseases, including some that are normally unexpected such as ischemic strokes. The app also provides info on heart diseases and how to prevent it, including tips on healthy eating and physical fitness. You can set your own goals through the app and track your journey to and achieve your ideal level of health. </p>
-        </div>
-        <div class="col-sm-4">
-        	<img src="https://img.icons8.com/fluent-systems-regular/96/000000/artificial-intelligence.png" style="width: 15%">
-            <h3>How does it work? </h3>
-            <p>HeartAcuity is an iOS health app that interprets your heartbeats and basic info with numerous machine learning models to predict your probability of having specific heart diseases. HeartAcuity was created during HackMIT 2020 by Abishek Ashok, Sandra Tang, Sabrina Romero, and Eliot Huh over the course of 36 hours. </p>
-        </div>
-        <div class="col-sm-4">
-        	<img src="https://img.icons8.com/fluent-systems-regular/96/000000/stack.png" style="width: 15%">
-            <h3>Is my data safe?</h3>
-            <p>Yes, your data is safe! HeartAcuity will not send it anywhere. Heartbeat data is only transferred from your Apple Watch to our app to help us inform you about your heart health. The data is never sent to us or anyone else, and it is never sold. </p>
-        </div>
-    </div>
+<div class="container" style="text-align: center;">
+	<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRD-UcZCSMR4SHFPiggbMGonpqCOqlIOjY_unB-u-UZrfzoKks1Hu1yQeWqflVrW4QHPpxC927aEHO0/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>		
 </div>
 
-<br><br>
+<br/><br/>
 
 </body>
 </html>
