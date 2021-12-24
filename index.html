@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- Personal Stylesheet -->
-	<link rel="stylesheet" href="sandratang.github.io/theme.css">
 	<!-- Import Roboto Medium and Bold -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -18,44 +16,28 @@
 
 <style>
 	/* General Font */
-	p, li {font-family: 'Roboto', sans-serif;}
-	h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif;}
+	p, li, h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif;}
 	a, a:hover{color: #ff781a;}
-	/* Top Nav Bar */
-	div.header {display:table; width:100%; table-layout: fixed; background-color: #fafafa;}
-	div.header span {display:table-cell; border: none; padding: 16px 12px 12px 12px;}
-	.highlight:hover {background-color: #f0f0f0;}
-	.highlight a {text-decoration: none;}
-	.highlight {text-align:center;}
-	nav {background-color: white; position: fixed; width: 100%; z-index: 999;}
+	/* Content Box */
+	.icon-container {width: fit-content; border-radius: 5px; padding: 20px; margin: 0 auto;}
+	.feature-container {width: 50vw; padding: 20px; margin: 0 auto;}
+	.feature-container-logo {width: 80%; max-width: 100px; height:auto; vertical-align: bottom; float: right;}
+	.feature-container-img {width: 80%; max-width: 250px; height:auto; vertical-align: bottom; float: right;}
+	.vertical-aligner {display: inline-block; height: 40%; vertical-align: middle;}
 	/* Other */
-	.btn {background-color: white; outline: solid; margin: 5px;}
 	.icon {border-radius: 10px; width: 30px; height: auto; margin: 10px;}
-	.center {display: flex; justify-content: center; align-items: center;}
 	.fading-element {opacity: 0;}
-	.flex-container {white-space: nowrap; display: flex; overflow-x: auto;}
-	.flex-item {justify-content: center; align-items: center; margin: 12px;}
-	.card {box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.15); text-align: center;}
-	.card-image {width: 100%; object-fit: cover; width: auto; height: 300px;}
-	.card-caption {padding-top: 12px}
+	/* Remove Scrollbar */
 	html {scroll-behavior: smooth; overflow: scroll; overflow-x: hidden;}
 	::-webkit-scrollbar {width: 0px; background: transparent;}
-	/* Remove Scrollbar */
-	.hide-scrollbar::-webkit-scrollbar {display: none;}
-	.hide-scrollbar {-ms-overflow-style: none;  scrollbar-width: none;}
-	/* Videos */
-	.iframe-container{position: relative; width: 100%; padding-top: 60%; overflow: hidden;}
-	.iframe-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-	/* Google Slides */
-	.google-slides-container{position: relative; width: 100%; padding-top: 60%; overflow: hidden;}
-	.google-slides-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 </style>
 
 <body>
 
 <!-- Intro -->
-<div style="height: 90vh;">
-	<div class="container" style="padding-top: 30vh; margin-bottom: 30px; text-align: center;">
+<div style="height: 80vh; text-align: center;">
+	<span class="vertical-aligner"></span>
+	<div class="container">
 		<!-- Logo -->
 		<img src="https://i.ibb.co/fQhNwqP/Logo.png" style="height: 50px; width: auto;"/></a>
 		<!-- Info -->
@@ -65,9 +47,9 @@
 	</div>
 
 	<!-- Links -->
-	<div style="text-align: center;">
+	<div>
 		<!-- Box fits content, centered with "margin: 0 auto;" -->
-		<div class="row" style="width: fit-content; border-radius: 25px; background-color: #fafafa; padding: 20px; margin: 0 auto;">
+		<div class="row icon-container" style="background-color: #fafafa;">
 			<a href="https://www.linkedin.com/in/sandra-tang/"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/linkedin.png"/></a>
 			<!-- Programming --> 
 			<a href="https://github.com/SandraTang"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/github.png"/></a>
@@ -84,52 +66,143 @@
 	</div>
 </div>
 
-<!--
-<div class="center">
-	<div class="flex-container no-scrollbar fading-element">
-		<div class="flex-item card">
-			<a href="https://sandratang.github.io/final10/index.html">
-				<img class="card-image" src="https://i.ibb.co/hHDCyGP/gamedevhistory.png">
-				<div class="card-caption">
-					<p>Personal Game Development History</p>
-				</div>
-			</a>
-		</div>
-		<div class="flex-item card">
-			<a href="https://sandratang.github.io/machine-learning-research">
-				<img class="card-image" src="https://i.ibb.co/5TcjgLC/risklaburop.png">
-				<div class="card-caption">
-					<p>Machine Learning Research</p>
-				</div>
-			</a>
-		</div>
-		<div class="flex-item card">
-			<a href="https://sandratang.github.io/heartacuity">
-				<img class="card-image" src="https://i.ibb.co/LQ7NQL4/heartacuity.png">
-				<div class="card-caption">
-					<p>HeartAcuity</p>
-				</div>
-			</a>
-		</div>
-		<div class="flex-item card">
-			<a href="https://dribbble.com/shots/15010098-Sandra-Tang-Responsive-Logo">
-				<img class="card-image" src="https://tinyurl.com/u9dz2h38">
-				<div class="card-caption">
-					<p>Responsive Personal Logo</p>
-				</div>
-			</a>
-		</div>
-		<div class="flex-item card">
-			<a href="https://sandratang.github.io/cryptography">
-				<img class="card-image" src="https://i.ibb.co/qYZT5Bw/cryptology.png">
-				<div class="card-caption">
-					<p>Cryptology Games</p>
-				</div>
-			</a>
+<!-- Start featured content -->
+
+<!-- Content's "fade in" reaction is better with container. -->
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-logo" src="https://tinyurl.com/juzamyx7"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>Meta (Facebook)</b> Technical Program Management Intern</h3>
+				<p><i>Seattle, WA (June 2022–August 2022)</i></p>
+				<p>Data Infra Team</p>
+			</div>
 		</div>
 	</div>
 </div>
---->
+
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-logo" src="https://tinyurl.com/4fappxdb"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>Google</b> STEP Intern</h3>
+				<p><i>Remote (June 2021–September 2021)</i></p>
+				<p>During my first internship, I worked remotely while traveling, living in four different locations with my friends. I wrote FlumeJava functions to read, aggregate, compute, and write stats from a database for the internal Core ML labeling service. This required developing a parallel data-processing pipeline design and making informed feature and design decisions. My intern partner and I led an insightful user interview with a client and early user of the feature that our project displays stats on. I also added computed statistics to the front-end using Javascript following material design and Google accessibility guidelines.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-logo" src="https://tinyurl.com/yc5f6nss"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>MIT Urban Risk Lab</b> Undergraduate Researcher</h3>
+				<p><i>Remote (June 2020–December 2020)</i></p>
+				<p>The summer after my freshman year of college, I wrote image classification machine learning algorithms (CNN, XGBoost, and Random Forest) in Python with up to 95% accuracy to categorize natural disaster damage and aid natural disaster emergency responders. I also worked with Amazon Elastic Compute Cloud, Tensorflow, Keras, Pandas, Numpy, Seaborn, and Matplotlib. </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-logo" src="https://i.ibb.co/Ydnyzmp/Logo-Color-Fill.png"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>Bamboo Chats</b> Start-Up CTO</h3>
+				<p><i>(March 2021–Present)</i></p>
+				<p>My friends and I created an Asian-American targeted virtual coffee chat React web app. I led technical development for building our product from scratch, organize meetings with an itemized weekly agenda, recruit and onboard new members. Bamboo Chats was accepted to and flourished in Brown University's Breakthrough Lab (B-Lab) accelerator program. Bamboo Chats was named one of the most promising startups to come out of Brown University by The Business Journals.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-logo" src="https://i.ibb.co/3vmhsmD/GDDC-Beaver.png"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>MIT GDDC</b> (Game Design and Development Club) President</h3>
+				<p><i>(August 2021–Present)</i></p>
+				<p>Fostering community within the Massachusetts Institute of Technology through uniting people with a passion for game design and development.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-img" src="https://tinyurl.com/mr29d248"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>Best Educational Hack</b></h3>
+				<p><i>MLH (Major League Hacking) Same Home Different Hacks (June 2020)</i></p>
+				<p>Quake Shake is an educational game that teaches kids earthquake safety in a fun and interactive way. It covers all major aspects of dealing with earthquakes, from preparation, what to do in multifarious situations during an earthquake, and dealing with the aftermath. Earthquake safety is especially important to me because I grew up in Southern California next to an active fault. I created Quake Shake in Godot after researching earthquakes and discovering that typical earthquake safety taught by schools is inadequate.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-img" src="https://i.ibb.co/pwTw8yS/hard-wrap-title-orignal-twhg3g8k.png"/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b>Best Game</b></h3>
+				<p><i>CodeDay LA Hackathon (November 2017)</i></p>
+				<p>Junior year of high school, I created a retro-style minigame with my brother and friend. I coded it in GameMaker and created most of the art.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Template
+<div class="container">
+	<div class="feature-container fading-element">
+		<div class="row">
+			<div class="col-sm-4">
+				<div style="height: 30px;"></div>
+				<img class="feature-container-img" src=""/>
+			</div>
+			<div class="col-sm-8">
+				<h3><b></b></h3>
+				<p><i></i></p>
+				<p></p>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+
+<!-- End featured content -->
+
+<!-- Extra space at bottom -->
+<div style="height: 20vh;"/>
 
 <script>
 	$(window).on("load",function() {
@@ -138,24 +211,21 @@
 			var windowTop = $(this).scrollTop();
 			$(".fading-element").each(function() {
 				/* Check location of each desired element */
-				var objectMiddle = $(this).offset().top + $(this).outerHeight()/2;
+				var objectMiddle = $(this).offset().top + $(this).outerHeight();
 				/* If element completely within bounds of window, fade in */
 				if (objectMiddle < windowBottom) { // Object comes into view (scrolling down)
 					if ($(this).css("opacity")==0) {
-						$(this).fadeTo(200,1);
-						$(this).animate({scrollLeft: $(this).scrollLeft() + 100}, 'slow')
+						$(this).fadeTo(200, 1);
 					}
 				} else { //object goes out of view (scrolling up)
 					if ($(this).css("opacity")==1) {
-						$(this).fadeTo(200,0);
+						$(this).fadeTo(200, 0);
 					}
 				}
 			});
 		}).scroll();
 	});
 </script>
-
-<div style="height: 10vh;"/>
 
 </body>
 </html>
