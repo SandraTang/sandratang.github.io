@@ -19,10 +19,10 @@
 	p, li, h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif;}
 	a, a:hover{color: #ff781a;}
 	/* Content Box */
-	.icon-container {width: fit-content; border-radius: 5px; padding: 20px; margin: 0 auto;}
-	.feature-container {width: 50vw; padding: 20px; margin: 0 auto;}
-	.feature-container-logo {width: 80%; max-width: 100px; height:auto; vertical-align: bottom; float: right;}
-	.feature-container-img {width: 80%; max-width: 250px; height:auto; vertical-align: bottom; float: right;}
+	.icon-container {width: fit-content; border-radius: 5px; padding: 15px; margin: 0 auto;}
+	.feature-container {width: 50vw; min-width: 300px; padding: 15px; margin: 0 auto;}
+	.feature-container-logo {width: 80%; max-width: 100px; height:auto; vertical-align: bottom;}
+	.feature-container-img {width: 80%; max-width: 250px; height:auto; vertical-align: bottom;}
 	.vertical-aligner {display: inline-block; height: 40%; vertical-align: middle;}
 	/* Other */
 	.icon {border-radius: 10px; width: 30px; height: auto; margin: 10px;}
@@ -42,26 +42,30 @@
 		<img src="https://i.ibb.co/fQhNwqP/Logo.png" style="height: 50px; width: auto;"/></a>
 		<!-- Info -->
 		<h1>Sandra <b style="color: #ff781a;">Tang</b></h1>
-		<p>MIT '23 / Computer Science and Design / Google STEP Intern</p>
-		<p>stangs@mit.edu / sandratang01@gmail.com</p>
+		<p>MIT '23 / Computer Science and Design</p>
+		<p>Incoming Meta Technical Program Management Intern</p>
 	</div>
 
 	<!-- Links -->
-	<div>
+	<div style="margin-top: 15px;">
 		<!-- Box fits content, centered with "margin: 0 auto;" -->
 		<div class="row icon-container" style="background-color: #fafafa;">
-			<a href="https://www.linkedin.com/in/sandra-tang/"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/linkedin.png"/></a>
-			<!-- Programming --> 
-			<a href="https://github.com/SandraTang"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/github.png"/></a>
-			<a href="https://devpost.com/SandraTang"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-512/dev-post-555431.png"/></a>
-			<a href="https://gitlab.com/SandraTang"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-512/gitlab-3-555563.png"/></a>
-			<!-- Game Development --> 
-			<a href="https://stangs.itch.io/"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/itch-io.png"/></a>
-			<!-- Design --> 
-			<a href="https://www.behance.net/sandra-tang"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/behance.png"/></a>
-			<a href="https://dribbble.com/sandratang"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/42-dribbble-512.png"/></a>
-			<!-- Other -->
-			<a href="https://sandratang.blogspot.com/"><img class="icon" src="https://img.icons8.com/ios-glyphs/480/000000/blogger.png"/></a>
+			<div class="col-sm-6" style="padding: 3px; margin: 0px;">
+				<a href="https://www.linkedin.com/in/sandra-tang/"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/linkedin.png"/></a>
+				<!-- Programming --> 
+				<a href="https://github.com/SandraTang"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/github.png"/></a>
+				<a href="https://devpost.com/SandraTang"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-512/dev-post-555431.png"/></a>
+				<a href="https://gitlab.com/SandraTang"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-512/gitlab-3-555563.png"/></a>
+			</div>
+			<div class="col-sm-6" style="padding: 3px; margin: 0px;">
+				<!-- Game Development --> 
+				<a href="https://stangs.itch.io/"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/itch-io.png"/></a>
+				<!-- Design --> 
+				<a href="https://www.behance.net/sandra-tang"><img class="icon" src="https://img.icons8.com/ios-glyphs/240/000000/behance.png"/></a>
+				<a href="https://dribbble.com/sandratang"><img class="icon" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/42-dribbble-512.png"/></a>
+				<!-- Other -->
+				<a href="https://sandratang.blogspot.com/"><img class="icon" src="https://img.icons8.com/ios-glyphs/480/000000/blogger.png"/></a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -89,7 +93,6 @@
 	<div class="feature-container fading-element">
 		<div class="row">
 			<div class="col-sm-4">
-				<div style="height: 30px;"></div>
 				<img class="feature-container-logo" src="https://tinyurl.com/4fappxdb"/>
 			</div>
 			<div class="col-sm-8">
