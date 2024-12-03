@@ -12,7 +12,7 @@ export default function Home() {
   const [selectedTab, setSelectedTab] = useState<tabOptions>("resume");
   return (
     <div className="grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 w-full">
+      <main className="flex flex-col gap-8 row-start-2 w-full items-center">
         <Landing />
         <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         {selectedTab === "resume" && <Resume />}

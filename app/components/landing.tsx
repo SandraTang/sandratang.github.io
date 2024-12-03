@@ -38,11 +38,12 @@ export default function Landing() {
       </div>
       <Canvas
         style={{
-          width: "25vw",
-          height: "25vh",
+          width: "50vw",
+          height: "50vh",
           position: "absolute",
-          top: 125,
-          right: 100,
+          top: 20,
+          zIndex: -1,
+          opacity: 0.3,
         }}
       >
         <CameraController cameraRef={cameraRef} position={cameraPosition} />

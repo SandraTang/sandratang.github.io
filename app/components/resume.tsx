@@ -8,13 +8,13 @@ export default function Resume() {
           </button>
         </a>
       </div>
-      <iframe
-        src="/Sandra Tang Resume.pdf#toolbar=0"
+      <img
+        src="/sandra_tang_resume.svg"
+        alt="Sandra Tang Resume"
         width="100%"
         height="100%"
         className="border-none"
-        title="Sandra Tang Resume"
-      ></iframe>
+      />
     </div>
   );
 }

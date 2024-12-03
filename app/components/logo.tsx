@@ -11,7 +11,7 @@ export default function Logo() {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setX((x) => x + 0.005);
+      setX((x) => x + 0.003);
     }, 10);
     return () => clearInterval(interval);
   }, []);
