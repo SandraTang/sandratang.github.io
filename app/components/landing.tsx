@@ -1,4 +1,29 @@
+"use client";
+
+import { Canvas } from "@react-three/fiber";
+import Logo from "./logo";
+import * as THREE from "three";
+import { useEffect, useRef } from "react";
+
+interface CameraControllerProps {
+  cameraRef: React.RefObject<THREE.PerspectiveCamera>;
+  position: THREE.Vector3;
+}
+
+function CameraController({ cameraRef, position }: CameraControllerProps) {
+  useEffect(() => {
+    if (cameraRef.current) {
+      cameraRef.current.lookAt(new THREE.Vector3(0, 0, 0));
+    }
+  }, [cameraRef, position]);
+
+  return null; // This component doesn't render anything
+}
+
 export default function Landing() {
+  const cameraPosition = new THREE.Vector3(0, 5, 10);
+  const cameraRef = useRef<THREE.PerspectiveCamera>(null);
+
   return (
     <div className="flex flex-col sm:flex-row gap-4">
       <div>
@@ -11,6 +36,19 @@ export default function Landing() {
           <li>Software Engineer</li>
         </ul>
       </div>
+      <Canvas
+        style={{
+          width: "25vw",
+          height: "25vh",
+          position: "absolute",
+          top: 125,
+          right: 100,
+        }}
+      >
+        <CameraController cameraRef={cameraRef} position={cameraPosition} />
+        <ambientLight intensity={5} />
+        <Logo />
+      </Canvas>
     </div>
   );
 }
