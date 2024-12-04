@@ -18,8 +18,10 @@ export default function Card({
   labels?: string[];
 }) {
   return (
-    <div className="border border-gray-300 rounded-md p-4 mb-4 flex flex-col gap-2 break-inside-avoid">
-      {image && <img src={image} alt="Card image" />}
+    <div className="border border-gray-300 rounded-lg p-4 mb-4 flex flex-col gap-3 break-inside-avoid">
+      {image && (
+        <img src={image} alt="Card image" className="rounded-md mb-2" />
+      )}
       {title && <h2 className="text-lg font-bold">{title}</h2>}
       {subheadline && <h3 className="text-md font-semibold">{subheadline}</h3>}
       {labels && (
