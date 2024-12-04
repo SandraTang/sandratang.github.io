@@ -25,7 +25,7 @@ export default function Landing() {
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
 
   return (
-    <div className="flex flex-col sm:flex-row lg:mx-[25vw]">
+    <div className="flex flex-col sm:flex-row lg:mx-[25vw] mb-32">
       <div>
         <p className="text-2xl sm:text-4xl">
           Hi, I'm <span className="font-bold text-orange-500">Sandra Tang</span>

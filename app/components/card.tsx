@@ -40,9 +40,7 @@ export default function Card({
       {children}
       {buttonText && buttonLink && (
         <a href={buttonLink}>
-          <button className="px-4 py-2 bg-orange-500 text-white rounded-md cursor-pointer">
-            {buttonText}
-          </button>
+          <button>{buttonText}</button>
         </a>
       )}
     </div>
