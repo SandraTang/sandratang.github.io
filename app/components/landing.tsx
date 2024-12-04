@@ -27,24 +27,23 @@ export default function Landing() {
   return (
     <div className="flex flex-col sm:flex-row lg:mx-[25vw] mb-32">
       <div>
-        <p className="text-2xl sm:text-4xl">
-          Hi, I'm <span className="font-bold text-orange-500">Sandra Tang</span>
+        <p className="text-2xl sm:text-4xl mb-4">
+          Hi, I'm <span className="font-bold text-primary">Sandra Tang.</span>
         </p>
-        <ul className="list-disc list-inside">
-          <li>San Francisco, CA</li>
-          <li>MIT CS and Design</li>
-          <li>Software Engineer</li>
-        </ul>
+        <p>I'm a San Francisco based maker and software engineer.</p>
+        <p>
+          <i>MIT Computer Science and Design</i>
+        </p>
       </div>
       <Canvas
         style={{
-          width: "50vw",
-          height: "50vh",
+          width: "45vw",
+          height: "45vh",
           position: "absolute",
-          top: 20,
-          right: "5vw",
+          top: 25,
+          right: "10vw",
           zIndex: -1,
-          opacity: 0.25,
+          opacity: 0.2,
         }}
       >
         <CameraController cameraRef={cameraRef} position={cameraPosition} />

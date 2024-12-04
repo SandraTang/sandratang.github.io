@@ -11,7 +11,7 @@ function Buttons({ data }: ButtonsInfo) {
   return (
     <>
       {data.map((datum) => (
-        <a href={datum.link}>
+        <a href={datum.link} key={datum.link}>
           <button>{datum.text}</button>
         </a>
       ))}
