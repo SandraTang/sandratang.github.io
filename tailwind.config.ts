@@ -11,8 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#4cad66",
+        primary: "#217337",
         secondary: "#a3d1af",
+        light: "#d3edda",
       },
       screens: {
         // sm: '480px',  // Small screens (mobile)

@@ -11,7 +11,7 @@ export default function Logo() {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setX((x) => x + 0.003);
+      setX((x) => x + 0.01);
     }, 10);
     return () => clearInterval(interval);
   }, []);
@@ -21,7 +21,7 @@ export default function Logo() {
       ref={logoRef}
       object={scene.clone()}
       scale={[scale, scale, scale]}
-      rotation={[Math.PI * Math.cos(x), Math.PI * Math.sin(x), 0]}
+      rotation={[0.25 * Math.cos(x), Math.PI + 0.25 * Math.sin(x), 0]}
     />
   );
 }

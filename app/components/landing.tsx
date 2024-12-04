@@ -25,11 +25,9 @@ export default function Landing() {
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
 
   return (
-    <div className="flex flex-col sm:flex-row lg:mx-[25vw] mb-32">
+    <div className="flex flex-col sm:flex-row lg:mx-[25vw] mb-[25vh] text-white">
       <div>
-        <p className="text-2xl sm:text-4xl mb-4">
-          Hi, I'm <span className="font-bold text-primary">Sandra Tang.</span>
-        </p>
+        <p className="text-2xl sm:text-4xl mb-4">Hi, I'm Sandra Tang</p>
         <p>I'm a San Francisco based maker and software engineer.</p>
         <p>
           <i>MIT Computer Science and Design</i>
@@ -37,13 +35,13 @@ export default function Landing() {
       </div>
       <Canvas
         style={{
-          width: "45vw",
-          height: "45vh",
+          width: "50vw",
+          height: "50vh",
           position: "absolute",
-          top: 25,
-          right: "10vw",
+          top: "10vh",
+          transform: "translateX(-55%)",
           zIndex: -1,
-          opacity: 0.2,
+          opacity: 0.03,
         }}
       >
         <CameraController cameraRef={cameraRef} position={cameraPosition} />

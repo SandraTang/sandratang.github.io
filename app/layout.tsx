@@ -2,15 +2,28 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const circularBook = localFont({
+  src: "./fonts/CircularStd-Book.otf",
+  variable: "--font-circular-book",
+  weight: "100",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const circularMedium = localFont({
+  src: "./fonts/CircularStd-Medium.otf",
+  variable: "--font-circular-medium",
+  weight: "400",
+});
+
+const circularBold = localFont({
+  src: "./fonts/CircularStd-Bold.otf",
+  variable: "--font-circular-bold",
+  weight: "700",
+});
+
+const circularBlack = localFont({
+  src: "./fonts/CircularStd-Black.otf",
+  variable: "--font-circular-black",
+  weight: "900",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${circularBook.variable} ${circularMedium.variable} ${circularBold.variable} ${circularBlack.variable} antialiased`}
       >
         {children}
       </body>

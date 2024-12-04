@@ -3,23 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #217337;
+  --foreground: #000000;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
 }
 
 button {
-  @apply px-4 py-2 bg-primary text-white rounded-md cursor-pointer;
+  @apply px-4 py-2 bg-light font-semibold rounded-md cursor-pointer;
 }

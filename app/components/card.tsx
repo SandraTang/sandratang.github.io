@@ -18,7 +18,7 @@ export default function Card({
   labels?: string[];
 }) {
   return (
-    <div className="border border-gray-300 rounded-lg p-4 mb-4 flex flex-col gap-3 break-inside-avoid">
+    <div className="bg-white rounded-lg p-4 mb-4 flex flex-col gap-3 break-inside-avoid">
       {image && (
         <img src={image} alt="Card image" className="rounded-md mb-2" />
       )}

@@ -37,34 +37,71 @@ export default function MasonryLayout() {
     );
   }
 
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollContainerRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } =
+          scrollContainerRef.current;
+        setIsScrolledToEnd(scrollLeft + clientWidth >= scrollWidth - 10);
+      }
+    };
+
+    let scrollContainer = scrollContainerRef.current;
+
+    const timeout = setTimeout(() => {
+      scrollContainer = scrollContainerRef.current;
+      scrollContainer?.addEventListener("scroll", handleScroll);
+    }, 100);
+
+    return () => {
+      scrollContainer?.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       {masonryWidth !== 0 && (
         <div style={{ width: masonryWidth }}>
           <div
-            className="flex overflow-x-auto scrollbar-hide whitespace-nowrap space-x-2 w-full"
+            className="flex overflow-x-auto scrollbar-hide whitespace-nowrap space-x-8 w-full"
             style={{ scrollbarWidth: "none" }} // Firefox-specific
+            ref={scrollContainerRef}
           >
             {uniqueLabels.map((label) => (
-              <button
+              <div
                 key={label}
                 onClick={() => {
                   setFilter(label);
                   setFilteredCards(filterCardsByLabel(label));
                 }}
                 className={`${
-                  filter === label ? "bg-primary font-semibold" : "bg-secondary"
+                  filter === label
+                    ? "text-white font-semibold underline underline-offset-4"
+                    : "text-light"
                 }`}
               >
                 {label}
-              </button>
+              </div>
             ))}
+            {!isScrolledToEnd && (
+              <div
+                className="absolute right-[32px] sm:right-[80px] bg-primary rounded-full w-6 h-6"
+                style={{
+                  boxShadow: `0 0 10px 10px #217337`,
+                }}
+              >
+                <img src="/arrow-right.png" />
+              </div>
+            )}
           </div>
         </div>
       )}
       <div
         ref={masonryRef}
-        className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 mt-4"
+        className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 mt-8"
       >
         {filteredCards.map((card) => (
           <Card key={card.title} {...card} />
