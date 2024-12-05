@@ -101,6 +101,29 @@ const codingProjects: CardInfo[] = [
     buttonText: "View",
     buttonLink: "/game_dev_history",
   },
+  {
+    title: "Quake Shake",
+    labels: ["Coding", "Game Development", "Godot"],
+    image: "https://img.itch.zone/aW1nLzM2NjE0OTIucG5n/315x250%23c/I2JDmy.png",
+    description:
+      "Same Home Different Hacks 2020 Winner of Best Educational Hack",
+    buttonText: "Play",
+    buttonLink: "https://stangs.itch.io/quake-shake",
+  },
+  {
+    title: "Telegem",
+    labels: ["Coding", "Game Development", "Godot"],
+    image: "https://img.itch.zone/aW1nLzc4ODI0MDQucG5n/315x250%23c/cGmoRE.png",
+    buttonText: "Play",
+    buttonLink: "https://stangs.itch.io/telegem",
+  },
+  {
+    title: "Message Hunt",
+    labels: ["Coding", "Game Development", "Godot"],
+    image: "https://img.itch.zone/aW1nLzM1MTI2OTYuZ2lm/315x250%23cm/qi179G.gif",
+    buttonText: "Play",
+    buttonLink: "https://stangs.itch.io/message-hunt",
+  },
 ];
 
 const designProjects: CardInfo[] = [
