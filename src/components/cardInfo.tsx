@@ -144,6 +144,57 @@ const makerProjects: CardInfo[] = [
     description:
       "Sewed a dress from scratch without a pattern for the MIT 2023 Senior Ball.",
   },
+  {
+    title: "Tailored Dress",
+    labels: ["Sewing"],
+    image: "/tailoring_green_dress.PNG",
+    description: "Tailored a dress my friend gave me. Thank you, Trisha!",
+  },
+];
+
+const posters: CardInfo[] = [
+  {
+    title: "Let's Go for a Drive",
+    labels: ["Design", "Poster"],
+    image: "/go_for_a_drive.png",
+    description: "Original photo and design, created in Figma.",
+  },
+  {
+    title: "Survival of the Fittest",
+    labels: ["Design", "Poster"],
+    image: "/jellyfish.png",
+    description: "Original photo and design, created in Figma.",
+  },
+  {
+    title: "Life is Good",
+    labels: ["Design", "Poster"],
+    image: "/life_is_good.png",
+    description: "Original photos and design, created in Figma.",
+  },
+  {
+    title: "San Francisco",
+    labels: ["Design", "Poster"],
+    image: "/san_francisco.png",
+    description: "Original design, created in Figma.",
+  },
+  {
+    title: "Summer 2022",
+    labels: ["Design", "Poster"],
+    image: "/summer_internship_friends.png",
+    description: "Original photos and design, created in Figma.",
+  },
+  {
+    title: "The Loner Pact",
+    labels: ["Design", "Poster"],
+    image: "/tlp.png",
+    description: "Original photos and design, created in Figma.",
+  },
+  {
+    title: "Toronto Geese",
+    labels: ["Design", "Poster"],
+    image: "/toronto.png",
+    description: "Original photos and design, created in Figma.",
+  },
 ];
 
 export const cardInfo: CardInfo[] = [
@@ -151,4 +202,5 @@ export const cardInfo: CardInfo[] = [
   ...codingProjects,
   ...designProjects,
   ...makerProjects,
+  ...posters,
 ];
