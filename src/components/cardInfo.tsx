@@ -25,7 +25,7 @@ const socialMedia: CardInfo[] = [
     labels: ["Design"],
     image: "/dribbble.png",
     description: "Quick snapshot overviews of a few design projects.",
-    buttonText: "Dribble",
+    buttonText: "View",
     buttonLink: "https://dribbble.com/sandratang",
   },
   {
@@ -35,7 +35,7 @@ const socialMedia: CardInfo[] = [
       "https://blog.tubikstudio.com/wp-content/uploads/2015/10/Behance-Review-1-1024x711.jpg",
     description:
       "Responsive logo design, fonts, photography, publication design, architectural sculptures, and more.",
-    buttonText: "Dribble",
+    buttonText: "View",
     buttonLink: "https://www.behance.net/sandra-tang",
   },
   {

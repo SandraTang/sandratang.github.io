@@ -27,27 +27,21 @@ export default function Card({
 
   return (
     <div className="relative group">
-      <div className="absolute hidden group-hover:block h-full p-8 z-10">
+      <div
+        className={`absolute hidden group-hover:block p-8 z-10 overflow-y-auto`}
+        style={{ height: imageHeight }}
+      >
         <div className="flex flex-col gap-2 text-white">
           {title && <p className="text-xl">{title}</p>}
-          {description && (
-            <p
-              className="overflow-y-auto"
-              style={{
-                maxHeight: imageHeight ? `${imageHeight / 3}px` : "none",
-              }}
-            >
-              {description}
-            </p>
+          {buttonText && buttonLink && (
+            <a href={buttonLink}>
+              <button className="bg-white text-custom-black whitespace-nowrap">
+                {buttonText}
+              </button>
+            </a>
           )}
+          {description && <p>{description}</p>}
         </div>
-        {buttonText && buttonLink && (
-          <a href={buttonLink} className="absolute bottom-0 mb-8">
-            <button className="bg-white text-custom-black whitespace-nowrap">
-              {buttonText}
-            </button>
-          </a>
-        )}
       </div>
       {image && (
         <img

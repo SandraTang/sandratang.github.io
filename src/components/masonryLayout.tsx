@@ -96,7 +96,7 @@ function MasonryLayout({ isDarkMode }: { isDarkMode: boolean }) {
             ))}
             {!isScrolledToEnd && (
               <div
-                className={`absolute right-[32px] sm:right-[80px] rounded-full w-6 h-6`}
+                className={`absolute right-8 sm:right-32 lg:right-48 rounded-full w-6 h-6`}
                 style={{
                   boxShadow: `0 0 10px 10px var(--background)`,
                   backgroundColor: `var(--background)`,

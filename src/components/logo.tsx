@@ -6,7 +6,7 @@ import React from "react";
 function Logo() {
   const logoRef = useRef<THREE.Object3D>(null);
   const { scene } = useGLTF("/logo.glb");
-  const scale = 0.05;
+  const scale = 0.025;
   const [x, setX] = React.useState(0);
 
   React.useEffect(() => {

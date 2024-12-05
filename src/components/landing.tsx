@@ -33,7 +33,7 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
   );
 
   return (
-    <div className="flex flex-col sm:flex-row lg:mx-[25vw] mb-[25vh] text-var(--foreground)">
+    <div className="flex flex-col sm:flex-row mb-[25vh] text-var(--foreground)">
       <div className="flex flex-col justify-center items-center text-center gap-2">
         <h1 className="text-4xl sm:text-6xl">Hi, I'm Sandra Tang</h1>
         <p>San Francisco based software engineer, MIT CS + Design</p>
@@ -76,14 +76,14 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
       </div>
       <Canvas
         style={{
-          width: "50vw",
-          height: "50vh",
+          width: "100vw",
+          height: "100vh",
           position: "absolute",
           transform: "translateX(-55%)",
           zIndex: -1,
           opacity: isDarkMode ? 0.03 : 0.3,
         }}
-        className="top-[50px] sm:top-[90px]"
+        className="top-[-165px] sm:top-[-115px]"
       >
         <CameraController cameraRef={cameraRef} position={cameraPosition} />
         <ambientLight intensity={5} />
