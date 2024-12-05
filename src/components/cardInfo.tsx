@@ -94,7 +94,7 @@ const codingProjects: CardInfo[] = [
     buttonLink: "https://cloob-pengoob.vercel.app/",
   },
   {
-    title: "My personal game development history from birth to 2021",
+    title: "My game dev history (up to 2021)",
     subheadline: "Created in 2021",
     labels: ["Coding", "Game Development", "Javascript", "Processing"],
     image: "/game_dev_history_screenshot.png",
