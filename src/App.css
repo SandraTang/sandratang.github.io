@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default (Light Mode) */
+:root {
+  --background: #ffffff;
+  --foreground: #121212;
+  --custom-black: #121212;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --foreground: #ffffff;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilda Display", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  @apply px-4 py-2 font-semibold rounded-md cursor-pointer;
+}
+
+.button-filled {
+  background: var(--foreground);
+  color: var(--background);
+  border-color: var(--foreground);
+  border-width: 2px;
+}
+
+.button-outlined {
+  background: var(--background);
+  color: var(--foreground);
+  border-color: var(--foreground);
+  border-width: 2px;
 }
