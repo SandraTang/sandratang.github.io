@@ -19,7 +19,7 @@ function CameraController({ cameraRef, position }: CameraControllerProps) {
 }
 
 function Landing({ isDarkMode }: { isDarkMode: boolean }) {
-  const cameraPosition = new THREE.Vector3(0, 5, 10);
+  const cameraPosition = new THREE.Vector3(0, 0, 0);
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
   const [contactOpen, setContactOpen] = useState(false);
 
@@ -33,7 +33,7 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
   );
 
   return (
-    <div className="flex flex-col sm:flex-row mb-[25vh] text-var(--foreground)">
+    <div className="flex flex-col sm:flex-row mb-[25vh] text-var(--foreground) items-center justify-center">
       <div className="flex flex-col justify-center items-center text-center gap-2">
         <h1 className="text-4xl sm:text-6xl">Hi, I'm Sandra Tang</h1>
         <p>San Francisco based software engineer, MIT CS + Design</p>
@@ -79,11 +79,10 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
           width: "100vw",
           height: "100vh",
           position: "absolute",
-          transform: "translateX(-55%)",
           zIndex: -1,
           opacity: isDarkMode ? 0.03 : 0.3,
         }}
-        className="top-[-165px] sm:top-[-115px]"
+        className="transform ml:translate-x-[-270px] ml:translate-y-[-25px]"
       >
         <CameraController cameraRef={cameraRef} position={cameraPosition} />
         <ambientLight intensity={5} />
