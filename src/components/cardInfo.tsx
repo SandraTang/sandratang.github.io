@@ -124,6 +124,14 @@ const codingProjects: CardInfo[] = [
     buttonText: "Play",
     buttonLink: "https://stangs.itch.io/message-hunt",
   },
+  {
+    title: "Gaps",
+    labels: ["Coding", "Game Development"],
+    image: "/gaps_game.png",
+    description: "Created in Game Maker in 2017",
+    buttonText: "Play",
+    buttonLink: "https://gamejolt.net/?token=JfmsX4reJpFdMa7jMHKmWeo7rzPXbs",
+  },
 ];
 
 const designProjects: CardInfo[] = [
