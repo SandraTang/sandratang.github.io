@@ -19,9 +19,17 @@ function MasonryLayout({ isDarkMode }: { isDarkMode: boolean }) {
   const [masonryWidth, setMasonryWidth] = useState<number>(0);
   // TODO: make responsive to window screen size changes
   useEffect(() => {
-    if (masonryRef.current) {
-      setMasonryWidth(masonryRef.current.offsetWidth);
-    }
+    if (!masonryRef.current) return;
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width } = entry.contentRect;
+        setMasonryWidth(width);
+      }
+    });
+
+    resizeObserver.observe(masonryRef.current);
+    return () => resizeObserver.disconnect();
   }, []);
 
   const [filteredCards, setFilteredCards] = useState(cardInfo);
@@ -53,7 +61,7 @@ function MasonryLayout({ isDarkMode }: { isDarkMode: boolean }) {
       scrollContainer = scrollContainerRef.current;
       scrollContainer?.addEventListener("scroll", handleScroll);
       handleScroll();
-    }, 0);
+    }, 10);
 
     return () => {
       scrollContainer?.removeEventListener("scroll", handleScroll);
