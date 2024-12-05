@@ -165,6 +165,12 @@ const designProjects: CardInfo[] = [
       />
     ),
   },
+  {
+    title: "3D Modeling",
+    labels: ["Design"],
+    image: "/womp_desert_glass.gif",
+    description: "Womp",
+  },
 ];
 
 const makerProjects: CardInfo[] = [
