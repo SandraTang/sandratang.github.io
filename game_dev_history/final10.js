@@ -453,8 +453,8 @@ pacSize = 15;
 phase = 0;
 
 function preload() {
-  fancy = loadFont("game_dev_history/data/joystixmonospace.ttf");
-  normal = loadFont("game_dev_history/data/Roboto-Regular.ttf");
+  fancy = loadFont("/game_dev_history/data/joystixmonospace.ttf");
+  normal = loadFont("/game_dev_history/data/Roboto-Regular.ttf");
 }
 
 function setup() {
