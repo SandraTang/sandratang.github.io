@@ -26,6 +26,7 @@ function MasonryLayout({ isDarkMode }: { isDarkMode: boolean }) {
         const { width } = entry.contentRect;
         setMasonryWidth(width);
       }
+      handleScroll();
     });
 
     resizeObserver.observe(masonryRef.current);
@@ -46,15 +47,15 @@ function MasonryLayout({ isDarkMode }: { isDarkMode: boolean }) {
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const [isScrolledToEnd, setIsScrolledToEnd] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (scrollContainerRef.current) {
-        const { scrollLeft, scrollWidth, clientWidth } =
-          scrollContainerRef.current;
-        setIsScrolledToEnd(scrollLeft + clientWidth >= scrollWidth - 10);
-      }
-    };
+  const handleScroll = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } =
+        scrollContainerRef.current;
+      setIsScrolledToEnd(scrollLeft + clientWidth >= scrollWidth - 10);
+    }
+  };
 
+  useEffect(() => {
     let scrollContainer = scrollContainerRef.current;
 
     setTimeout(() => {
