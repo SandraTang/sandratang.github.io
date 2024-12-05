@@ -140,14 +140,14 @@ const makerProjects: CardInfo[] = [
   {
     title: "MIT Senior Ball Dress",
     labels: ["Design", "Sewing"],
-    image: "/senior_ball_dress.PNG",
+    image: "/senior_ball_dress.png",
     description:
       "Sewed a dress from scratch without a pattern for the MIT 2023 Senior Ball.",
   },
   {
     title: "Tailored Dress",
     labels: ["Sewing"],
-    image: "/tailoring_green_dress.PNG",
+    image: "/tailoring_green_dress.png",
     description: "Tailored a dress my friend gave me. Thank you, Trisha!",
   },
 ];
