@@ -19,6 +19,49 @@ function Buttons({ data }: ButtonsInfo) {
   );
 }
 
+const professional: CardInfo[] = [
+  {
+    title: "Pomelo",
+    labels: ["Coding", "Professional"],
+    image:
+      "https://techcrunch.com/wp-content/uploads/2022/08/pomelo_cards_pink_green.jpg",
+    description:
+      "Frontend Software Engineer (React, React Native, Typescript, Tailwind, SCSS, HTML, CSS, Storybook, Segment, Sentry, Mixpanel)",
+    buttonText: "View Website",
+    buttonLink: "https://www.pomelo.com/",
+  },
+  {
+    title: "Mandolin AI Agent",
+    labels: ["Coding", "Professional"],
+    image:
+      "https://cdn.prod.website-files.com/667223c75fbb608863bb39a9/667247d6201b091bd31a9430_Mandolin%20Meta%20Image.png",
+    description:
+      "Built an agent in 4 days to find valid prior authorization documents.",
+    buttonText: "View Website",
+    buttonLink: "https://www.mandolin.com/",
+  },
+  {
+    title: "Mintlify AI Translation Assistant",
+    labels: ["Coding", "Professional"],
+    image:
+      "https://www.etcentric.org/wp-content/uploads/2022/06/Mintlify_Logo_png.png",
+    description:
+      "Built a new pathway for the AI Assistant to translate documents.",
+    buttonText: "View Website",
+    buttonLink: "https://mintlify.com/",
+  },
+  {
+    title: "Welfare Benefits Common Application",
+    labels: ["Coding", "Design"],
+    image: "/beni.png",
+    description:
+      "The government sets aside billions of dollars every year for welfare benefits. However, a large amount doesn't reach the people who need it most. There are numerous programs each with their own separate application and lots of repetitive questions. When someone's juggling two jobs and childcare, how can they navigate complex government processes to get the benefits they deserve? I set out to solve this issue. After talking with local government employees and industry experts in government sales in addition to doing lots of independent research, I learned that technical modernization in the government is largely limited by reliance on legacy systems and many applications are still done by pencil and paper (and digitization efforts are led by non-profits like Code for America and large corporations like Deloitte). While attempting to build a common app built on top of existing digital applications through scraping (with Playwright), I discovered that quite a few government websites block such activity. Applications can still be sent automatically through emailed PDFs, but not all programs offer this routes, and even so, they may not be processed at all. While I learned a lot from this experience and enjoyed creating prototypes, I've come to realize that the problem is extremely deep and complex.",
+    buttonText: "View Figma",
+    buttonLink:
+      "https://www.figma.com/design/gV1i48UuWJsyoZMzzf2g6i/Beni?node-id=28-359&t=WL3MXzuZ1VMFzX2T-1",
+  },
+];
+
 const socialMedia: CardInfo[] = [
   {
     title: "Dribbble",
@@ -80,14 +123,7 @@ const codingProjects: CardInfo[] = [
   {
     title: "2D MMORPG",
     subheadline: "Developed fall 2023 to summer 2024",
-    labels: [
-      "Coding",
-      "Game Development",
-      "React",
-      "Three.js",
-      "Typescript",
-      "Socket.io",
-    ],
+    labels: ["Coding", "Game Development", "React"],
     description: `This is the earlier iteration of the 3D MMORPG.`,
     image: "/mmorpg-2d.png",
     buttonText: "Play",
@@ -235,6 +271,7 @@ const posters: CardInfo[] = [
 ];
 
 export const cardInfo: CardInfo[] = [
+  ...professional,
   ...socialMedia,
   ...codingProjects,
   ...designProjects,

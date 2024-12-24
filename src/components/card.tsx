@@ -46,8 +46,8 @@ export default function Card({
       {image && (
         <img
           src={image}
-          alt="Card image"
-          className="group group-hover:brightness-50 rounded-md mb-2 object-cover min-h-[225px]"
+          alt="Card with information"
+          className="group group-hover:brightness-50 rounded-md mb-2 object-cover min-h-[200px]"
           ref={imageRef}
         />
       )}
