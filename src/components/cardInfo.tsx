@@ -168,6 +168,14 @@ const codingProjects: CardInfo[] = [
     buttonText: "Play",
     buttonLink: "https://gamejolt.net/?token=JfmsX4reJpFdMa7jMHKmWeo7rzPXbs",
   },
+  {
+    title: "Godot Game Development Engine LLM",
+    labels: ["Coding", "Game Development"],
+    image:
+      "https://docs.godotengine.org/en/stable/_images/editor_intro_editor_empty.webp",
+    description:
+      "Modifying the Godot Game Development Engine to have AI capabilities such as conversations with an LLM with the project's context. (WIP)",
+  },
 ];
 
 const designProjects: CardInfo[] = [
