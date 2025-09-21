@@ -21,44 +21,38 @@ function Buttons({ data }: ButtonsInfo) {
 
 const professional: CardInfo[] = [
   {
+    title: "AgentHub",
+    labels: ["Coding", "Professional"],
+    image: "/agenthub-personal-website.png",
+    description: "AgentHub Co-Founder (YC S25)",
+    buttonText: "View Website",
+    buttonLink: "https://www.agenthublabs.com/",
+  },
+  {
+    title: "Y Combinator (S25)",
+    labels: ["Professional"],
+    image: "/yc-s25.JPG",
+    description: "AgentHub Co-Founder (YC S25)",
+    buttonText: "View Website",
+    buttonLink: "https://www.ycombinator.com/companies/agenthub-2",
+  },
+  {
+    title: "Nooks",
+    labels: ["Coding", "Professional"],
+    image:
+      "https://cdn.prod.website-files.com/6822db388c44137c00f8c124/685ee7f0d8929272d1cc402d_OG-Nooks_V%2002.png",
+    description: "Product Engineer",
+    buttonText: "View Website",
+    buttonLink: "https://www.nooks.ai/",
+  },
+  {
     title: "Pomelo",
     labels: ["Coding", "Professional"],
     image:
       "https://techcrunch.com/wp-content/uploads/2022/08/pomelo_cards_pink_green.jpg",
-    description:
-      "Frontend Software Engineer (React, React Native, Typescript, Tailwind, SCSS, HTML, CSS, Storybook, Segment, Sentry, Mixpanel)",
+    description: "Frontend Software Engineer (First New Grad)",
     buttonText: "View Website",
     buttonLink: "https://www.pomelo.com/",
-  },
-  {
-    title: "Mandolin AI Agent",
-    labels: ["Coding", "Professional"],
-    image:
-      "https://cdn.prod.website-files.com/667223c75fbb608863bb39a9/667247d6201b091bd31a9430_Mandolin%20Meta%20Image.png",
-    description:
-      "Built an agent in 4 days to find valid prior authorization documents.",
-    buttonText: "View Website",
-    buttonLink: "https://www.mandolin.com/",
-  },
-  {
-    title: "Mintlify AI Translation Assistant",
-    labels: ["Coding", "Professional"],
-    image:
-      "https://www.etcentric.org/wp-content/uploads/2022/06/Mintlify_Logo_png.png",
-    description:
-      "Built a new pathway for the AI Assistant to translate documents.",
-    buttonText: "View Website",
-    buttonLink: "https://mintlify.com/",
-  },
-  {
-    title: "Welfare Benefits Common Application",
-    labels: ["Coding", "Design"],
-    image: "/beni.png",
-    description:
-      "The government sets aside billions of dollars every year for welfare benefits. However, a large amount doesn't reach the people who need it most. There are numerous programs each with their own separate application and lots of repetitive questions. When someone's juggling two jobs and childcare, how can they navigate complex government processes to get the benefits they deserve? I set out to solve this issue. After talking with local government employees and industry experts in government sales in addition to doing lots of independent research, I learned that technical modernization in the government is largely limited by reliance on legacy systems and many applications are still done by pencil and paper (and digitization efforts are led by non-profits like Code for America and large corporations like Deloitte). While attempting to build a common app built on top of existing digital applications through scraping (with Playwright), I discovered that quite a few government websites block such activity. Applications can still be sent automatically through emailed PDFs, but not all programs offer this routes, and even so, they may not be processed at all. While I learned a lot from this experience and enjoyed creating prototypes, I've come to realize that the problem is extremely deep and complex.",
-    buttonText: "View Figma",
-    buttonLink:
-      "https://www.figma.com/design/gV1i48UuWJsyoZMzzf2g6i/Beni?node-id=28-359&t=WL3MXzuZ1VMFzX2T-1",
   },
 ];
 
@@ -168,14 +162,6 @@ const codingProjects: CardInfo[] = [
     buttonText: "Play",
     buttonLink: "https://gamejolt.net/?token=JfmsX4reJpFdMa7jMHKmWeo7rzPXbs",
   },
-  {
-    title: "Godot Game Development Engine LLM",
-    labels: ["Coding", "Game Development"],
-    image:
-      "https://docs.godotengine.org/en/stable/_images/editor_intro_editor_empty.webp",
-    description:
-      "Modifying the Godot Game Development Engine to have AI capabilities such as conversations with an LLM with the project's context. (WIP)",
-  },
 ];
 
 const designProjects: CardInfo[] = [
@@ -213,7 +199,7 @@ const designProjects: CardInfo[] = [
     title: "3D Modeling",
     labels: ["Design"],
     image: "/womp_desert_glass.gif",
-    description: "Womp",
+    description: "I enjoy experimenting in Womp!",
   },
 ];
 
