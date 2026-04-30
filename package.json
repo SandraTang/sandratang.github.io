@@ -2,7 +2,7 @@
   "name": "sandratang.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sandratang.github.io",
+  "homepage": "https://sandrata.ng",
   "dependencies": {
     "@react-three/drei": "^9.119.0",
     "@react-three/fiber": "^8.17.10",
@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --cname sandrata.ng"
   },
   "eslintConfig": {
     "extends": [
