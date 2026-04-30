@@ -21,6 +21,37 @@ function Buttons({ data }: ButtonsInfo) {
 
 const professional: CardInfo[] = [
   {
+    title: "Tangerine Slice Game Studio",
+    labels: [
+      "Coding",
+      "Professional",
+      "Game Development",
+      "Design",
+      "Maker",
+      "Godot",
+    ],
+    image: "/tangerine-slice-cover-image.png",
+    description: "Solo-founded 2026, developing Lunar Crypt.",
+    buttonText: "View Website",
+    buttonLink: "https://tangerineslice.com/",
+  },
+  {
+    title: "Lunar Crypt",
+    labels: [
+      "Coding",
+      "Professional",
+      "Game Development",
+      "Design",
+      "Maker",
+      "Godot",
+    ],
+    image: "/kickstarter-cover.png",
+    description:
+      "Chinese New Year-themed action puzzle game inspired by Celeste, Hollow Knight, and Tomb of the Mask. Journey through the spirit world, exorcise the twelve zodiac animals, and save the world from the Chinese monster Nian.",
+    buttonText: "View Linktree",
+    buttonLink: "https://linktr.ee/tangerineslice",
+  },
+  {
     title: "AgentHub",
     labels: ["Coding", "Professional"],
     image: "/agenthub-personal-website.png",
@@ -34,7 +65,8 @@ const professional: CardInfo[] = [
     image: "/yc-s25.JPG",
     description: "AgentHub Co-Founder (YC S25)",
     buttonText: "View Website",
-    buttonLink: "https://www.ycombinator.com/companies/agenthub-2",
+    buttonLink:
+      "https://www.ycombinator.com/launches/O6a-agenthub-the-staging-environment-for-your-ai-agents",
   },
   {
     title: "Nooks",
@@ -207,7 +239,7 @@ const makerProjects: CardInfo[] = [
   {
     title: "MIT Senior Ball Dress",
     labels: ["Design", "Sewing"],
-    image: "/senior_ball_dress.png",
+    image: "/senior_ball_dress.PNG",
     description:
       "Sewed a dress from scratch without a pattern for the MIT 2023 Senior Ball.",
   },
