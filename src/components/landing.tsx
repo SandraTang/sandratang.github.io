@@ -36,7 +36,10 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
     <div className="flex flex-col sm:flex-row mb-[25vh] text-var(--foreground) items-center justify-center">
       <div className="flex flex-col justify-center items-center text-center gap-2">
         <h1 className="text-4xl sm:text-6xl">Hi, I'm Sandra Tang</h1>
-        <p>San Francisco based software engineer, MIT CS + Design</p>
+        <p>
+          San Francisco based indie game developer, formerly YC S25, Prod.so,
+          MIT CS+Design
+        </p>
         <div className="flex flex-row gap-4 mt-2">
           {contactOpen ? (
             <div
