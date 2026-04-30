@@ -72,7 +72,7 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
             ContactButton
           )}
 
-          <a href="/Sandra Tang Resume.pdf" download="Sandra Tang Resume.pdf">
+          <a href="https://www.linkedin.com/in/sandra-tang/">
             <button className="button-outlined">Resume</button>
           </a>
         </div>
