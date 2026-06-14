@@ -132,7 +132,7 @@ const socialMedia: CardInfo[] = [
 const codingProjects: CardInfo[] = [
   {
     title: "3D MMORPG",
-    subheadline: "Developed fall 2024 to present",
+    subheadline: "Developed fall 2024",
     labels: [
       "Coding",
       "Game Development",
@@ -145,23 +145,6 @@ const codingProjects: CardInfo[] = [
     image: "/mmorpg-3d.png",
     buttonText: "Play",
     buttonLink: "https://cloob-pengoob-3d.vercel.app/",
-  },
-  {
-    title: "2D MMORPG",
-    subheadline: "Developed fall 2023 to summer 2024",
-    labels: ["Coding", "Game Development", "React"],
-    description: `This is the earlier iteration of the 3D MMORPG.`,
-    image: "/mmorpg-2d.png",
-    buttonText: "Play",
-    buttonLink: "https://cloob-pengoob.vercel.app/",
-  },
-  {
-    title: "My game dev history (up to 2021)",
-    subheadline: "Created in 2021",
-    labels: ["Coding", "Game Development", "Javascript", "Processing"],
-    image: "/game_dev_history_screenshot.png",
-    buttonText: "View",
-    buttonLink: "/game_dev_history",
   },
   {
     title: "Quake Shake",
