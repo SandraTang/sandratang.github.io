@@ -52,7 +52,7 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
   ];
 
   return (
-    <div className="flex flex-col sm:flex-row mb-[25vh] text-var(--foreground) items-center justify-center">
+    <div className="relative flex min-h-screen w-full flex-col items-center justify-center text-var(--foreground) sm:flex-row">
       <div className="flex flex-col justify-center items-center text-center gap-6">
         <h1 className="text-4xl sm:text-6xl">Hi, I'm Sandra Tang</h1>
         <div className="flex flex-col gap-0">
