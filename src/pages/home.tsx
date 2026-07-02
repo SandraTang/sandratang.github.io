@@ -1,5 +1,5 @@
+import Experiences from "../components/experiences";
 import Landing from "../components/landing";
-import MasonryLayout from "../components/masonryLayout";
 import SoftwareCareerOverview from "../components/softwareCareerOverview";
 
 export default function Home({ isDarkMode }: { isDarkMode: boolean }) {
@@ -8,7 +8,7 @@ export default function Home({ isDarkMode }: { isDarkMode: boolean }) {
       <main className="flex flex-col w-full items-center mt-[20vh]">
         <Landing isDarkMode={isDarkMode} />
         <SoftwareCareerOverview />
-        <MasonryLayout isDarkMode={isDarkMode} />
+        <Experiences />
       </main>
     </div>
   );
