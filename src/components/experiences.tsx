@@ -25,7 +25,7 @@ const experiences: ExperienceItem[] = [
       "Game studio. Solo-founded and run in February 2026. Developing Lunar Crypt.",
   },
   {
-    imageUrl: "/kickstarter-cover.png",
+    imageUrl: "/experiences-img/lunar-crypt.png",
     title: "Lunar Crypt",
     category: "Game Development",
     description:
@@ -36,14 +36,14 @@ const experiences: ExperienceItem[] = [
     title: "Game Development",
     category: "Game Development",
     description:
-      "Game development is my life-long hobby. I began developing games at age 9, and have since created over 75 and garnered over 1 million plays. ",
+      "Game development is my life-long hobby. I began developing games at age 9, and have since created over 75 games and garnered over 1 million plays. ",
   },
   {
     imageUrl: "/gaps_game.png",
     title: "Town Square",
     category: "Game Development",
     description:
-      "My game development story began when I wanted to create my own MMORPG as a child, inspired by games I played online. Post-grad, I finally tried my hand at creating a simple live-service game. ",
+      "My game development story began when I wanted to create my own MMORPG as a child, inspired by games I played online. Post-grad, I finally created a simple live-service game as I had wished to do so all those years ago. ",
   },
   {
     imageUrl: "/agenthub-personal-website.png",
@@ -119,7 +119,7 @@ function Experiences() {
             className="rounded-full px-3 py-1 text-sm font-bold text-white transition-colors"
             style={{
               backgroundColor:
-                selectedFilter === filter.label ? filter.color : "#BDBDBD",
+                selectedFilter === filter.label ? filter.color : "#E5E2DF",
             }}
           >
             {filter.label}

@@ -61,7 +61,7 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
         </div>
         <div
           className="inline-flex w-fit items-center gap-4 self-center rounded-full"
-          style={{ backgroundColor: "#E5E2DF", padding: 10 }}
+          style={{ backgroundColor: "#EEEBE8", padding: 10 }}
         >
           {socialLinks.map((item) => (
             <a

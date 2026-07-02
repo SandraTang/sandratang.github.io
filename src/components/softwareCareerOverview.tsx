@@ -1,65 +1,80 @@
 interface InfoPillItem {
   imageUrl: string;
   title: string;
-  tooltip: string;
+  description: string;
   href?: string;
 }
 
 function SoftwareCareerOverview() {
   const infoPillItems: InfoPillItem[] = [
     {
-      imageUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/MIT_logo_2003-2023.svg/3840px-MIT_logo_2003-2023.svg.png?utm_source=wikitech.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      imageUrl: "/logos-career/mit.png",
       title: "MIT '23",
-      tooltip:
+      description:
         "MIT Class of 2023 Computer Science + Design Minor + Chinese Concentration",
     },
     {
-      imageUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Y_Combinator_logo.svg",
+      imageUrl: "/logos-career/yc.png",
       title: "YC S25",
-      tooltip: "AgentHub YC S25",
+      description: "AgentHub YC S25",
     },
     {
-      imageUrl:
-        "https://media.licdn.com/dms/image/v2/C560BAQGOellJMb-77g/company-logo_200_200/company-logo_200_200/0/1660015054353/buildprod_logo?e=2147483647&v=beta&t=Q9SCmxFFtk1RrjtIUrJhHPRXWsAYZOyH8M_89BzsyOs",
+      imageUrl: "/logos-career/prod-square.png",
       title: "Prod.so",
-      tooltip:
+      description:
         "Prod.so Cohort 2. Prod is an exclusive MIT, Harvard, and Stanford startup accelerator, boasting an alumni portfolio that includes multi-billion-dollar startups like Mercor, Cursor, and Etched.",
       href: "https://prod.so/",
     },
     {
-      imageUrl:
-        "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Mit-system-lab-logo.jpg/250px-Mit-system-lab-logo.jpg",
+      imageUrl: "/logos-career/mit-ssl.png",
       title: "MIT SSL",
-      tooltip: "MIT Space Systems Laboratory",
+      description: "MIT Space Systems Laboratory",
       href: "https://en.wikipedia.org/wiki/Space_Systems_Laboratory_(MIT)",
     },
     {
-      imageUrl: "/logos-small/mit-url.png",
+      imageUrl: "/logos-career/mit-url.png",
       title: "MIT URL",
-      tooltip: "MIT Urban Risk Lab",
+      description: "MIT Urban Risk Lab",
       href: "https://urbanrisklab.org/",
     },
+    {
+      imageUrl: "/logos-career/google.png",
+      title: "Google",
+      description: "Backend Intern",
+    },
+    {
+      imageUrl: "/logos-career/meta.png",
+      title: "Meta",
+      description: "TPM Intern",
+    },
+    {
+      imageUrl: "/logos-career/pomelo.png",
+      title: "Pomelo",
+      description: "SWE. First new grad hired. Acquired by SendWave.",
+    },
+    {
+      imageUrl: "/logos-career/nooks.png",
+      title: "Nooks.ai",
+      description: "Product Engineer",
+    },
   ];
-
   return (
-    <div className="flex flex-col items-center gap-2">
-      <p className="font-bold" style={{ color: "#B5A18D" }}>
-        Software Career Overview
-      </p>
+    <div className="mb-[350px] flex flex-col items-center gap-8">
       <div
-        className="inline-flex w-fit items-center gap-8 self-center rounded-full"
+        className="flex w-fit flex-wrap items-center justify-center gap-0 self-center rounded-full"
         style={{ padding: 10 }}
       >
         {infoPillItems.map((item) => (
           <div
             key={item.title}
-            className="group relative flex w-20 items-center justify-center"
+            className="group relative flex w-24 items-center justify-center overflow-visible py-2 transition-all duration-500 ease-out hover:w-28"
           >
-            <div className="pointer-events-none absolute bottom-full left-1/2 mb-2 hidden w-[200px] -translate-x-1/2 rounded-md bg-black px-3 py-2 text-center text-xs text-white group-hover:block">
-              <p className="font-bold">{item.title}</p>
-              <p className="font-normal">{item.tooltip}</p>
+            <div className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-5 hidden w-[220px] -translate-x-1/2 group-hover:block">
+              <div className="relative rounded-2xl bg-black px-4 py-3 text-center text-xs text-white shadow-lg">
+                <p className="font-bold">{item.title}</p>
+                <p className="mt-1 font-normal">{item.description}</p>
+                <div className="absolute left-1/2 top-full h-3 w-3 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-black" />
+              </div>
             </div>
             {item.href ? (
               <a
@@ -67,20 +82,20 @@ function SoftwareCareerOverview() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={item.title}
-                className="flex items-center justify-center"
+                className="flex w-full items-center justify-center overflow-hidden rounded-2xl px-[10px]"
               >
                 <img
                   src={item.imageUrl}
                   alt={`${item.title} logo`}
-                  className="h-12 w-auto object-contain"
+                  className="h-16 w-auto object-contain transition-all duration-500 ease-out group-hover:h-[72px]"
                 />
               </a>
             ) : (
-              <div className="flex items-center justify-center">
+              <div className="flex w-full items-center justify-center overflow-hidden rounded-2xl px-[10px]">
                 <img
                   src={item.imageUrl}
                   alt={`${item.title} logo`}
-                  className="h-12 w-auto object-contain"
+                  className="h-16 w-auto object-contain transition-all duration-500 ease-out group-hover:h-[72px]"
                 />
               </div>
             )}
