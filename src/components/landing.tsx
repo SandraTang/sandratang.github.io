@@ -1,11 +1,17 @@
 import { Canvas } from "@react-three/fiber";
 import Logo from "./logo";
 import * as THREE from "three";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 interface CameraControllerProps {
   cameraRef: React.RefObject<THREE.PerspectiveCamera>;
   position: THREE.Vector3;
+}
+
+interface LinkPillItem {
+  imageUrl: string;
+  title: string;
+  href: string;
 }
 
 function CameraController({ cameraRef, position }: CameraControllerProps) {
@@ -21,60 +27,57 @@ function CameraController({ cameraRef, position }: CameraControllerProps) {
 function Landing({ isDarkMode }: { isDarkMode: boolean }) {
   const cameraPosition = new THREE.Vector3(0, 0, 0);
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
-  const [contactOpen, setContactOpen] = useState(false);
 
-  const ContactButton = (
-    <button
-      className="button-filled"
-      onClick={() => setContactOpen(!contactOpen)}
-    >
-      Contact
-    </button>
-  );
+  const socialLinks: LinkPillItem[] = [
+    {
+      imageUrl: "/logos-small/linkedin.png",
+      title: "LinkedIn",
+      href: "https://www.linkedin.com/in/sandra-tang/",
+    },
+    {
+      imageUrl: "/logos-small/behance.png",
+      title: "Behance",
+      href: "https://www.behance.net/sandra-tang",
+    },
+    {
+      imageUrl: "/logos-small/github.png",
+      title: "GitHub",
+      href: "https://github.com/SandraTang",
+    },
+    {
+      imageUrl: "/logos-small/itchio.png",
+      title: "Itch.io",
+      href: "https://stangs.itch.io/",
+    },
+  ];
 
   return (
     <div className="flex flex-col sm:flex-row mb-[25vh] text-var(--foreground) items-center justify-center">
-      <div className="flex flex-col justify-center items-center text-center gap-2">
+      <div className="flex flex-col justify-center items-center text-center gap-6">
         <h1 className="text-4xl sm:text-6xl">Hi, I'm Sandra Tang</h1>
-        <p>
-          San Francisco based indie game developer, formerly YC S25, Prod.so,
-          MIT CS+Design
-        </p>
-        <div className="flex flex-row gap-4 mt-2">
-          {contactOpen ? (
-            <div
-              className={`flex flex-row gap-2 items-center ${
-                isDarkMode ? "bg-[#222]" : "bg-[#eee]"
-              } rounded-md`}
+        <div className="flex flex-col gap-0">
+          <p>Lifelong indie game developer.</p>
+          <p>Creating for the love of it.</p>
+        </div>
+        <div
+          className="inline-flex w-fit items-center gap-4 self-center rounded-full"
+          style={{ backgroundColor: "#E5E2DF", padding: 10 }}
+        >
+          {socialLinks.map((item) => (
+            <a
+              key={item.title}
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={item.title}
             >
-              {ContactButton}
-              <div className="flex flex-row gap-4 mx-4">
-                <span>
-                  <a
-                    href="https://www.linkedin.com/in/sandra-tang/"
-                    className="hover:underline"
-                  >
-                    LinkedIn
-                  </a>
-                </span>
-                <span>|</span>
-                <span>
-                  <a
-                    href="https://github.com/SandraTang"
-                    className="hover:underline"
-                  >
-                    Github
-                  </a>
-                </span>
-              </div>
-            </div>
-          ) : (
-            ContactButton
-          )}
-
-          <a href="https://www.linkedin.com/in/sandra-tang/">
-            <button className="button-outlined">Resume</button>
-          </a>
+              <img
+                src={item.imageUrl}
+                alt={`${item.title} logo`}
+                className="h-10 w-10"
+              />
+            </a>
+          ))}
         </div>
       </div>
       <Canvas
