@@ -56,6 +56,7 @@ function SoftwareCareerOverview() {
       imageUrl: "/logos-career/nooks.png",
       title: "Nooks.ai",
       description: "Product Engineer",
+      href: "https://nooks.ai/",
     },
   ];
   return (

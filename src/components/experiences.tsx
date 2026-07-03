@@ -131,16 +131,16 @@ function Experiences() {
         {filteredExperiences.map((experience) => (
           <article
             key={experience.title}
-            className="grid gap-12 sm:grid-cols-2"
+            className="grid gap-6 sm:grid-cols-2 sm:gap-12"
           >
-            <div className="w-[375px] h-[242px] overflow-hidden">
+            <div className="h-[242px] w-full overflow-hidden sm:h-[242px]">
               <img
                 src={experience.imageUrl}
                 alt={`${experience.title} cover`}
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="flex h-full max-w-[400px] flex-col gap-4 text-left">
+            <div className="flex h-full w-full max-w-[400px] flex-col gap-4 text-left">
               <p className="text-xl font-semibold">{experience.title}</p>
               <div>
                 <span
