@@ -2,8 +2,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import FigmaPosters from "./pages/figmaPosters";
 import Home from "./pages/home";
 import GameDevHistory from "./pages/gameDevHistory";
+import Yearbooks from "./pages/yearbooks";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -32,7 +34,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
+        <Route path="/figma-posters" element={<FigmaPosters />} />
         <Route path="/game_dev_history" element={<GameDevHistory />} />
+        <Route path="/yearbooks" element={<Yearbooks />} />
       </Routes>
     </Router>
   );

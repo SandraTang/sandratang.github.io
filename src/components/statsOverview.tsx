@@ -39,7 +39,7 @@ function StatsOverview() {
 
     observer.observe(sectionRef.current);
     return () => observer.disconnect();
-  }, [hasAnimated, stats]);
+  }, [hasAnimated]);
 
   useEffect(() => {
     if (!hasAnimated) return;
@@ -62,7 +62,7 @@ function StatsOverview() {
 
     const animationFrame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(animationFrame);
-  }, [hasAnimated, stats]);
+  }, [hasAnimated]);
 
   return (
     <section

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 type ExperienceFilter = "All" | "Game Development" | "Software" | "Art";
 
@@ -7,6 +8,8 @@ type ExperienceItem = {
   title: string;
   category: Exclude<ExperienceFilter, "All">;
   description: string;
+  href?: string;
+  hrefDescription?: string;
 };
 
 const filters: { label: ExperienceFilter; color: string }[] = [
@@ -23,6 +26,8 @@ const experiences: ExperienceItem[] = [
     category: "Game Development",
     description:
       "Game studio. Solo-founded and run in February 2026. Developing Lunar Crypt.",
+    href: "https://tangerineslice.com/",
+    hrefDescription: "View website",
   },
   {
     imageUrl: "/experiences-img/lunar-crypt.png",
@@ -30,16 +35,18 @@ const experiences: ExperienceItem[] = [
     category: "Game Development",
     description:
       "Chinese New Year-themed action-adventure precision platformer and metroidvania. Journey through the spirit world to save the zodiac animals. Single-player PC game. Releasing February 2027. ",
+    href: "https://tangerineslice.com/",
+    hrefDescription: "View website",
   },
   {
-    imageUrl: "/mmorpg-3d.png",
+    imageUrl: "/gaps_game.png",
     title: "Game Development",
     category: "Game Development",
     description:
       "Game development is my life-long hobby. I began developing games at age 9, and have since created over 75 games and garnered over 1 million plays. ",
   },
   {
-    imageUrl: "/gaps_game.png",
+    imageUrl: "/mmorpg-3d.png",
     title: "Town Square",
     category: "Game Development",
     description:
@@ -51,27 +58,16 @@ const experiences: ExperienceItem[] = [
     category: "Software",
     description:
       "Cofounded AgentHub, an AI agent simulation and evaluation engine.",
+    href: "https://www.ycombinator.com/launches/O6a-agenthub-the-staging-environment-for-your-ai-agents",
+    hrefDescription: "View YC launch",
   },
   {
-    imageUrl:
-      "https://cdn.prod.website-files.com/6822db388c44137c00f8c124/685ee7f0d8929272d1cc402d_OG-Nooks_V%2002.png",
-    title: "Nooks.ai Product Engineer",
-    category: "Software",
-    description:
-      "Product Engineer. Created the SEP hackathon project. SEP is now one of the leading products at Nooks.",
-  },
-  {
-    imageUrl:
-      "https://techcrunch.com/wp-content/uploads/2022/08/pomelo_cards_pink_green.jpg",
-    title: "Pomelo Software Engineer",
-    category: "Software",
-    description: "First new-grad hire.",
-  },
-  {
-    imageUrl: "/san_francisco.png",
+    imageUrl: "/figma-posters/san_francisco.png",
     title: "Figma Posters",
     category: "Art",
     description: "Preserving memories into wall art",
+    href: "/figma-posters",
+    hrefDescription: "Read more",
   },
   {
     imageUrl: "/arcadia_high_yearbook.png",
@@ -79,6 +75,8 @@ const experiences: ExperienceItem[] = [
     category: "Art",
     description:
       "Everyone has a story worth celebrating. I've created half a dozen yearbooks during my time in high school and for fun, with and for friends.",
+    href: "/yearbooks",
+    hrefDescription: "Read more",
   },
   {
     imageUrl: "/maker_instagram.png",
@@ -92,6 +90,8 @@ const experiences: ExperienceItem[] = [
     title: "Personal Branding",
     category: "Art",
     description: "S Tangerine",
+    href: "https://www.behance.net/gallery/67494769/Personal-Branding",
+    hrefDescription: "View on Behance",
   },
 ];
 
@@ -109,7 +109,7 @@ function Experiences() {
         );
 
   return (
-    <section className="flex w-full flex-col gap-8 lg:max-w-[750px]">
+    <section className="flex w-full flex-col gap-8 lg:max-w-[800px]">
       <div className="flex flex-wrap items-center gap-3">
         {filters.map((filter) => (
           <button
@@ -127,7 +127,7 @@ function Experiences() {
         ))}
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-8">
         {filteredExperiences.map((experience) => (
           <article
             key={experience.title}
@@ -140,7 +140,7 @@ function Experiences() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="flex flex-col gap-4 text-left max-w-[350px]">
+            <div className="flex h-full max-w-[400px] flex-col gap-4 text-left">
               <p className="text-xl font-semibold">{experience.title}</p>
               <div>
                 <span
@@ -151,6 +151,27 @@ function Experiences() {
                 </span>
               </div>
               <p>{experience.description}</p>
+              {experience.href && experience.hrefDescription && (
+                <div className="mt-auto pt-2">
+                  {experience.href.startsWith("/") ? (
+                    <Link
+                      to={experience.href}
+                      className="inline-flex items-center rounded-md border border-black/10 px-3 py-1.5 text-sm font-medium text-black/70 transition-colors hover:border-black/20 hover:text-black"
+                    >
+                      {experience.hrefDescription}
+                    </Link>
+                  ) : (
+                    <a
+                      href={experience.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center rounded-md border border-black/10 px-3 py-1.5 text-sm font-medium text-black/70 transition-colors hover:border-black/20 hover:text-black"
+                    >
+                      {experience.hrefDescription}
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </article>
         ))}
