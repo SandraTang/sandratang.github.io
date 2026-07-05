@@ -1,11 +1,27 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import CoinClickLayer from "./components/coinClickLayer";
 import FigmaPosters from "./pages/figmaPosters";
 import Home from "./pages/home";
 import GameDevHistory from "./pages/gameDevHistory";
 import Yearbooks from "./pages/yearbooks";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -32,6 +48,8 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
+      <CoinClickLayer />
       <Routes>
         <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
         <Route path="/figma-posters" element={<FigmaPosters />} />

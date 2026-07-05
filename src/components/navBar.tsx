@@ -28,14 +28,16 @@ function NavBar({ alwaysVisible = false }: { alwaysVisible?: boolean }) {
         showNav ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
       }`}
     >
-      <Link to="/" className="flex items-center gap-3 px-6 py-3 sm:px-8">
-        <img
-          src="/personal-logo/logo-black.png"
-          alt="Sandra Tang logo"
-          className="h-8 w-8 object-contain"
-        />
-        <p className="text-base font-medium">Sandra Tang</p>
-      </Link>
+      <div className="px-6 py-3 sm:px-8">
+        <Link to="/" className="inline-flex items-center gap-3">
+          <img
+            src="/personal-logo/logo-black.png"
+            alt="Sandra Tang logo"
+            className="h-8 w-8 object-contain"
+          />
+          <p className="text-base font-medium">Sandra Tang</p>
+        </Link>
+      </div>
     </div>
   );
 }
