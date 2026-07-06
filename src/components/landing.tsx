@@ -93,8 +93,9 @@ function Landing({ isDarkMode }: { isDarkMode: boolean }) {
           width: "100vw",
           height: "100svh",
           position: "absolute",
-          zIndex: -1,
+          zIndex: 0,
           opacity: isDarkMode ? 0.03 : 0.3,
+          pointerEvents: "none",
         }}
         className="transform -translate-y-[150px] sm:translate-y-0 ml:translate-x-[-270px] ml:translate-y-[-25px]"
       >
