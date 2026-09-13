@@ -11,6 +11,7 @@ import CoinClickLayer from "./components/coinClickLayer";
 import FigmaPosters from "./pages/figmaPosters";
 import Home from "./pages/home";
 import GameDevHistory from "./pages/gameDevHistory";
+import GameDev from "./pages/gameDev";
 import Yearbooks from "./pages/yearbooks";
 
 function ScrollToTop() {
@@ -54,6 +55,7 @@ function App() {
         <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
         <Route path="/figma-posters" element={<FigmaPosters />} />
         <Route path="/game_dev_history" element={<GameDevHistory />} />
+        <Route path="/gamedev" element={<GameDev />} />
         <Route path="/yearbooks" element={<Yearbooks />} />
       </Routes>
     </Router>

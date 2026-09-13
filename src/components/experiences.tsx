@@ -47,7 +47,7 @@ const experiences: ExperienceItem[] = [
   },
   {
     imageUrl: "/mmorpg-3d.png",
-    title: "Town Square",
+    title: "Online RPG",
     category: "Game Development",
     description:
       "My game development story began when I wanted to create my own MMORPG as a child, inspired by games I played online. Post-grad, I finally created a simple live-service game as I had wished to do so all those years ago. ",
