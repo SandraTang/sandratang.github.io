@@ -55,12 +55,41 @@ const conceptSteps = [
 ];
 
 const journeyMilestones = [
-  { year: "Age 9", title: "My first games" },
-  { year: "Age 14", title: "First mobile game" },
-  { year: "2017", title: "CodeDay LA Best Game" },
-  { year: "2020", title: "MLH Best Educational Hack" },
-  { year: "2024", title: "Online RPG" },
-  { year: "2026", title: "Lunar Crypt" },
+  {
+    year: "Age 9",
+    title: "My first games",
+    image: "/old-games/first-games.png",
+  },
+  {
+    year: "Age 14",
+    title: "First mobile game",
+    subtitle: "Gaps",
+    image: "/old-games/gaps.gif",
+  },
+  {
+    year: "2017",
+    title: "CodeDay LA Best Game",
+    subtitle: "Hard Wrap",
+    image: "/old-games/hard-wrap.png",
+  },
+  {
+    year: "2020",
+    title: "MLH Best Educational Hack",
+    subtitle: "Quake Shake",
+    image: "/old-games/quake-shake.gif",
+  },
+  {
+    year: "2024",
+    title: "Online RPG",
+    subtitle: "Fulfilling my childhood dream to create my own MMORPG",
+    image: "/old-games/pengoob-screenshot.png",
+  },
+  {
+    year: "2026",
+    title: "Lunar Crypt",
+    subtitle: "What I'm currently working on",
+    image: "/old-games/lunar-crypt-icon.png",
+  },
 ];
 
 const communityRoles = [
@@ -91,7 +120,7 @@ const yearAhead = [
 
 function GameDev() {
   return (
-    <main className="relative min-h-[100svh] overflow-hidden bg-[#19172a] px-5 py-0 text-[#fff7e7] sm:px-10 sm:py-0">
+    <main className="relative min-h-[100svh] overflow-hidden bg-[#27233a] px-5 py-0 text-[#fff7e7] sm:px-10 sm:py-0">
       <nav className="absolute inset-x-5 top-5 z-20 mx-auto flex max-w-6xl items-center sm:inset-x-10 sm:top-8">
         <div className="flex items-center gap-3">
           <Link
@@ -117,21 +146,27 @@ function GameDev() {
           className="pointer-events-none absolute bottom-0 right-0 w-[60vw] origin-bottom-right select-none md:w-[clamp(35vw,calc(768px-40vw),60vw)] lg:w-auto lg:scale-100"
           style={{ imageRendering: "pixelated" }}
         />
-        <div className="relative z-10 order-1 w-full max-w-6xl lg:absolute lg:inset-x-0 lg:top-[13svh] lg:mx-auto lg:px-5 xl:px-10">
+        <div className="relative z-10 order-1 w-full max-w-6xl lg:absolute lg:inset-x-0 lg:top-[13svh] lg:mx-auto">
           <div className="max-w-5xl">
             <h1 className="max-w-[calc(56rem-16px)] text-[2.25rem] leading-[0.96] sm:text-[3.5rem] lg:text-[4.5rem]">
               Hi, I&apos;m Sandra.
             </h1>
-            <p className="mt-3 max-w-2xl font-sans text-[15px] leading-snug text-[#fff7e7]/80 sm:text-[18px]">
+            <p className="mt-3 max-w-3xl font-sans text-[14px] leading-snug text-[#fff7e7]/80 sm:text-[16px]">
               I've been creating games since I was 9 years old. I studied
               Computer Science, Design, and Chinese at MIT, where I led the
               undergraduate game development club. Earlier this year, I founded
               my own game studio, Tangerine Slice Games, and am currently
               working on the first title: Lunar Crypt.
             </p>
+
+            <p className="mt-3 max-w-3xl font-sans text-[14px] leading-snug text-[#fff7e7]/80 sm:text-[16px]">
+              I'm obsessed with the concept of "easy to learn, hard to master"
+              and designing game mechanics that are extremely simple to learn
+              yet can be layered for limitless complexity.
+            </p>
           </div>
 
-          <div className="mt-5 flex w-fit flex-wrap gap-16 sm:mt-6">
+          <div className="mt-5 flex w-fit flex-wrap gap-x-16 gap-y-5 sm:mt-6 sm:gap-16">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <p className="font-sans text-[1.75rem] font-semibold tracking-tight text-[#f7a05d] sm:text-[2.25rem]">
@@ -146,25 +181,45 @@ function GameDev() {
         </div>
       </section>
 
-      <section className="mx-auto -mx-5 bg-[#f8f0e3] px-5 py-16 text-[#241d2b] sm:-mx-10 sm:px-10 sm:py-24">
+      <section className="-mx-5 bg-[#f8f0e3] px-5 py-16 text-[#241d2b] sm:-mx-10 sm:px-10 sm:py-24">
         <div className="mx-auto w-full max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:gap-16">
-            <div className="flex flex-col items-start lg:pt-5">
-              <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#a8423e]">
-                Featured project
-              </p>
-              <h2 className="mt-4 text-5xl leading-none sm:text-6xl">
-                Lunar Crypt
-              </h2>
+            <div className="order-2 flex flex-col items-start lg:order-1 lg:pt-5">
+              <h2 className="text-5xl leading-none sm:text-6xl">Lunar Crypt</h2>
               <p className="mt-6 max-w-md font-sans text-xl leading-relaxed text-[#241d2b]/80">
-                A Chinese New Year–themed, zero-gravity precision platformer.
+                A Chinese New Year-themed, zero-gravity precision platformer.
               </p>
               <p className="mt-4 max-w-md font-sans leading-relaxed text-[#241d2b]/70">
                 Journey through the spirit world to exorcise the twelve zodiac
                 animals and save Chinese New Year in this zero-gravity precision
                 platformer inspired by Chinese mythology and folklore.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
+
+              <p className="mt-4 max-w-md font-sans leading-relaxed text-[#241d2b]/70">
+                It has been my dream to start a game studio and create games
+                full-time since I began developing games as a child. Two years
+                ago, I experienced Chinese New Year in Asia surrounded by family
+                for the first time. Inspired to learn more about and honor my
+                culture and explore what it means to be Chinese American, I
+                decided to create Lunar Crypt.
+              </p>
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <figure>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  src="/lunar-crypt/gameplay-trailer-simple-cropped.mp4"
+                  poster="/experiences-img/lunar-crypt.png"
+                  className="aspect-[1.74] w-full rounded-lg border-2 border-[#241d2b] object-cover shadow-[7px_7px_0_#9e413d]"
+                  aria-label="Lunar Crypt gameplay trailer"
+                />
+              </figure>
+              <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href="https://store.steampowered.com/app/5035390/Lunar_Crypt/"
                   target="_blank"
@@ -174,7 +229,7 @@ function GameDev() {
                   Steam <span aria-hidden="true">↗</span>
                 </a>
                 <a
-                  href="https://tangerineslice.itch.io/lunar-crypt-discord-playtest"
+                  href="https://tangerineslice.itch.io/lunar-crypt-wip-demo"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-full border border-[#9e413d] px-5 py-3 font-sans text-sm font-semibold text-[#9e413d] transition-colors hover:bg-[#9e413d] hover:text-[#fff7e7]"
@@ -190,21 +245,55 @@ function GameDev() {
                   Linktree <span aria-hidden="true">↗</span>
                 </a>
               </div>
+              <p className="mt-5 font-sans text-sm leading-relaxed text-[#241d2b]/60">
+                Played by{" "}
+                <a
+                  href="https://www.youtube.com/@theodd1sout"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#a8423e] underline decoration-[#a8423e]/30 underline-offset-2 hover:decoration-[#a8423e]"
+                >
+                  TheOdd1sOut
+                </a>
+                {", "}
+                <a
+                  href="https://www.youtube.com/@JuniperDev"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#a8423e] underline decoration-[#a8423e]/30 underline-offset-2 hover:decoration-[#a8423e]"
+                >
+                  Juniper Dev
+                </a>
+                {", and "}
+                <a
+                  href="https://www.youtube.com/@alanbecker"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#a8423e] underline decoration-[#a8423e]/30 underline-offset-2 hover:decoration-[#a8423e]"
+                >
+                  Animation VS
+                </a>
+                {"; featured at "}
+                <a
+                  href="https://www.opensauce.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#a8423e] underline decoration-[#a8423e]/30 underline-offset-2 hover:decoration-[#a8423e]"
+                >
+                  Open Sauce 2026
+                </a>
+                {" as an exhibitor and by "}
+                <a
+                  href="https://www.youtube.com/watch?v=xvrBlm8uRnY&t=2s"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-[#a8423e] underline decoration-[#a8423e]/30 underline-offset-2 hover:decoration-[#a8423e]"
+                >
+                  SLAM.co
+                </a>
+                .
+              </p>
             </div>
-
-            <figure>
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
-                src="/lunar-crypt/gameplay-trailer-simple-cropped.mp4"
-                poster="/experiences-img/lunar-crypt.png"
-                className="aspect-[1.74] w-full rounded-lg border-2 border-[#241d2b] object-cover shadow-[7px_7px_0_#9e413d]"
-                aria-label="Lunar Crypt gameplay trailer"
-              />
-            </figure>
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -226,110 +315,101 @@ function GameDev() {
               </figure>
             ))}
           </div>
-        </div>
-      </section>
 
-      <section className="mx-auto -mx-5 bg-[#27233a] px-5 py-12 text-[#fff7e7] sm:-mx-10 sm:px-10 sm:py-24">
-        <div className="mx-auto w-full max-w-6xl">
-          <h2 className="text-3xl leading-none sm:text-4xl">
-            From a simple idea...
-          </h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {conceptSteps.map((step, index) => (
-              <article key={step.title} className="relative">
-                <div className="relative">
-                  <img
-                    src={step.image}
-                    alt={`Lunar Crypt development art: ${step.title}`}
-                    className="aspect-video w-full rounded-md border border-[#fff7e7]/20 object-cover"
-                  />
-                  {index < conceptSteps.length - 1 && (
-                    <span
-                      className="absolute -right-[22.5px] top-1/2 z-10 hidden -translate-y-1/2 font-sans text-2xl text-[#f7a05d] lg:block"
-                      aria-hidden="true"
-                    >
-                      →
-                    </span>
-                  )}
-                </div>
-                <h3 className="mt-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-[#f7a05d]">
-                  {step.title}
-                </h3>
-                <p className="mt-2 font-sans text-sm leading-snug text-[#fff7e7]/70">
-                  {step.description}
-                </p>
-              </article>
-            ))}
+          <div className="mt-16 border-t border-[#241d2b]/20 pt-16 sm:mt-24 sm:pt-20">
+            <h2 className="max-w-4xl text-3xl leading-none sm:text-4xl">
+              Rapid learning and progress over just 8 months of full-time
+              development.
+            </h2>
+            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {conceptSteps.map((step, index) => (
+                <article key={step.title} className="relative">
+                  <div className="relative">
+                    <img
+                      src={step.image}
+                      alt={`Lunar Crypt development art: ${step.title}`}
+                      className="aspect-video w-full rounded-md border border-[#241d2b]/20 object-cover"
+                    />
+                    {index < conceptSteps.length - 1 && (
+                      <span
+                        className="absolute -right-[22.5px] top-1/2 z-10 hidden -translate-y-1/2 font-sans text-2xl text-[#a8423e] lg:block"
+                        aria-hidden="true"
+                      >
+                        →
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="mt-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-[#a8423e]">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 font-sans text-sm leading-snug text-[#241d2b]/65">
+                    {step.description}
+                  </p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto -mx-5 bg-[#e8d5be] px-5 py-16 text-[#241d2b] sm:-mx-10 sm:px-10 sm:py-24">
+      <section className="-mx-5 bg-[#27233a] px-5 py-16 text-[#fff7e7] sm:-mx-10 sm:px-10 sm:py-24">
         <div className="mx-auto w-full max-w-6xl">
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#a8423e]">
-            My journey
-          </p>
-          <h2 className="mt-4 text-5xl leading-none sm:text-6xl">
+          <h2 className="text-5xl leading-none sm:text-6xl">
             75+ games later...
           </h2>
+          <p className="mt-6 max-w-3xl font-sans leading-relaxed text-[#fff7e7]/75">
+            As a lifelong game developer, I&apos;ve created in a wide variety of
+            genres, in 2D and 3D, and in all sorts of engines (Godot, Unity,
+            GameMaker, no engine). Most of my games have been solo-developed,
+            giving me the opportunity to practice all the skills that go into
+            creating and releasing a game.
+          </p>
           <div className="mt-12 grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-6">
             {journeyMilestones.map((milestone, index) => (
               <article
                 key={`${milestone.year}-${milestone.title}`}
                 className="relative"
               >
-                {index < journeyMilestones.length - 1 && (
-                  <span
-                    className="absolute -right-4 top-[97px] hidden font-sans text-xl text-[#a8423e] lg:block"
-                    aria-hidden="true"
-                  >
-                    →
-                  </span>
-                )}
-                <p className="font-sans text-xs font-semibold uppercase tracking-[0.12em] text-[#241d2b]/55">
+                <div className="relative">
+                  <img
+                    src={milestone.image}
+                    alt={
+                      milestone.subtitle
+                        ? `${milestone.title}: ${milestone.subtitle}`
+                        : milestone.title
+                    }
+                    className="aspect-square w-full rounded-md object-cover"
+                  />
+                  {index < journeyMilestones.length - 1 && (
+                    <span
+                      className="absolute -right-[19px] top-1/2 z-10 hidden -translate-y-1/2 font-sans text-xl text-[#f7a05d] lg:block"
+                      aria-hidden="true"
+                    >
+                      →
+                    </span>
+                  )}
+                </div>
+                <p className="mt-4 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-[#fff7e7]/55">
                   {milestone.year}
                 </p>
-                <h3 className="mt-1 h-10 font-sans text-sm font-semibold uppercase leading-5 tracking-[0.08em]">
+                <h3 className="mt-1 font-sans text-sm font-semibold uppercase leading-5 tracking-[0.08em]">
                   {milestone.title}
                 </h3>
-                <div className="mt-4 flex aspect-square items-center justify-center border border-dashed border-[#241d2b]/30 bg-[#fff7e7]/25 px-4 text-center font-sans text-xs uppercase tracking-[0.14em] text-[#241d2b]/45">
-                  Image placeholder
-                </div>
-                <p className="mt-3 font-sans text-sm leading-snug text-[#241d2b]/65">
-                  Placeholder milestone description.
-                </p>
+                {milestone.subtitle && (
+                  <p className="mt-2 font-sans text-sm leading-snug text-[#fff7e7]/70">
+                    {milestone.subtitle}
+                  </p>
+                )}
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto -mx-5 bg-[#19172a] px-5 py-16 text-[#fff7e7] sm:-mx-10 sm:px-10 sm:py-24">
-        <div className="mx-auto w-full max-w-6xl">
-          <div>
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#f7a05d]">
-              Why I make games
-            </p>
-            <h2 className="mt-4 text-5xl leading-none sm:text-6xl">
-              Easy to learn. Hard to master.
-            </h2>
-            <p className="mt-7 font-sans leading-relaxed text-[#fff7e7]/75">
-              I became obsessed with how simple mechanics can give rise to
-              intricate, layered complexity. I want players to enjoy the
-              experience, learn something useful, and for myself to keep
-              learning as I create.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto -mx-5 bg-[#f8f0e3] px-5 py-16 text-[#241d2b] sm:-mx-10 sm:px-10 sm:py-24">
+      <section className="-mx-5 bg-[#f8f0e3] px-5 py-16 text-[#241d2b] sm:-mx-10 sm:px-10 sm:py-24">
         <div className="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[1.5fr_0.45fr_0.85fr]">
           <div>
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#a8423e]">
-              MIT & beyond
-            </p>
-            <h2 className="mt-4 text-5xl leading-none sm:text-6xl">
+            <h2 className="text-5xl leading-none sm:text-6xl">
               Learning, teaching, and community.
             </h2>
             <p className="mt-6 font-sans leading-relaxed text-[#241d2b]/70">
@@ -359,12 +439,9 @@ function GameDev() {
         </div>
       </section>
 
-      <section className="mx-auto -mx-5 bg-[#27233a] px-5 py-16 text-[#fff7e7] sm:-mx-10 sm:px-10 sm:py-24">
+      <section className="-mx-5 bg-[#27233a] px-5 py-16 text-[#fff7e7] sm:-mx-10 sm:px-10 sm:py-24">
         <div className="mx-auto w-full max-w-6xl">
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#f7a05d]">
-            What&apos;s next
-          </p>
-          <h2 className="mt-4 text-5xl leading-none sm:text-6xl">
+          <h2 className="text-5xl leading-none sm:text-6xl">
             A year to create.
           </h2>
           <p className="mt-6 max-w-3xl font-sans leading-relaxed text-[#fff7e7]/75">
@@ -407,7 +484,7 @@ function GameDev() {
         </div>
       </section>
 
-      <footer className="mx-auto -mx-5 bg-[#11101c] px-5 py-10 text-[#fff7e7] sm:-mx-10 sm:px-10">
+      <footer className="-mx-5 bg-[#27233a] px-5 py-10 text-[#fff7e7] sm:-mx-10 sm:px-10">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <Link
@@ -418,9 +495,9 @@ function GameDev() {
             </Link>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-2 font-sans text-sm text-[#fff7e7]/70">
-            <a href="#top" className="transition-colors hover:text-[#f7a05d]">
+            <Link to="/" className="transition-colors hover:text-[#f7a05d]">
               Home
-            </a>
+            </Link>
             <a
               href="https://store.steampowered.com/app/5035390/Lunar_Crypt/"
               target="_blank"

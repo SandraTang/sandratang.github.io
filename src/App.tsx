@@ -13,6 +13,7 @@ import Home from "./pages/home";
 import GameDevHistory from "./pages/gameDevHistory";
 import GameDev from "./pages/gameDev";
 import Yearbooks from "./pages/yearbooks";
+import RapidFlier from "./pages/rapidFlier";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -22,6 +23,25 @@ function ScrollToTop() {
   }, [pathname]);
 
   return null;
+}
+
+function AppContent({ isDarkMode }: { isDarkMode: boolean }) {
+  const { pathname } = useLocation();
+
+  return (
+    <>
+      <ScrollToTop />
+      {pathname !== "/rapid-flier" && <CoinClickLayer />}
+      <Routes>
+        <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
+        <Route path="/figma-posters" element={<FigmaPosters />} />
+        <Route path="/game_dev_history" element={<GameDevHistory />} />
+        <Route path="/gamedev" element={<GameDev />} />
+        <Route path="/yearbooks" element={<Yearbooks />} />
+        <Route path="/rapid-flier" element={<RapidFlier />} />
+      </Routes>
+    </>
+  );
 }
 
 function App() {
@@ -49,15 +69,7 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop />
-      <CoinClickLayer />
-      <Routes>
-        <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
-        <Route path="/figma-posters" element={<FigmaPosters />} />
-        <Route path="/game_dev_history" element={<GameDevHistory />} />
-        <Route path="/gamedev" element={<GameDev />} />
-        <Route path="/yearbooks" element={<Yearbooks />} />
-      </Routes>
+      <AppContent isDarkMode={isDarkMode} />
     </Router>
   );
 }
