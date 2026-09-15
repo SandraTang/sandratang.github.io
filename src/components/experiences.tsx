@@ -44,6 +44,8 @@ const experiences: ExperienceItem[] = [
     category: "Game Development",
     description:
       "Game development is my life-long hobby. I began developing games at age 9, and have since created over 75 games and garnered over 1 million plays. ",
+    href: "/gamedev",
+    hrefDescription: "View portfolio",
   },
   {
     imageUrl: "/mmorpg-3d.png",
