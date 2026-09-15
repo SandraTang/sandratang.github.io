@@ -207,16 +207,12 @@ function GameDev() {
 
             <div className="order-1 lg:order-2">
               <figure>
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="metadata"
-                  src="/lunar-crypt/gameplay-trailer-simple-cropped.mp4"
-                  poster="/experiences-img/lunar-crypt.png"
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/2ZK9gRTu5Lc?rel=0"
                   className="aspect-[1.74] w-full rounded-lg border-2 border-[#241d2b] object-cover shadow-[7px_7px_0_#9e413d]"
-                  aria-label="Lunar Crypt gameplay trailer"
+                  title="Lunar Crypt gameplay trailer"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
                 />
               </figure>
               <div className="mt-6 flex flex-wrap gap-3">
